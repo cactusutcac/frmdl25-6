@@ -1,0 +1,6 @@
+numpy<2
+torch
+matplotlib
+git+https://github.com/facebookresearch/pytorchvideo.git
+torchvision
+lightning
