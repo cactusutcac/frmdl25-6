@@ -12,10 +12,10 @@ class Difference(nn.Module):
         super(Difference, self).__init__()
         self.bvj = None
 
-    def forward(self, bvi):
-        if self.bvj is None:
-            d = bvi
-        else:
-            d = bvi - self.bvj
-        self.bvj = bvi
+    """
+    Args:
+        x: the input frames tensor of shape (T, C, H, W), i.e. video with T frames
+    """
+    def forward(self, x):
+        d = x - x.roll(1, dims=0)
         return d

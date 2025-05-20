@@ -10,11 +10,11 @@ class TargetLoss(nn.Module):
         alpha: the adversarial weight for trade-off between action and privacy recognition
     """
     def __init__(self, encoder, target_predictor, alpha=1):
+        super(TargetLoss, self).__init__()
         self.encoder = encoder
         self.target_predictor = target_predictor
         self.alpha = alpha
         self.cross_entropy = nn.CrossEntropyLoss()
-        super(TargetLoss, self).__init__()
 
     def entropy(self, x, dim=1, eps=1e-6):
         x = torch.clamp(x, eps)
@@ -38,9 +38,9 @@ class PrivacyLoss(nn.Module):
         privacy_predictor: 2D CNN for predicting the privacy attribute
     """
     def __init__(self, privacy_predictor):
+        super(PrivacyLoss, self).__init__()
         self.privacy_predictor = privacy_predictor
         self.cross_entropy = nn.CrossEntropyLoss()
-        super(PrivacyLoss, self).__init__()
 
     """
     Args:
