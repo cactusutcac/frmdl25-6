@@ -1,11 +1,7 @@
 import torch
 import json
 from pytorchvideo.data.encoded_video import EncodedVideo
-from torchvision.transforms import Compose, Lambda
-from torchvision.transforms._transforms_video import (
-    CenterCropVideo,
-    NormalizeVideo,
-)
+from torchvision.transforms import Compose, Lambda, CenterCrop, Normalize
 from pytorchvideo.transforms import (
     ApplyTransformToKey,
     ShortSideScale,
@@ -38,16 +34,29 @@ class ActionRecognitionModel(nn.Module):
             key="video",
             transform=Compose([UniformTemporalSubsample(num_frames),
                     Lambda(lambda x: x / 255.0),
-                    NormalizeVideo(mean, std),
+                    Normalize(mean, std),
                     ShortSideScale(size = side_size),
-                    CenterCropVideo(crop_size = (crop_size, crop_size))])
+                    CenterCrop((crop_size, crop_size))])
         )
         self.id_to_classname = id_to_classname
 
     #accepts [B?, C=3, T=num_frames?, crop_size, crop_size]
     def forward(self, x):
-        x = self.model(x)
-        return x
+        """
+        Args:
+            x (torch.Tensor): input video (batched) of shape (B, T, C, H, W).
+
+        outputs:
+            y (string): predicted action label.
+        """
+        # If not batched, make sample of 1 batch
+        if len(x.shape) == 4:
+            x = x.unsqueeze(dim=0)
+        
+        # Transpose channel and temporal dimension
+        x = torch.transpose(x, -3, -4)
+        y = self.model(x)
+        return y
 
     def test(self, video_path):
         video = EncodedVideo.from_path(video_path)
@@ -69,4 +78,7 @@ class ActionRecognitionModel(nn.Module):
         for param in self.model.parameters():
             param.requires_grad = False
 
+    def unfreeze(self):
+        for param in self.model.parameters():
+            param.requires_grad = True
 # Adapted from: https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/

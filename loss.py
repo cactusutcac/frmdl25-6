@@ -2,7 +2,7 @@ import torch
 from torch import nn
 
 
-class TargetLoss(nn.Module):
+class ActionLoss(nn.Module):
     """
     Args:
         encoder: the BDQ encoder
@@ -10,7 +10,7 @@ class TargetLoss(nn.Module):
         alpha: the adversarial weight for trade-off between action and privacy recognition
     """
     def __init__(self, encoder, target_predictor, alpha=1):
-        super(TargetLoss, self).__init__()
+        super().__init__()
         self.encoder = encoder
         self.target_predictor = target_predictor
         self.alpha = alpha
@@ -38,7 +38,7 @@ class PrivacyLoss(nn.Module):
         privacy_predictor: 2D CNN for predicting the privacy attribute
     """
     def __init__(self, privacy_predictor):
-        super(PrivacyLoss, self).__init__()
+        super().__init__()
         self.privacy_predictor = privacy_predictor
         self.cross_entropy = nn.CrossEntropyLoss()
 
