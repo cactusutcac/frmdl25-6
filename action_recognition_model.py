@@ -8,6 +8,7 @@ from pytorchvideo.transforms import (
     UniformTemporalSubsample
 )
 import torch.nn as nn
+import torch.nn.functional as F
 
 device = "cpu"
 side_size = 256
@@ -55,8 +56,12 @@ class ActionRecognitionModel(nn.Module):
         
         # Transpose channel and temporal dimension
         x = torch.transpose(x, -3, -4)
-        y = self.model(x)
-        return y
+        logits = self.model(x)  # Get prediction logits from 3d resnet. Shape: (B, num_classes)
+
+        # Apply softmax to get and return probabilities of each label
+        logits_softmax = F.softmax(logits, dim=1)
+        
+        return logits_softmax
 
     def test(self, video_path):
         video = EncodedVideo.from_path(video_path)
@@ -75,10 +80,10 @@ class ActionRecognitionModel(nn.Module):
         return pred_class_names
 
     def freeze(self):
-        for param in self.model.parameters():
+        for param in self.parameters():
             param.requires_grad = False
 
     def unfreeze(self):
-        for param in self.model.parameters():
+        for param in self.parameters():
             param.requires_grad = True
 # Adapted from: https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/

@@ -30,12 +30,12 @@ class BDQEncoder(nn.Module):
         """
         Freezes the parameters to prevent/pause learning. 
         """
-        for param in self.model.parameters():
+        for param in self.parameters():
             param.requires_grad = False
 
     def unfreeze(self):
         """
         Resumes learning for BDQ encoder parameters.
         """
-        for param in self.model.parameters():
+        for param in self.parameters():
             param.requires_grad = True
