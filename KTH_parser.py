@@ -35,7 +35,7 @@ def parse_sequences_txt(txt_path):
                         "video_id": video_id,
                         "clip_id": f"{video_id}_clip{idx+1}",
                         "label": label,
-                        "subject": subject,
+                        "subject": int(subject)-1,
                         "scenario": scenario,
                         "start_frame": start,
                         "end_frame": end,
