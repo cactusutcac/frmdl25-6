@@ -24,7 +24,6 @@ class KTHBDQDataset(Dataset):
             all_clips = json.load(f)
 
         self.data = all_clips if split is None else [clip for clip in all_clips if clip.get("split") == split]
-        self.data = self.data[:16]
 
     def __len__(self):
         return len(self.data)
@@ -161,3 +160,21 @@ class MultiScaleCrop(object):
         ]
 
         return random.choice(options)
+
+class NormalizePixelValues(object):
+    """
+    Normalizes pixel values to be in the range [0., 1.] instead of the hex format.
+    """
+    def __init__(self, eps=1e-6):
+        """
+        Args:
+            eps (float): small offset to prevent edge values.
+        """
+        self.eps = eps
+
+    def __call__(self, x):
+        """
+        Args:
+            x (torch.Tensor): an image-like tensor whose values to normalize.
+        """
+        return torch.clamp(x / 255., self.eps, 1.-self.eps)
