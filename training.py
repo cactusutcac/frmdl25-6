@@ -14,10 +14,10 @@ from pytorchvideo.transforms import UniformTemporalSubsample
 from torch.optim import SGD
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader
-from torchvision import transforms
+from torchvision.transforms import Compose, Resize
 
 
-device = torch.accelerator.current_accelerator if torch.accelerator.is_available() else "cpu"
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
 
 # Avoid randomness to ensure/improve result reproducibility
 torch.manual_seed(42)
@@ -78,10 +78,10 @@ if __name__ == "__main__":
     output_size = (224, 224)
 
     # Load KTH dataset. Apply transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
-    transform = transforms.Compose([
+    transform = Compose([
         ConsecutiveTemporalSubsample(32), # first, sample 32 consecutive frames
         MultiScaleCrop(), # then, apply randomized multi-scale crop
-        transforms.Resize((224, 224)), # then, resize to (224, 224)
+        Resize((224, 224)), # then, resize to (224, 224)
         NormalizePixelValues(),
     ])
     train_data = KTHBDQDataset(
