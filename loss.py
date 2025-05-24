@@ -29,7 +29,7 @@ class ActionLoss(nn.Module):
     def forward(self, V, L_action, fixed_privacy_predictor):
         V_encoded = self.encoder(V)
         y_pred = self.target_predictor(V_encoded)
-        loss = self.cross_entropy(y_pred, L_action) - self.alpha * self.entropy(fixed_privacy_predictor(V_encoded))
+        loss = self.cross_entropy(y_pred, L_action) - self.alpha * torch.sum(self.entropy(fixed_privacy_predictor(V_encoded)))
         return loss
 
 class PrivacyLoss(nn.Module):

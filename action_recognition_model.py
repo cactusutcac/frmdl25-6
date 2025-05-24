@@ -10,7 +10,7 @@ from pytorchvideo.transforms import (
 import torch.nn as nn
 import torch.nn.functional as F
 
-device = "cpu"
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
 side_size = 256
 mean = [0.45, 0.45, 0.45]
 std = [0.225, 0.225, 0.225]

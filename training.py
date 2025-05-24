@@ -11,8 +11,8 @@ from loss import ActionLoss, PrivacyLoss
 from preprocess import KTHBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues
 from privacy_attribute_prediction_model import PrivacyAttributePredictor
 from pytorchvideo.transforms import UniformTemporalSubsample
-from torch.optim import SGD
-from torch.optim.lr_scheduler import CosineAnnealingLR
+from torch.optim import SGD, Optimizer
+from torch.optim.lr_scheduler import CosineAnnealingLR, LRScheduler
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Resize
 
@@ -24,12 +24,13 @@ torch.manual_seed(42)
 np.random.seed(42)
 random.seed(42)
 
-def adverserial_training(train_dataloader, E, T, P, optimizer_ET, optimizer_P, scheduler_ET, scheduler_P, num_epochs=50):
+def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
+                         optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler, num_epochs=50):
     for epoch in tqdm(range(num_epochs)):
         # Set all components to training mode
         E.train()
         T.train()
-        # P.train()
+        P.train() #TODO
         epoch_loss_action = 0.0
         epoch_loss_privacy = 0.0
         for inputs, targets, privacies in train_dataloader:
@@ -43,7 +44,7 @@ def adverserial_training(train_dataloader, E, T, P, optimizer_ET, optimizer_P, s
 
             # Freeze P, train E and T together
             P.freeze()
-            loss_action = criterion_action(inputs, targets, P)
+            loss_action = criterion_action.forward(inputs, targets, P)
             loss_action.backward()
             optimizer_ET.step()
 
@@ -51,7 +52,7 @@ def adverserial_training(train_dataloader, E, T, P, optimizer_ET, optimizer_P, s
             P.unfreeze()
             E.freeze()
             T.freeze()
-            loss_privacy = criterion_privacy(inputs, privacies, E)
+            loss_privacy = criterion_privacy.forward(inputs, privacies, E)
             loss_privacy.backward()
             optimizer_P.step()
 
@@ -91,19 +92,19 @@ if __name__ == "__main__":
         split="train",
     )
     train_dataloader = DataLoader(
-        train_data, 
+        train_data,
         batch_size=batch_size,
         num_workers=4
     )
     # Initialize the BDQEncoder (E), the action attribute predictor (T),
     # and the privacy attribute predictor (P)
-    E = BDQEncoder()
+    E = BDQEncoder(hardness=5.0)
     T = ActionRecognitionModel(fine_tune=True, num_classes=6)
-    P = PrivacyAttributePredictor(25)
+    P = PrivacyAttributePredictor(num_privacy_classes=25)
 
     # Initialize optimizer, scheduler and loss functions
     optim_ET = SGD(params=list(E.parameters())+list(T.parameters()), lr=lr)
-    optim_P = SGD(params=P.parameters(), lr=lr)
+    optim_P = SGD(params=list(P.parameters()), lr=lr)
     scheduler_ET = CosineAnnealingLR(optimizer=optim_ET, T_max=num_epochs)
     scheduler_P = CosineAnnealingLR(optimizer=optim_P, T_max=num_epochs)
     criterion_action = ActionLoss(encoder=E, target_predictor=T, alpha=1)

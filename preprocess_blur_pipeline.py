@@ -6,8 +6,8 @@ from blur import LearnableGaussian
 dataset = KTHBDQDataset(
     root_dir="KTH",
     json_path="kth_clips.json",
-    clip_len=32,
-    resize=(128, 128)
+    # clip_len=32,
+    # resize=(128, 128)
 )
 
 blur = LearnableGaussian()
