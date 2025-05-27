@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else 'cpu'
+
 class DifferentiableQuantization(nn.Module):
     def __init__(self, num_bins=15, hardness=5.0, normalize_input=True, rescale_output=True):
         """
@@ -39,7 +41,7 @@ class DifferentiableQuantization(nn.Module):
 
         # Expand for broadcasting
         x_expanded = x.unsqueeze(-1)                        # Shape: [B, T, C, H, W, 1]
-        bin_centers = self.bins.view(1, 1, 1, 1, 1, -1)        # Shape: [1, 1, 1, 1, 1, num_bins]
+        bin_centers = self.bins.view(1, 1, 1, 1, 1, -1).to(device)  # Shape: [1, 1, 1, 1, 1, num_bins]
 
         # Sum of sigmoid activations
         y = torch.sigmoid(self.hardness * (x_expanded - bin_centers)).sum(dim=-1)
