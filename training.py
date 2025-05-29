@@ -16,7 +16,27 @@ from torch.optim.lr_scheduler import CosineAnnealingLR, LRScheduler
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Resize
 import re
+import os
 
+def get_sorted_checkpoints():
+    checkpoints = []
+    try:
+        files = os.listdir(CHECKPOINT_PATH)
+    except FileNotFoundError:
+        return checkpoints
+    for file in files:
+        match = re.search(r'checkpoint_(\d+)\.tar$', file)
+        if match:
+            checkpoints.append((os.path.join(CHECKPOINT_PATH, file), int(match.group(1))))
+    checkpoints.sort(key=lambda x: x[1])
+    return checkpoints
+
+def delete_old_checkpoints():
+    checkpoints = get_sorted_checkpoints()
+    if len(checkpoints) > 2:
+        for file, _ in checkpoints[:-2]:
+            os.remove(file)
+            print("delete_old_checkpoints", file)
 
 device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
 
@@ -29,9 +49,6 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
                          optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler,
                          action_loss: ActionLoss, privacy_loss: PrivacyLoss, last_epoch=0, num_epochs=50):
     def save_checkpoint(epoch: int):
-        PATH = 'checkpoints'
-        if not os.path.isdir(PATH):
-            os.mkdir(PATH)
         torch.save({
             'E_state_dict': E.state_dict(),
             'T_state_dict': T.state_dict(),
@@ -40,7 +57,9 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
             'optim_P_state_dict': optimizer_P.state_dict(),
             'scheduler_ET_state_dict': scheduler_ET.state_dict(),
             'scheduler_P_state_dict': scheduler_P.state_dict(),
-        }, PATH + '/' + 'checkpoint_' + str(epoch) + '.tar')
+        }, os.path.join(CHECKPOINT_PATH, f"checkpoint_{epoch}.tar"))
+        print("save_checkpoint", epoch)
+        delete_old_checkpoints()
 
     print("last_epoch", last_epoch)
     for epoch in tqdm(range(last_epoch, num_epochs)):
@@ -102,15 +121,18 @@ def load_train_checkpoint(E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAt
     optim_P.load_state_dict(checkpoint['optim_P_state_dict'])
     scheduler_ET.load_state_dict(checkpoint['scheduler_ET_state_dict'])
     scheduler_P.load_state_dict(checkpoint['scheduler_P_state_dict'])
+    print("load_train_checkpoint", PATH)
     # modelA.train()
 
-def extract_epoch(PATH: str | None) -> int:
-    if PATH is None:
-        return 0
-    match = re.search(r'_(\d+)\.tar$', PATH)
-    return int(match.group(1))
-
 if __name__ == "__main__":
+    global COLAB_PATH
+    global CHECKPOINT_PATH
+    COLAB_PATH = os.getenv('COLAB_PATH')
+    CHECKPOINT_PATH = "checkpoints" if COLAB_PATH is None else COLAB_PATH  # "checkpoints/checkpoint_1.tar"
+    print("COLAB_PATH", COLAB_PATH)
+    print("CHECKPOINT_PATH", CHECKPOINT_PATH)
+    if not os.path.isdir(CHECKPOINT_PATH):
+        os.makedirs(CHECKPOINT_PATH)
     # Set parameters according to https://arxiv.org/abs/2208.02459
     num_epochs = 50
     lr = 0.001
@@ -147,10 +169,14 @@ if __name__ == "__main__":
     optim_P = SGD(params=list(P.parameters()), lr=lr)
     scheduler_ET = CosineAnnealingLR(optimizer=optim_ET, T_max=num_epochs)
     scheduler_P = CosineAnnealingLR(optimizer=optim_P, T_max=num_epochs)
-    CHECKPOINT_PATH = None #"checkpoints/checkpoint_1.tar"
-    load_train_checkpoint(E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, CHECKPOINT_PATH)
+    checkpoints = get_sorted_checkpoints()
+    last_checkpoint_path = None
+    last_epoch = 0
+    if len(checkpoints) > 0:
+        last_checkpoint_path, last_epoch = checkpoints[-1]
+    load_train_checkpoint(E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, last_checkpoint_path)
     criterion_action = ActionLoss(encoder=E, target_predictor=T, alpha=1)
     criterion_privacy = PrivacyLoss(privacy_predictor=P)
 
     adverserial_training(train_dataloader, E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, criterion_action, criterion_privacy,
-                         last_epoch=extract_epoch(CHECKPOINT_PATH), num_epochs=num_epochs)
+                         last_epoch=last_epoch, num_epochs=num_epochs)
