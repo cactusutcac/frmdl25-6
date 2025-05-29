@@ -18,6 +18,14 @@ from torchvision.transforms import Compose, Resize
 import re
 import os
 
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
+
+# Avoid randomness to ensure/improve result reproducibility
+torch.manual_seed(42)
+np.random.seed(42)
+random.seed(42)
+
+
 def get_sorted_checkpoints():
     checkpoints = []
     try:
@@ -37,13 +45,6 @@ def delete_old_checkpoints():
         for file, _ in checkpoints[:-2]:
             os.remove(file)
             print("delete_old_checkpoints", file)
-
-device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
-
-# Avoid randomness to ensure/improve result reproducibility
-torch.manual_seed(42)
-np.random.seed(42)
-random.seed(42)
 
 def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
                          optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler,
@@ -66,7 +67,7 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
         # Set all components to training mode
         E.train()
         T.train()
-        P.train() #TODO
+        P.train()
         epoch_loss_action = 0.0
         epoch_loss_privacy = 0.0
         for inputs, targets, privacies in train_dataloader:
@@ -142,7 +143,7 @@ if __name__ == "__main__":
 
     # Load KTH dataset. Apply transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
     transform = Compose([
-        ConsecutiveTemporalSubsample(32), # first, sample 32 consecutive frames
+        ConsecutiveTemporalSubsample(consecutive_frames), # first, sample n consecutive frames
         MultiScaleCrop(), # then, apply randomized multi-scale crop
         Resize((224, 224)), # then, resize to (224, 224)
         NormalizePixelValues(),
