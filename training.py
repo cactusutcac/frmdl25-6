@@ -15,6 +15,7 @@ from torch.optim import SGD, Optimizer
 from torch.optim.lr_scheduler import CosineAnnealingLR, LRScheduler
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Resize
+import re
 
 
 device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
@@ -25,8 +26,24 @@ np.random.seed(42)
 random.seed(42)
 
 def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
-                         optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler, num_epochs=50):
-    for epoch in tqdm(range(num_epochs)):
+                         optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler,
+                         action_loss: ActionLoss, privacy_loss: PrivacyLoss, last_epoch=0, num_epochs=50):
+    def save_checkpoint(epoch: int):
+        PATH = 'checkpoints'
+        if not os.path.isdir(PATH):
+            os.mkdir(PATH)
+        torch.save({
+            'E_state_dict': E.state_dict(),
+            'T_state_dict': T.state_dict(),
+            'P_state_dict': P.state_dict(),
+            'optim_ET_state_dict': optimizer_ET.state_dict(),
+            'optim_P_state_dict': optimizer_P.state_dict(),
+            'scheduler_ET_state_dict': scheduler_ET.state_dict(),
+            'scheduler_P_state_dict': scheduler_P.state_dict(),
+        }, PATH + '/' + 'checkpoint_' + str(epoch) + '.tar')
+
+    print("last_epoch", last_epoch)
+    for epoch in tqdm(range(last_epoch, num_epochs)):
         # Set all components to training mode
         E.train()
         T.train()
@@ -44,7 +61,7 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
 
             # Freeze P, train E and T together
             P.freeze()
-            loss_action = criterion_action.forward(inputs, targets, P)
+            loss_action = action_loss.forward(inputs, targets, P)
             loss_action.backward()
             optimizer_ET.step()
 
@@ -52,7 +69,7 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
             P.unfreeze()
             E.freeze()
             T.freeze()
-            loss_privacy = criterion_privacy.forward(inputs, privacies, E)
+            loss_privacy = privacy_loss.forward(inputs, privacies, E)
             loss_privacy.backward()
             optimizer_P.step()
 
@@ -62,13 +79,36 @@ def adverserial_training(train_dataloader: DataLoader, E: BDQEncoder, T: ActionR
 
             epoch_loss_action += loss_action
             epoch_loss_privacy += loss_privacy
-            
+
         # Update learning rates
         scheduler_ET.step()
         scheduler_P.step()
+        save_checkpoint(epoch + 1)
 
         print(f"Epoch {epoch+1}/{num_epochs}, Action Loss: {epoch_loss_action:.4f}, Privacy Loss: {epoch_loss_privacy:.4f}")
 
+def load_train_checkpoint(E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
+               optim_ET: Optimizer, optim_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler, PATH: str | None):
+    if PATH is None:
+        return
+    checkpoint = torch.load(PATH, weights_only=True)
+    E.load_state_dict(checkpoint['E_state_dict'])
+    E.to(device)
+    T.load_state_dict(checkpoint['T_state_dict'])
+    T.to(device)
+    P.load_state_dict(checkpoint['P_state_dict'])
+    P.to(device)
+    optim_ET.load_state_dict(checkpoint['optim_ET_state_dict'])
+    optim_P.load_state_dict(checkpoint['optim_P_state_dict'])
+    scheduler_ET.load_state_dict(checkpoint['scheduler_ET_state_dict'])
+    scheduler_P.load_state_dict(checkpoint['scheduler_P_state_dict'])
+    # modelA.train()
+
+def extract_epoch(PATH: str | None) -> int:
+    if PATH is None:
+        return 0
+    match = re.search(r'_(\d+)\.tar$', PATH)
+    return int(match.group(1))
 
 if __name__ == "__main__":
     # Set parameters according to https://arxiv.org/abs/2208.02459
@@ -107,7 +147,10 @@ if __name__ == "__main__":
     optim_P = SGD(params=list(P.parameters()), lr=lr)
     scheduler_ET = CosineAnnealingLR(optimizer=optim_ET, T_max=num_epochs)
     scheduler_P = CosineAnnealingLR(optimizer=optim_P, T_max=num_epochs)
+    CHECKPOINT_PATH = None #"checkpoints/checkpoint_1.tar"
+    load_train_checkpoint(E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, CHECKPOINT_PATH)
     criterion_action = ActionLoss(encoder=E, target_predictor=T, alpha=1)
     criterion_privacy = PrivacyLoss(privacy_predictor=P)
 
-    adverserial_training(train_dataloader, E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, num_epochs=num_epochs)
+    adverserial_training(train_dataloader, E, T, P, optim_ET, optim_P, scheduler_ET, scheduler_P, criterion_action, criterion_privacy,
+                         last_epoch=extract_epoch(CHECKPOINT_PATH), num_epochs=num_epochs)
