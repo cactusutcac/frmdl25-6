@@ -135,8 +135,8 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         total_acc_privacy += acc_privacy.item()
 
     # Average out accuracies
-    total_acc_action /= len(train_dataloader)
-    total_acc_privacy /= len(train_dataloader)
+    total_acc_action /= len(train_dataloader.dataset)
+    total_acc_privacy /= len(train_dataloader.dataset)
 
     return total_loss_action, total_loss_privacy, total_acc_action, total_acc_privacy
 
@@ -185,8 +185,8 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
             total_acc_privacy += acc_privacy.item()
 
         # Average out accuracies
-        total_acc_action /= len(val_dataloader)
-        total_acc_privacy /= len(val_dataloader)
+        total_acc_action /= len(val_dataloader.dataset)
+        total_acc_privacy /= len(val_dataloader.dataset)
 
         return total_loss_action, total_loss_privacy, total_acc_action, total_acc_privacy
 
