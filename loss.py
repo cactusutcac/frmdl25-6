@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-
+from torch.nn.modules.loss import _Loss
 
 class ActionLoss(nn.Module):
     """
@@ -9,10 +9,8 @@ class ActionLoss(nn.Module):
         target_predictor: 3D CNN N for predicting target action attribute
         alpha: the adversarial weight for trade-off between action and privacy recognition
     """
-    def __init__(self, encoder, target_predictor, alpha=1):
+    def __init__(self, alpha=1):
         super().__init__()
-        self.encoder = encoder
-        self.target_predictor = target_predictor
         self.alpha = alpha
         self.cross_entropy = nn.CrossEntropyLoss()
 
@@ -22,14 +20,12 @@ class ActionLoss(nn.Module):
 
     """
     Args:
-        V: input (video);
+        T_pred: predicted target labels for the input video
+        P_pred: predicted privacy labels for the input video
         L_action: the ground-truct action labels of the inputs
-        fixed_privacy_predictor: a 2D CNN for predicting the privacy attribute (with frozen weights)
     """
-    def forward(self, V, L_action, fixed_privacy_predictor):
-        V_encoded = self.encoder(V)
-        y_pred = self.target_predictor(V_encoded)
-        loss = self.cross_entropy(y_pred, L_action) - self.alpha * self.entropy(fixed_privacy_predictor(V_encoded))
+    def forward(self, T_pred, P_pred, L_action):
+        loss = self.cross_entropy(T_pred, L_action) - self.alpha * self.entropy(P_pred)
         return loss
 
 class PrivacyLoss(nn.Module):
@@ -37,19 +33,16 @@ class PrivacyLoss(nn.Module):
     Args:
         privacy_predictor: 2D CNN for predicting the privacy attribute
     """
-    def __init__(self, privacy_predictor):
+    def __init__(self):
         super().__init__()
-        self.privacy_predictor = privacy_predictor
         self.cross_entropy = nn.CrossEntropyLoss()
 
     """
     Args:
-        V: the input (video)
+        P_pred: predicted privacy labels for the input video
         L_privacy: the ground-truth privacy labels
         fixed_encoder: the (fixed) BDQ encoder
     """
-    def forward(self, V, L_privacy, fixed_encoder):
-        V_encoded = fixed_encoder(V)
-        y_pred = self.privacy_predictor(V_encoded)
-        loss = self.cross_entropy(y_pred, L_privacy)
+    def forward(self, P_pred, L_privacy):
+        loss = self.cross_entropy(P_pred, L_privacy)
         return loss
