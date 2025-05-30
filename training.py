@@ -17,6 +17,13 @@ from torchvision.transforms import Compose, Resize, CenterCrop
 import re
 import os
 
+# Setup checkpointing
+COLAB_PATH = os.getenv('COLAB_PATH')
+CHECKPOINT_PATH = "checkpoints" if COLAB_PATH is None else COLAB_PATH  # "checkpoints/checkpoint_1.tar"
+if not os.path.isdir(CHECKPOINT_PATH):
+    os.makedirs(CHECKPOINT_PATH)
+
+# Set accelerator
 device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
 
 # Avoid randomness to ensure/improve result reproducibility
@@ -43,7 +50,6 @@ def delete_old_checkpoints():
     if len(checkpoints) > 2:
         for file, _ in checkpoints[:-2]:
             os.remove(file)
-            print("delete_old_checkpoints", file)
 
 def compute_accuracy(input, target_action, target_privacy):
     """
@@ -87,7 +93,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
     total_acc_action = torch.tensor(0.)
     total_acc_privacy = torch.tensor(0.)
 
-    for input, target_action, target_privacy in tqdm(train_dataloader, total=len(train_dataloader), desc="Training epoch...", unit="batch"):
+    for input, target_action, target_privacy in tqdm(train_dataloader, total=len(train_dataloader), desc="Training epoch...", unit="batch", position=1, leave=False):
         input = input.to(device)
         target_action = target_action.to(device)
         target_privacy = target_privacy.to(device)
@@ -157,7 +163,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
         total_acc_action = torch.tensor(0.)
         total_acc_privacy = torch.tensor(0.)
 
-        for input, target_action, target_privacy in tqdm(val_dataloader, total=len(val_dataloader), desc="Validating epoch...", unit="batch"):
+        for input, target_action, target_privacy in tqdm(val_dataloader, total=len(val_dataloader), desc="Validating epoch...", unit="batch", position=1, leave=False):
             input = input.to(device)
             target_action = target_action.to(device)
             target_privacy = target_privacy.to(device)
@@ -214,11 +220,9 @@ def adverserial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
             'scheduler_ET_state_dict': scheduler_ET.state_dict(),
             'scheduler_P_state_dict': scheduler_P.state_dict(),
         }, os.path.join(CHECKPOINT_PATH, f"checkpoint_{epoch}.tar"))
-        print("save_checkpoint", epoch)
         delete_old_checkpoints()
 
-    print("last_epoch", last_epoch)
-    with tqdm(range(last_epoch, num_epochs), total=num_epochs, initial=last_epoch, desc="Averserial training", unit="epoch") as progress_loader:
+    with tqdm(range(last_epoch, num_epochs), total=num_epochs, initial=last_epoch, desc="Averserial training", unit="epoch", position=0, leave=True) as progress_loader:
         for epoch in progress_loader:
             train_loss_action, train_loss_privacy, train_acc_action, train_acc_privacy = train_once(train_dataloader=train_dataloader, E=E, T=T, P=P, 
                                                                                                     action_loss=action_loss, privacy_loss=privacy_loss, 
@@ -233,8 +237,9 @@ def adverserial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
             save_checkpoint(epoch + 1)
 
             # Display statistics
-            progress_loader.set_postfix(action_loss=val_loss_action, privacy_loss=val_loss_privacy,
-                                         action_accuracy=val_acc_action, privacy_accuracy= val_acc_privacy)
+            progress_loader.set_postfix(action_loss=val_loss_action.numpy(), privacy_loss=val_loss_privacy.numpy(),
+                                         action_accuracy=val_acc_action.numpy(), privacy_accuracy= val_acc_privacy.numpy())
+            progress_loader.refresh()
             # print(f"Epoch {epoch+1}/{num_epochs}, Action Loss: {val_loss_action:.4f}, Privacy Loss: {val_loss_privacy:.4f}")
             # print(f"Action accuracy: {val_acc_action:.4f}, Privacy accuracy: {val_acc_privacy:.4f}")
 
@@ -253,18 +258,12 @@ def load_train_checkpoint(E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAt
     optim_P.load_state_dict(checkpoint['optim_P_state_dict'])
     scheduler_ET.load_state_dict(checkpoint['scheduler_ET_state_dict'])
     scheduler_P.load_state_dict(checkpoint['scheduler_P_state_dict'])
-    print("load_train_checkpoint", PATH)
-    # modelA.train()
 
 if __name__ == "__main__":
-    global COLAB_PATH
-    global CHECKPOINT_PATH
-    COLAB_PATH = os.getenv('COLAB_PATH')
-    CHECKPOINT_PATH = "checkpoints" if COLAB_PATH is None else COLAB_PATH  # "checkpoints/checkpoint_1.tar"
-    print("COLAB_PATH", COLAB_PATH)
-    print("CHECKPOINT_PATH", CHECKPOINT_PATH)
-    if not os.path.isdir(CHECKPOINT_PATH):
-        os.makedirs(CHECKPOINT_PATH)
+    # Specify location of KTH dataset and labels file
+    KTH_DATA_DIR = "./KTH"
+    KTH_LABELS_DIR = "kth_clips.json"
+
     # Set parameters according to https://arxiv.org/abs/2208.02459
     num_epochs = 50
     lr = 0.001
@@ -280,8 +279,8 @@ if __name__ == "__main__":
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
     ])
     train_data = KTHBDQDataset(
-        root_dir="./KTH",
-        json_path="kth_clips.json",
+        root_dir=KTH_DATA_DIR,
+        json_path=KTH_LABELS_DIR,
         transform=train_transform,
         split="train",
     )
@@ -297,8 +296,8 @@ if __name__ == "__main__":
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
     ])
     val_data = KTHBDQDataset(
-        root_dir="./KTH",
-        json_path="kth_clips.json",
+        root_dir=KTH_DATA_DIR,
+        json_path=KTH_LABELS_DIR,
         transform=val_transform,
         split="val",
     )
@@ -310,9 +309,9 @@ if __name__ == "__main__":
 
     # Initialize the BDQEncoder (E), the action attribute predictor (T),
     # and the privacy attribute predictor (P)
-    E = BDQEncoder(hardness=5.0)
-    T = ActionRecognitionModel(fine_tune=True, num_classes=6)
-    P = PrivacyAttributePredictor(num_privacy_classes=25)
+    E = BDQEncoder(hardness=5.0).to(device)
+    T = ActionRecognitionModel(fine_tune=True, num_classes=6).to(device)
+    P = PrivacyAttributePredictor(num_privacy_classes=25).to(device)
 
     # Initialize optimizer, scheduler and loss functions
     optim_ET = SGD(params=list(E.parameters())+list(T.parameters()), lr=lr)

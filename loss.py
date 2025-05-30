@@ -1,6 +1,5 @@
 import torch
 from torch import nn
-from torch.nn.modules.loss import _Loss
 
 class ActionLoss(nn.Module):
     """
