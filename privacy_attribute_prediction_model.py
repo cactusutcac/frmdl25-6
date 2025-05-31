@@ -67,6 +67,15 @@ class PrivacyAttributePredictor(nn.Module):
 
         return averaged_softmax_predictions
 
+    def freeze(self):
+        for param in self.parameters():
+            param.requires_grad = False
+
+    def unfreeze(self):
+        for param in self.parameters():
+            param.requires_grad = True
+
+
 if __name__ == "__main__":
     from preprocess import KTHBDQDataset
 

@@ -1,19 +1,16 @@
 import torch
 import json
 from pytorchvideo.data.encoded_video import EncodedVideo
-from torchvision.transforms import Compose, Lambda
-from torchvision.transforms._transforms_video import (
-    CenterCropVideo,
-    NormalizeVideo,
-)
+from torchvision.transforms import Compose, Lambda, CenterCrop, Normalize
 from pytorchvideo.transforms import (
     ApplyTransformToKey,
     ShortSideScale,
     UniformTemporalSubsample
 )
 import torch.nn as nn
+import torch.nn.functional as F
 
-device = "cpu"
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else "cpu"
 side_size = 256
 mean = [0.45, 0.45, 0.45]
 std = [0.225, 0.225, 0.225]
@@ -38,16 +35,33 @@ class ActionRecognitionModel(nn.Module):
             key="video",
             transform=Compose([UniformTemporalSubsample(num_frames),
                     Lambda(lambda x: x / 255.0),
-                    NormalizeVideo(mean, std),
+                    Normalize(mean, std),
                     ShortSideScale(size = side_size),
-                    CenterCropVideo(crop_size = (crop_size, crop_size))])
+                    CenterCrop((crop_size, crop_size))])
         )
         self.id_to_classname = id_to_classname
 
     #accepts [B?, C=3, T=num_frames?, crop_size, crop_size]
     def forward(self, x):
-        x = self.model(x)
-        return x
+        """
+        Args:
+            x (torch.Tensor): input video (batched) of shape (B, T, C, H, W).
+
+        outputs:
+            y (string): predicted action label.
+        """
+        # If not batched, make sample of 1 batch
+        if len(x.shape) == 4:
+            x = x.unsqueeze(dim=0)
+        
+        # Transpose channel and temporal dimension
+        x = torch.transpose(x, -3, -4)
+        logits = self.model(x)  # Get prediction logits from 3d resnet. Shape: (B, num_classes)
+
+        # Apply softmax to get and return probabilities of each label
+        logits_softmax = F.softmax(logits, dim=1)
+        
+        return logits_softmax
 
     def test(self, video_path):
         video = EncodedVideo.from_path(video_path)
@@ -66,7 +80,10 @@ class ActionRecognitionModel(nn.Module):
         return pred_class_names
 
     def freeze(self):
-        for param in self.model.parameters():
+        for param in self.parameters():
             param.requires_grad = False
 
+    def unfreeze(self):
+        for param in self.parameters():
+            param.requires_grad = True
 # Adapted from: https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/

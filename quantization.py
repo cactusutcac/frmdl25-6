@@ -2,11 +2,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+device = torch.accelerator.current_accelerator() if torch.accelerator.is_available() else 'cpu'
+
 class DifferentiableQuantization(nn.Module):
-    def __init__(self, num_bins=15, hardness=10.0, normalize_input=True, rescale_output=True):
+    def __init__(self, num_bins=15, hardness=5.0, normalize_input=True, rescale_output=True):
         """
         Args:
-            num_bins (int): Number of quantization bins (default 15).
+            num_bins (int): Number of quantization bins N = 2^k (default 15).
             hardness (float): Controls sigmoid sharpness; higher = closer to step function.
             normalize_input (bool): Whether to normalize input to [0, num_bins] before quantizing.
             rescale_output (bool): Whether to rescale output back to input's original value range.
@@ -24,11 +26,11 @@ class DifferentiableQuantization(nn.Module):
     def forward(self, x):
         """
         Args:
-            x (Tensor): Input tensor of shape (B, C, H, W)
+            x (Tensor): Input tensor of shape (B, T, C, H, W)
         Returns:
-            Tensor: Quantized output of shape (B, C, H, W)
+            Tensor: Quantized output of shape (B, T, C, H, W)
         """
-        orig_min, orig_max = x.min(), x.max()
+        orig_min, orig_max = x.min(), x.max() #TODO is it batch min/max?
 
         if self.normalize_input:
             qmin = 0.0
@@ -38,8 +40,8 @@ class DifferentiableQuantization(nn.Module):
             x = (x - orig_min) / (orig_max - orig_min + 1e-4) * (qmax - qmin)
 
         # Expand for broadcasting
-        x_expanded = x.unsqueeze(-1)                        # Shape: [B, C, H, W, 1]
-        bin_centers = self.bins.view(1, 1, 1, 1, -1)        # Shape: [1, 1, 1, 1, num_bins]
+        x_expanded = x.unsqueeze(-1)                        # Shape: [B, T, C, H, W, 1]
+        bin_centers = self.bins.view(1, 1, 1, 1, 1, -1).to(device)  # Shape: [1, 1, 1, 1, 1, num_bins]
 
         # Sum of sigmoid activations
         y = torch.sigmoid(self.hardness * (x_expanded - bin_centers)).sum(dim=-1)
