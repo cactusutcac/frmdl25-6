@@ -194,7 +194,8 @@ def adverserial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
                          P: PrivacyAttributePredictor, optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, 
                          scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, last_epoch=0, num_epochs=50):
     """
-    Function encapsulating the whole adverserial training process from https://arxiv.org/abs/2208.02459
+    Function encapsulating the whole adverserial training process from https://arxiv.org/abs/2208.02459.
+    If last_epoch >= num_epochs then only runs validation once.
     Args:
         train_dataloader: DataLoader for the training split of the KTH dataset
         val_dataloader: DataLoader for the validation split of the KTH dataset
@@ -222,6 +223,12 @@ def adverserial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
         }, os.path.join(CHECKPOINT_PATH, f"checkpoint_{epoch}.tar"))
         delete_old_checkpoints()
 
+    if last_epoch >= num_epochs:
+        val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P, 
+                                                                                            action_loss=action_loss, privacy_loss=privacy_loss)
+        print(f"Action accuracy: {val_acc_action:.4f}, Privacy accuracy: {val_acc_privacy:.4f}")
+        print(f"Action Loss: {val_loss_action:.4f}, Privacy Loss: {val_loss_privacy:.4f}")
+
     with tqdm(range(last_epoch, num_epochs), total=num_epochs, initial=last_epoch, desc="Averserial training", unit="epoch", position=0, leave=True) as progress_loader:
         for epoch in progress_loader:
             train_loss_action, train_loss_privacy, train_acc_action, train_acc_privacy = train_once(train_dataloader=train_dataloader, E=E, T=T, P=P, 
@@ -240,14 +247,12 @@ def adverserial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
             progress_loader.set_postfix(action_loss=val_loss_action.numpy(), privacy_loss=val_loss_privacy.numpy(),
                                          action_accuracy=val_acc_action.numpy(), privacy_accuracy= val_acc_privacy.numpy())
             progress_loader.refresh()
-            # print(f"Epoch {epoch+1}/{num_epochs}, Action Loss: {val_loss_action:.4f}, Privacy Loss: {val_loss_privacy:.4f}")
-            # print(f"Action accuracy: {val_acc_action:.4f}, Privacy accuracy: {val_acc_privacy:.4f}")
 
 def load_train_checkpoint(E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
                optim_ET: Optimizer, optim_P: Optimizer, scheduler_ET: LRScheduler, scheduler_P: LRScheduler, PATH: str | None):
     if PATH is None:
         return
-    checkpoint = torch.load(PATH, weights_only=True)
+    checkpoint = torch.load(PATH, weights_only=True, map_location=torch.device(device))
     E.load_state_dict(checkpoint['E_state_dict'])
     E.to(device)
     T.load_state_dict(checkpoint['T_state_dict'])
@@ -268,7 +273,7 @@ if __name__ == "__main__":
     num_epochs = 50
     lr = 0.001
     batch_size = 4
-    consecutive_frames = 8
+    consecutive_frames = 24
     crop_size = (224, 224)
 
     # Load KTH dataset. Apply transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
