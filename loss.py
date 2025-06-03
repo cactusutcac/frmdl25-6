@@ -21,7 +21,7 @@ class ActionLoss(nn.Module):
     Args:
         T_pred: predicted target labels for the input video
         P_pred: predicted privacy labels for the input video
-        L_action: the ground-truct action labels of the inputs
+        L_action: the ground-truth action labels of the inputs
     """
     def forward(self, T_pred, P_pred, L_action):
         loss = self.cross_entropy(T_pred, L_action) - self.alpha * self.entropy(P_pred)

@@ -6,3 +6,4 @@ torchvision
 lightning
 opencv-python
 notebook
+tensorflow
