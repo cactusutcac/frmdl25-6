@@ -4,3 +4,6 @@ matplotlib
 git+https://github.com/facebookresearch/pytorchvideo.git
 torchvision
 lightning
+opencv-python
+notebook
+tensorflow
