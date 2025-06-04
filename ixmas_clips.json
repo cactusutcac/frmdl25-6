@@ -5,8 +5,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 53,
-    "end_frame": 97,
+    "start_frame": 0,
+    "end_frame": 44,
     "split": "train"
   },
   {
@@ -15,8 +15,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 53,
-    "end_frame": 97,
+    "start_frame": 0,
+    "end_frame": 44,
     "split": "train"
   },
   {
@@ -25,8 +25,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 51,
-    "end_frame": 120,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -35,8 +35,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 51,
-    "end_frame": 120,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "val"
   },
   {
@@ -45,8 +45,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 35,
-    "end_frame": 93,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -55,8 +55,8 @@
     "label": "check-watch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 35,
-    "end_frame": 93,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -65,8 +65,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 115,
-    "end_frame": 191,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -75,8 +75,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 115,
-    "end_frame": 191,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -85,8 +85,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 121,
-    "end_frame": 207,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "train"
   },
   {
@@ -95,8 +95,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 121,
-    "end_frame": 207,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "val"
   },
   {
@@ -105,8 +105,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 94,
-    "end_frame": 176,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "test"
   },
   {
@@ -115,8 +115,8 @@
     "label": "cross-arms",
     "subject": 0,
     "scenario": "",
-    "start_frame": 94,
-    "end_frame": 176,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "test"
   },
   {
@@ -125,8 +125,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 192,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -135,8 +135,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 192,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -145,8 +145,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 208,
-    "end_frame": 298,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "train"
   },
   {
@@ -155,8 +155,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 208,
-    "end_frame": 298,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "val"
   },
   {
@@ -165,8 +165,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 177,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -175,8 +175,8 @@
     "label": "scratch-head",
     "subject": 0,
     "scenario": "",
-    "start_frame": 177,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -185,8 +185,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 268,
-    "end_frame": 349,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -195,8 +195,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 268,
-    "end_frame": 349,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -205,8 +205,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 299,
-    "end_frame": 354,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -215,8 +215,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 299,
-    "end_frame": 354,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "val"
   },
   {
@@ -225,8 +225,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 262,
-    "end_frame": 338,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -235,8 +235,8 @@
     "label": "sit-down",
     "subject": 0,
     "scenario": "",
-    "start_frame": 262,
-    "end_frame": 338,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -245,8 +245,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 424,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -255,8 +255,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 424,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -265,8 +265,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 355,
-    "end_frame": 475,
+    "start_frame": 0,
+    "end_frame": 120,
     "split": "train"
   },
   {
@@ -275,8 +275,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 355,
-    "end_frame": 475,
+    "start_frame": 0,
+    "end_frame": 120,
     "split": "val"
   },
   {
@@ -285,8 +285,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 348,
-    "end_frame": 400,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "test"
   },
   {
@@ -295,8 +295,8 @@
     "label": "get-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 348,
-    "end_frame": 400,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "test"
   },
   {
@@ -305,8 +305,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 425,
-    "end_frame": 497,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -315,8 +315,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 425,
-    "end_frame": 497,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -325,8 +325,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 503,
-    "end_frame": 590,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -335,8 +335,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 503,
-    "end_frame": 590,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "val"
   },
   {
@@ -345,8 +345,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 401,
-    "end_frame": 522,
+    "start_frame": 0,
+    "end_frame": 121,
     "split": "test"
   },
   {
@@ -355,8 +355,8 @@
     "label": "turn-around",
     "subject": 0,
     "scenario": "",
-    "start_frame": 401,
-    "end_frame": 522,
+    "start_frame": 0,
+    "end_frame": 121,
     "split": "test"
   },
   {
@@ -365,8 +365,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 640,
+    "start_frame": 0,
+    "end_frame": 142,
     "split": "train"
   },
   {
@@ -375,8 +375,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 640,
+    "start_frame": 0,
+    "end_frame": 142,
     "split": "train"
   },
   {
@@ -385,8 +385,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 591,
-    "end_frame": 760,
+    "start_frame": 0,
+    "end_frame": 169,
     "split": "train"
   },
   {
@@ -395,8 +395,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 591,
-    "end_frame": 760,
+    "start_frame": 0,
+    "end_frame": 169,
     "split": "val"
   },
   {
@@ -405,8 +405,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 523,
-    "end_frame": 651,
+    "start_frame": 0,
+    "end_frame": 128,
     "split": "test"
   },
   {
@@ -415,8 +415,8 @@
     "label": "walk",
     "subject": 0,
     "scenario": "",
-    "start_frame": 523,
-    "end_frame": 651,
+    "start_frame": 0,
+    "end_frame": 128,
     "split": "test"
   },
   {
@@ -425,8 +425,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 658,
-    "end_frame": 717,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -435,8 +435,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 658,
-    "end_frame": 717,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -445,8 +445,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 761,
-    "end_frame": 825,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -455,8 +455,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 761,
-    "end_frame": 825,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "val"
   },
   {
@@ -465,8 +465,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 661,
-    "end_frame": 721,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -475,8 +475,8 @@
     "label": "wave",
     "subject": 0,
     "scenario": "",
-    "start_frame": 661,
-    "end_frame": 721,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -485,8 +485,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 737,
-    "end_frame": 784,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -495,8 +495,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 737,
-    "end_frame": 784,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -505,8 +505,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 867,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "train"
   },
   {
@@ -515,8 +515,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 867,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "val"
   },
   {
@@ -525,8 +525,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 765,
-    "end_frame": 812,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "test"
   },
   {
@@ -535,8 +535,8 @@
     "label": "punch",
     "subject": 0,
     "scenario": "",
-    "start_frame": 765,
-    "end_frame": 812,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "test"
   },
   {
@@ -545,8 +545,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 794,
-    "end_frame": 871,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -555,8 +555,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 794,
-    "end_frame": 871,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -565,8 +565,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 868,
-    "end_frame": 966,
+    "start_frame": 0,
+    "end_frame": 98,
     "split": "train"
   },
   {
@@ -575,8 +575,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 868,
-    "end_frame": 966,
+    "start_frame": 0,
+    "end_frame": 98,
     "split": "val"
   },
   {
@@ -585,8 +585,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 813,
-    "end_frame": 897,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -595,8 +595,8 @@
     "label": "kick",
     "subject": 0,
     "scenario": "",
-    "start_frame": 813,
-    "end_frame": 897,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -605,8 +605,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 872,
-    "end_frame": 967,
+    "start_frame": 0,
+    "end_frame": 95,
     "split": "train"
   },
   {
@@ -615,8 +615,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 872,
-    "end_frame": 967,
+    "start_frame": 0,
+    "end_frame": 95,
     "split": "train"
   },
   {
@@ -625,8 +625,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 998,
-    "end_frame": 1107,
+    "start_frame": 0,
+    "end_frame": 109,
     "split": "train"
   },
   {
@@ -635,8 +635,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 998,
-    "end_frame": 1107,
+    "start_frame": 0,
+    "end_frame": 109,
     "split": "val"
   },
   {
@@ -645,8 +645,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 898,
-    "end_frame": 982,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -655,8 +655,8 @@
     "label": "point",
     "subject": 0,
     "scenario": "",
-    "start_frame": 898,
-    "end_frame": 982,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -665,8 +665,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 968,
-    "end_frame": 1030,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -675,8 +675,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 968,
-    "end_frame": 1030,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -685,8 +685,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 1137,
-    "end_frame": 1198,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "train"
   },
   {
@@ -695,8 +695,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 1137,
-    "end_frame": 1198,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "val"
   },
   {
@@ -705,8 +705,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 983,
-    "end_frame": 1034,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -715,8 +715,8 @@
     "label": "pick-up",
     "subject": 0,
     "scenario": "",
-    "start_frame": 983,
-    "end_frame": 1034,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -725,8 +725,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 51,
-    "end_frame": 113,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -735,8 +735,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 51,
-    "end_frame": 113,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -745,8 +745,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 76,
-    "end_frame": 123,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -755,8 +755,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 76,
-    "end_frame": 123,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "val"
   },
   {
@@ -765,8 +765,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 83,
-    "end_frame": 138,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -775,8 +775,8 @@
     "label": "check-watch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 83,
-    "end_frame": 138,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -785,8 +785,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 139,
-    "end_frame": 211,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -795,8 +795,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 139,
-    "end_frame": 211,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -805,8 +805,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 193,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -815,8 +815,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 193,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -825,8 +825,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 317,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -835,8 +835,8 @@
     "label": "cross-arms",
     "subject": 1,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 317,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -845,8 +845,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 212,
-    "end_frame": 313,
+    "start_frame": 0,
+    "end_frame": 101,
     "split": "train"
   },
   {
@@ -855,8 +855,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 212,
-    "end_frame": 313,
+    "start_frame": 0,
+    "end_frame": 101,
     "split": "train"
   },
   {
@@ -865,8 +865,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 194,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -875,8 +875,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 194,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "val"
   },
   {
@@ -885,8 +885,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 318,
-    "end_frame": 372,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "test"
   },
   {
@@ -895,8 +895,8 @@
     "label": "scratch-head",
     "subject": 1,
     "scenario": "",
-    "start_frame": 318,
-    "end_frame": 372,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "test"
   },
   {
@@ -905,8 +905,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 314,
-    "end_frame": 385,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -915,8 +915,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 314,
-    "end_frame": 385,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -925,8 +925,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 272,
-    "end_frame": 356,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "train"
   },
   {
@@ -935,8 +935,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 272,
-    "end_frame": 356,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "val"
   },
   {
@@ -945,8 +945,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 373,
-    "end_frame": 460,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "test"
   },
   {
@@ -955,8 +955,8 @@
     "label": "sit-down",
     "subject": 1,
     "scenario": "",
-    "start_frame": 373,
-    "end_frame": 460,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "test"
   },
   {
@@ -965,8 +965,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 441,
-    "end_frame": 523,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "train"
   },
   {
@@ -975,8 +975,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 441,
-    "end_frame": 523,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "train"
   },
   {
@@ -985,8 +985,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 372,
-    "end_frame": 448,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -995,8 +995,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 372,
-    "end_frame": 448,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "val"
   },
   {
@@ -1005,8 +1005,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 486,
-    "end_frame": 548,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -1015,8 +1015,8 @@
     "label": "get-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 486,
-    "end_frame": 548,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -1025,8 +1025,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 536,
-    "end_frame": 617,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -1035,8 +1035,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 536,
-    "end_frame": 617,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -1045,8 +1045,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 474,
-    "end_frame": 549,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -1055,8 +1055,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 474,
-    "end_frame": 549,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "val"
   },
   {
@@ -1065,8 +1065,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 549,
-    "end_frame": 641,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "test"
   },
   {
@@ -1075,8 +1075,8 @@
     "label": "turn-around",
     "subject": 1,
     "scenario": "",
-    "start_frame": 549,
-    "end_frame": 641,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "test"
   },
   {
@@ -1085,8 +1085,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 618,
-    "end_frame": 781,
+    "start_frame": 0,
+    "end_frame": 163,
     "split": "train"
   },
   {
@@ -1095,8 +1095,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 618,
-    "end_frame": 781,
+    "start_frame": 0,
+    "end_frame": 163,
     "split": "train"
   },
   {
@@ -1105,8 +1105,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 556,
-    "end_frame": 683,
+    "start_frame": 0,
+    "end_frame": 127,
     "split": "train"
   },
   {
@@ -1115,8 +1115,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 556,
-    "end_frame": 683,
+    "start_frame": 0,
+    "end_frame": 127,
     "split": "val"
   },
   {
@@ -1125,8 +1125,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 642,
-    "end_frame": 780,
+    "start_frame": 0,
+    "end_frame": 138,
     "split": "test"
   },
   {
@@ -1135,8 +1135,8 @@
     "label": "walk",
     "subject": 1,
     "scenario": "",
-    "start_frame": 642,
-    "end_frame": 780,
+    "start_frame": 0,
+    "end_frame": 138,
     "split": "test"
   },
   {
@@ -1145,8 +1145,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 798,
-    "end_frame": 832,
+    "start_frame": 0,
+    "end_frame": 34,
     "split": "train"
   },
   {
@@ -1155,8 +1155,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 798,
-    "end_frame": 832,
+    "start_frame": 0,
+    "end_frame": 34,
     "split": "train"
   },
   {
@@ -1165,8 +1165,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 684,
-    "end_frame": 773,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "train"
   },
   {
@@ -1175,8 +1175,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 684,
-    "end_frame": 773,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "val"
   },
   {
@@ -1185,8 +1185,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 781,
-    "end_frame": 852,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -1195,8 +1195,8 @@
     "label": "wave",
     "subject": 1,
     "scenario": "",
-    "start_frame": 781,
-    "end_frame": 852,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -1205,8 +1205,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 860,
-    "end_frame": 917,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -1215,8 +1215,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 860,
-    "end_frame": 917,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -1225,8 +1225,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 774,
-    "end_frame": 824,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "train"
   },
   {
@@ -1235,8 +1235,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 774,
-    "end_frame": 824,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "val"
   },
   {
@@ -1245,8 +1245,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 870,
-    "end_frame": 892,
+    "start_frame": 0,
+    "end_frame": 23,
     "split": "test"
   },
   {
@@ -1255,8 +1255,8 @@
     "label": "punch",
     "subject": 1,
     "scenario": "",
-    "start_frame": 870,
-    "end_frame": 892,
+    "start_frame": 0,
+    "end_frame": 23,
     "split": "test"
   },
   {
@@ -1265,8 +1265,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 918,
-    "end_frame": 1008,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "train"
   },
   {
@@ -1275,8 +1275,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 918,
-    "end_frame": 1008,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "train"
   },
   {
@@ -1285,8 +1285,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 825,
-    "end_frame": 892,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -1295,8 +1295,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 825,
-    "end_frame": 892,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "val"
   },
   {
@@ -1305,8 +1305,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 961,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1315,8 +1315,8 @@
     "label": "kick",
     "subject": 1,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 961,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1325,8 +1325,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1070,
-    "end_frame": 1152,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "train"
   },
   {
@@ -1335,8 +1335,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1070,
-    "end_frame": 1152,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "train"
   },
   {
@@ -1345,8 +1345,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 946,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "train"
   },
   {
@@ -1355,8 +1355,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 946,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "val"
   },
   {
@@ -1365,8 +1365,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 977,
-    "end_frame": 1031,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "test"
   },
   {
@@ -1375,8 +1375,8 @@
     "label": "point",
     "subject": 1,
     "scenario": "",
-    "start_frame": 977,
-    "end_frame": 1031,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "test"
   },
   {
@@ -1385,8 +1385,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1153,
-    "end_frame": 1222,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -1395,8 +1395,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1153,
-    "end_frame": 1222,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -1405,8 +1405,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 983,
-    "end_frame": 1012,
+    "start_frame": 0,
+    "end_frame": 29,
     "split": "train"
   },
   {
@@ -1415,8 +1415,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 983,
-    "end_frame": 1012,
+    "start_frame": 0,
+    "end_frame": 29,
     "split": "val"
   },
   {
@@ -1425,8 +1425,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1032,
-    "end_frame": 1112,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "test"
   },
   {
@@ -1435,8 +1435,8 @@
     "label": "pick-up",
     "subject": 1,
     "scenario": "",
-    "start_frame": 1032,
-    "end_frame": 1112,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "test"
   },
   {
@@ -1445,8 +1445,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 43,
-    "end_frame": 126,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -1455,8 +1455,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 43,
-    "end_frame": 126,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -1465,8 +1465,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 43,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -1475,8 +1475,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 43,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "val"
   },
   {
@@ -1485,8 +1485,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 29,
-    "end_frame": 97,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1495,8 +1495,8 @@
     "label": "check-watch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 29,
-    "end_frame": 97,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1505,8 +1505,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 141,
-    "end_frame": 224,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -1515,8 +1515,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 141,
-    "end_frame": 224,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -1525,8 +1525,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 178,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -1535,8 +1535,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 178,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "val"
   },
   {
@@ -1545,8 +1545,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 98,
-    "end_frame": 149,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -1555,8 +1555,8 @@
     "label": "cross-arms",
     "subject": 2,
     "scenario": "",
-    "start_frame": 98,
-    "end_frame": 149,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -1565,8 +1565,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 225,
-    "end_frame": 293,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -1575,8 +1575,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 225,
-    "end_frame": 293,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -1585,8 +1585,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 179,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -1595,8 +1595,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 179,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "val"
   },
   {
@@ -1605,8 +1605,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 150,
-    "end_frame": 226,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -1615,8 +1615,8 @@
     "label": "scratch-head",
     "subject": 2,
     "scenario": "",
-    "start_frame": 150,
-    "end_frame": 226,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -1625,8 +1625,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 304,
-    "end_frame": 368,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -1635,8 +1635,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 304,
-    "end_frame": 368,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -1645,8 +1645,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 327,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -1655,8 +1655,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 327,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "val"
   },
   {
@@ -1665,8 +1665,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 227,
-    "end_frame": 285,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -1675,8 +1675,8 @@
     "label": "sit-down",
     "subject": 2,
     "scenario": "",
-    "start_frame": 227,
-    "end_frame": 285,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -1685,8 +1685,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 404,
-    "end_frame": 491,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -1695,8 +1695,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 404,
-    "end_frame": 491,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -1705,8 +1705,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 429,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "train"
   },
   {
@@ -1715,8 +1715,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 429,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "val"
   },
   {
@@ -1725,8 +1725,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 316,
-    "end_frame": 400,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -1735,8 +1735,8 @@
     "label": "get-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 316,
-    "end_frame": 400,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -1745,8 +1745,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 578,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -1755,8 +1755,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 578,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -1765,8 +1765,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 449,
-    "end_frame": 537,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "train"
   },
   {
@@ -1775,8 +1775,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 449,
-    "end_frame": 537,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "val"
   },
   {
@@ -1785,8 +1785,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 423,
-    "end_frame": 502,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "test"
   },
   {
@@ -1795,8 +1795,8 @@
     "label": "turn-around",
     "subject": 2,
     "scenario": "",
-    "start_frame": 423,
-    "end_frame": 502,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "test"
   },
   {
@@ -1805,8 +1805,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 579,
-    "end_frame": 772,
+    "start_frame": 0,
+    "end_frame": 193,
     "split": "train"
   },
   {
@@ -1815,8 +1815,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 579,
-    "end_frame": 772,
+    "start_frame": 0,
+    "end_frame": 193,
     "split": "train"
   },
   {
@@ -1825,8 +1825,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 538,
-    "end_frame": 680,
+    "start_frame": 0,
+    "end_frame": 142,
     "split": "train"
   },
   {
@@ -1835,8 +1835,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 538,
-    "end_frame": 680,
+    "start_frame": 0,
+    "end_frame": 142,
     "split": "val"
   },
   {
@@ -1845,8 +1845,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 515,
-    "end_frame": 642,
+    "start_frame": 0,
+    "end_frame": 127,
     "split": "test"
   },
   {
@@ -1855,8 +1855,8 @@
     "label": "walk",
     "subject": 2,
     "scenario": "",
-    "start_frame": 515,
-    "end_frame": 642,
+    "start_frame": 0,
+    "end_frame": 127,
     "split": "test"
   },
   {
@@ -1865,8 +1865,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 773,
-    "end_frame": 843,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -1875,8 +1875,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 773,
-    "end_frame": 843,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -1885,8 +1885,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 729,
-    "end_frame": 788,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -1895,8 +1895,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 729,
-    "end_frame": 788,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "val"
   },
   {
@@ -1905,8 +1905,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 690,
-    "end_frame": 758,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1915,8 +1915,8 @@
     "label": "wave",
     "subject": 2,
     "scenario": "",
-    "start_frame": 690,
-    "end_frame": 758,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -1925,8 +1925,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 844,
-    "end_frame": 908,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -1935,8 +1935,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 844,
-    "end_frame": 908,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -1945,8 +1945,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 789,
-    "end_frame": 821,
+    "start_frame": 0,
+    "end_frame": 32,
     "split": "train"
   },
   {
@@ -1955,8 +1955,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 789,
-    "end_frame": 821,
+    "start_frame": 0,
+    "end_frame": 32,
     "split": "val"
   },
   {
@@ -1965,8 +1965,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 759,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -1975,8 +1975,8 @@
     "label": "punch",
     "subject": 2,
     "scenario": "",
-    "start_frame": 759,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -1985,8 +1985,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 932,
-    "end_frame": 991,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -1995,8 +1995,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 932,
-    "end_frame": 991,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -2005,8 +2005,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 822,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -2015,8 +2015,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 822,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "val"
   },
   {
@@ -2025,8 +2025,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 820,
-    "end_frame": 861,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "test"
   },
   {
@@ -2035,8 +2035,8 @@
     "label": "kick",
     "subject": 2,
     "scenario": "",
-    "start_frame": 820,
-    "end_frame": 861,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "test"
   },
   {
@@ -2045,8 +2045,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1009,
-    "end_frame": 1067,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -2055,8 +2055,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1009,
-    "end_frame": 1067,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -2065,8 +2065,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 933,
-    "end_frame": 1008,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -2075,8 +2075,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 933,
-    "end_frame": 1008,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "val"
   },
   {
@@ -2085,8 +2085,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 884,
-    "end_frame": 940,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "test"
   },
   {
@@ -2095,8 +2095,8 @@
     "label": "point",
     "subject": 2,
     "scenario": "",
-    "start_frame": 884,
-    "end_frame": 940,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "test"
   },
   {
@@ -2105,8 +2105,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1107,
-    "end_frame": 1169,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -2115,8 +2115,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1107,
-    "end_frame": 1169,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -2125,8 +2125,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1027,
-    "end_frame": 1079,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "train"
   },
   {
@@ -2135,8 +2135,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 1027,
-    "end_frame": 1079,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "val"
   },
   {
@@ -2145,8 +2145,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 959,
-    "end_frame": 1014,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -2155,8 +2155,8 @@
     "label": "pick-up",
     "subject": 2,
     "scenario": "",
-    "start_frame": 959,
-    "end_frame": 1014,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -2165,8 +2165,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 44,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -2175,8 +2175,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 44,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -2185,8 +2185,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 33,
-    "end_frame": 87,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "train"
   },
   {
@@ -2195,8 +2195,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 33,
-    "end_frame": 87,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "val"
   },
   {
@@ -2205,8 +2205,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 29,
-    "end_frame": 93,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -2215,8 +2215,8 @@
     "label": "check-watch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 29,
-    "end_frame": 93,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -2225,8 +2225,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 163,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -2235,8 +2235,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 163,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -2245,8 +2245,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 93,
-    "end_frame": 144,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -2255,8 +2255,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 93,
-    "end_frame": 144,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "val"
   },
   {
@@ -2265,8 +2265,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 154,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "test"
   },
   {
@@ -2275,8 +2275,8 @@
     "label": "cross-arms",
     "subject": 3,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 154,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "test"
   },
   {
@@ -2285,8 +2285,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 164,
-    "end_frame": 232,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -2295,8 +2295,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 164,
-    "end_frame": 232,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -2305,8 +2305,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 145,
-    "end_frame": 202,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -2315,8 +2315,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 145,
-    "end_frame": 202,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -2325,8 +2325,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 155,
-    "end_frame": 233,
+    "start_frame": 0,
+    "end_frame": 78,
     "split": "test"
   },
   {
@@ -2335,8 +2335,8 @@
     "label": "scratch-head",
     "subject": 3,
     "scenario": "",
-    "start_frame": 155,
-    "end_frame": 233,
+    "start_frame": 0,
+    "end_frame": 78,
     "split": "test"
   },
   {
@@ -2345,8 +2345,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 247,
-    "end_frame": 339,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "train"
   },
   {
@@ -2355,8 +2355,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 247,
-    "end_frame": 339,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "train"
   },
   {
@@ -2365,8 +2365,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 203,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -2375,8 +2375,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 203,
-    "end_frame": 261,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "val"
   },
   {
@@ -2385,8 +2385,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 234,
-    "end_frame": 292,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -2395,8 +2395,8 @@
     "label": "sit-down",
     "subject": 3,
     "scenario": "",
-    "start_frame": 234,
-    "end_frame": 292,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -2405,8 +2405,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 438,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "train"
   },
   {
@@ -2415,8 +2415,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 350,
-    "end_frame": 438,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "train"
   },
   {
@@ -2425,8 +2425,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 281,
-    "end_frame": 351,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -2435,8 +2435,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 281,
-    "end_frame": 351,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "val"
   },
   {
@@ -2445,8 +2445,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 293,
-    "end_frame": 386,
+    "start_frame": 0,
+    "end_frame": 93,
     "split": "test"
   },
   {
@@ -2455,8 +2455,8 @@
     "label": "get-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 293,
-    "end_frame": 386,
+    "start_frame": 0,
+    "end_frame": 93,
     "split": "test"
   },
   {
@@ -2465,8 +2465,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 439,
-    "end_frame": 519,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -2475,8 +2475,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 439,
-    "end_frame": 519,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -2485,8 +2485,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 384,
-    "end_frame": 453,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -2495,8 +2495,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 384,
-    "end_frame": 453,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "val"
   },
   {
@@ -2505,8 +2505,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 387,
-    "end_frame": 448,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -2515,8 +2515,8 @@
     "label": "turn-around",
     "subject": 3,
     "scenario": "",
-    "start_frame": 387,
-    "end_frame": 448,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -2525,8 +2525,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 520,
-    "end_frame": 668,
+    "start_frame": 0,
+    "end_frame": 148,
     "split": "train"
   },
   {
@@ -2535,8 +2535,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 520,
-    "end_frame": 668,
+    "start_frame": 0,
+    "end_frame": 148,
     "split": "train"
   },
   {
@@ -2545,8 +2545,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 454,
-    "end_frame": 599,
+    "start_frame": 0,
+    "end_frame": 145,
     "split": "train"
   },
   {
@@ -2555,8 +2555,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 454,
-    "end_frame": 599,
+    "start_frame": 0,
+    "end_frame": 145,
     "split": "val"
   },
   {
@@ -2565,8 +2565,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 449,
-    "end_frame": 575,
+    "start_frame": 0,
+    "end_frame": 126,
     "split": "test"
   },
   {
@@ -2575,8 +2575,8 @@
     "label": "walk",
     "subject": 3,
     "scenario": "",
-    "start_frame": 449,
-    "end_frame": 575,
+    "start_frame": 0,
+    "end_frame": 126,
     "split": "test"
   },
   {
@@ -2585,8 +2585,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 669,
-    "end_frame": 704,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "train"
   },
   {
@@ -2595,8 +2595,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 669,
-    "end_frame": 704,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "train"
   },
   {
@@ -2605,8 +2605,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 600,
-    "end_frame": 635,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "train"
   },
   {
@@ -2615,8 +2615,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 600,
-    "end_frame": 635,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "val"
   },
   {
@@ -2625,8 +2625,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 576,
-    "end_frame": 611,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "test"
   },
   {
@@ -2635,8 +2635,8 @@
     "label": "wave",
     "subject": 3,
     "scenario": "",
-    "start_frame": 576,
-    "end_frame": 611,
+    "start_frame": 0,
+    "end_frame": 35,
     "split": "test"
   },
   {
@@ -2645,8 +2645,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 732,
-    "end_frame": 768,
+    "start_frame": 0,
+    "end_frame": 36,
     "split": "train"
   },
   {
@@ -2655,8 +2655,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 732,
-    "end_frame": 768,
+    "start_frame": 0,
+    "end_frame": 36,
     "split": "train"
   },
   {
@@ -2665,8 +2665,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 661,
-    "end_frame": 710,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -2675,8 +2675,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 661,
-    "end_frame": 710,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "val"
   },
   {
@@ -2685,8 +2685,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 641,
-    "end_frame": 688,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "test"
   },
   {
@@ -2695,8 +2695,8 @@
     "label": "punch",
     "subject": 3,
     "scenario": "",
-    "start_frame": 641,
-    "end_frame": 688,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "test"
   },
   {
@@ -2705,8 +2705,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 853,
-    "end_frame": 919,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -2715,8 +2715,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 853,
-    "end_frame": 919,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -2725,8 +2725,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 716,
-    "end_frame": 767,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -2735,8 +2735,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 716,
-    "end_frame": 767,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "val"
   },
   {
@@ -2745,8 +2745,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 689,
-    "end_frame": 757,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -2755,8 +2755,8 @@
     "label": "kick",
     "subject": 3,
     "scenario": "",
-    "start_frame": 689,
-    "end_frame": 757,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -2765,8 +2765,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 941,
-    "end_frame": 998,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -2775,8 +2775,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 941,
-    "end_frame": 998,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -2785,8 +2785,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 790,
-    "end_frame": 848,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -2795,8 +2795,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 790,
-    "end_frame": 848,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "val"
   },
   {
@@ -2805,8 +2805,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 758,
-    "end_frame": 820,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -2815,8 +2815,8 @@
     "label": "point",
     "subject": 3,
     "scenario": "",
-    "start_frame": 758,
-    "end_frame": 820,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -2825,8 +2825,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 1014,
-    "end_frame": 1081,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -2835,8 +2835,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 1014,
-    "end_frame": 1081,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -2845,8 +2845,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 849,
-    "end_frame": 905,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "train"
   },
   {
@@ -2855,8 +2855,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 849,
-    "end_frame": 905,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "val"
   },
   {
@@ -2865,8 +2865,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 821,
-    "end_frame": 882,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -2875,8 +2875,8 @@
     "label": "pick-up",
     "subject": 3,
     "scenario": "",
-    "start_frame": 821,
-    "end_frame": 882,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -2885,8 +2885,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 112,
-    "end_frame": 182,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -2895,8 +2895,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 112,
-    "end_frame": 182,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -2905,8 +2905,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 30,
-    "end_frame": 103,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -2915,8 +2915,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 30,
-    "end_frame": 103,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "val"
   },
   {
@@ -2925,8 +2925,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 32,
-    "end_frame": 95,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -2935,8 +2935,8 @@
     "label": "check-watch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 32,
-    "end_frame": 95,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -2945,8 +2945,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 294,
-    "end_frame": 347,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "train"
   },
   {
@@ -2955,8 +2955,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 294,
-    "end_frame": 347,
+    "start_frame": 0,
+    "end_frame": 53,
     "split": "train"
   },
   {
@@ -2965,8 +2965,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 124,
-    "end_frame": 200,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -2975,8 +2975,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 124,
-    "end_frame": 200,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "val"
   },
   {
@@ -2985,8 +2985,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 96,
-    "end_frame": 158,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -2995,8 +2995,8 @@
     "label": "cross-arms",
     "subject": 4,
     "scenario": "",
-    "start_frame": 96,
-    "end_frame": 158,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -3005,8 +3005,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 348,
-    "end_frame": 449,
+    "start_frame": 0,
+    "end_frame": 101,
     "split": "train"
   },
   {
@@ -3015,8 +3015,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 348,
-    "end_frame": 449,
+    "start_frame": 0,
+    "end_frame": 101,
     "split": "train"
   },
   {
@@ -3025,8 +3025,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 201,
-    "end_frame": 282,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -3035,8 +3035,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 201,
-    "end_frame": 282,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "val"
   },
   {
@@ -3045,8 +3045,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 159,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "test"
   },
   {
@@ -3055,8 +3055,8 @@
     "label": "scratch-head",
     "subject": 4,
     "scenario": "",
-    "start_frame": 159,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 79,
     "split": "test"
   },
   {
@@ -3065,8 +3065,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 450,
-    "end_frame": 520,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -3075,8 +3075,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 450,
-    "end_frame": 520,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -3085,8 +3085,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 283,
-    "end_frame": 348,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "train"
   },
   {
@@ -3095,8 +3095,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 283,
-    "end_frame": 348,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "val"
   },
   {
@@ -3105,8 +3105,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 274,
-    "end_frame": 334,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -3115,8 +3115,8 @@
     "label": "sit-down",
     "subject": 4,
     "scenario": "",
-    "start_frame": 274,
-    "end_frame": 334,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "test"
   },
   {
@@ -3125,8 +3125,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 530,
-    "end_frame": 591,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "train"
   },
   {
@@ -3135,8 +3135,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 530,
-    "end_frame": 591,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "train"
   },
   {
@@ -3145,8 +3145,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 371,
-    "end_frame": 446,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -3155,8 +3155,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 371,
-    "end_frame": 446,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "val"
   },
   {
@@ -3165,8 +3165,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 335,
-    "end_frame": 410,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "test"
   },
   {
@@ -3175,8 +3175,8 @@
     "label": "get-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 335,
-    "end_frame": 410,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "test"
   },
   {
@@ -3185,8 +3185,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 738,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -3195,8 +3195,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 738,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -3205,8 +3205,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 479,
-    "end_frame": 544,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "train"
   },
   {
@@ -3215,8 +3215,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 479,
-    "end_frame": 544,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "val"
   },
   {
@@ -3225,8 +3225,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 411,
-    "end_frame": 485,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -3235,8 +3235,8 @@
     "label": "turn-around",
     "subject": 4,
     "scenario": "",
-    "start_frame": 411,
-    "end_frame": 485,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -3245,8 +3245,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 880,
-    "end_frame": 1160,
+    "start_frame": 0,
+    "end_frame": 280,
     "split": "train"
   },
   {
@@ -3255,8 +3255,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 880,
-    "end_frame": 1160,
+    "start_frame": 0,
+    "end_frame": 280,
     "split": "train"
   },
   {
@@ -3265,8 +3265,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 545,
-    "end_frame": 714,
+    "start_frame": 0,
+    "end_frame": 169,
     "split": "train"
   },
   {
@@ -3275,8 +3275,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 545,
-    "end_frame": 714,
+    "start_frame": 0,
+    "end_frame": 169,
     "split": "val"
   },
   {
@@ -3285,8 +3285,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 486,
-    "end_frame": 694,
+    "start_frame": 0,
+    "end_frame": 208,
     "split": "test"
   },
   {
@@ -3295,8 +3295,8 @@
     "label": "walk",
     "subject": 4,
     "scenario": "",
-    "start_frame": 486,
-    "end_frame": 694,
+    "start_frame": 0,
+    "end_frame": 208,
     "split": "test"
   },
   {
@@ -3305,8 +3305,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1161,
-    "end_frame": 1238,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -3315,8 +3315,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1161,
-    "end_frame": 1238,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -3325,8 +3325,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 792,
-    "end_frame": 867,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -3335,8 +3335,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 792,
-    "end_frame": 867,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "val"
   },
   {
@@ -3345,8 +3345,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 695,
-    "end_frame": 768,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "test"
   },
   {
@@ -3355,8 +3355,8 @@
     "label": "wave",
     "subject": 4,
     "scenario": "",
-    "start_frame": 695,
-    "end_frame": 768,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "test"
   },
   {
@@ -3365,8 +3365,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1260,
-    "end_frame": 1296,
+    "start_frame": 0,
+    "end_frame": 36,
     "split": "train"
   },
   {
@@ -3375,8 +3375,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1260,
-    "end_frame": 1296,
+    "start_frame": 0,
+    "end_frame": 36,
     "split": "train"
   },
   {
@@ -3385,8 +3385,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 868,
-    "end_frame": 919,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -3395,8 +3395,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 868,
-    "end_frame": 919,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "val"
   },
   {
@@ -3405,8 +3405,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 769,
-    "end_frame": 818,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "test"
   },
   {
@@ -3415,8 +3415,8 @@
     "label": "punch",
     "subject": 4,
     "scenario": "",
-    "start_frame": 769,
-    "end_frame": 818,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "test"
   },
   {
@@ -3425,8 +3425,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1356,
-    "end_frame": 1411,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -3435,8 +3435,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1356,
-    "end_frame": 1411,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -3445,8 +3445,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 920,
-    "end_frame": 976,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "train"
   },
   {
@@ -3455,8 +3455,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 920,
-    "end_frame": 976,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "val"
   },
   {
@@ -3465,8 +3465,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 819,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "test"
   },
   {
@@ -3475,8 +3475,8 @@
     "label": "kick",
     "subject": 4,
     "scenario": "",
-    "start_frame": 819,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "test"
   },
   {
@@ -3485,8 +3485,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1529,
-    "end_frame": 1615,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "train"
   },
   {
@@ -3495,8 +3495,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1529,
-    "end_frame": 1615,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "train"
   },
   {
@@ -3505,8 +3505,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1089,
-    "end_frame": 1146,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -3515,8 +3515,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1089,
-    "end_frame": 1146,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -3525,8 +3525,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 907,
-    "end_frame": 971,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -3535,8 +3535,8 @@
     "label": "point",
     "subject": 4,
     "scenario": "",
-    "start_frame": 907,
-    "end_frame": 971,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -3545,8 +3545,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1737,
-    "end_frame": 1809,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -3555,8 +3555,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1737,
-    "end_frame": 1809,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -3565,8 +3565,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1156,
-    "end_frame": 1246,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "train"
   },
   {
@@ -3575,8 +3575,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 1156,
-    "end_frame": 1246,
+    "start_frame": 0,
+    "end_frame": 90,
     "split": "val"
   },
   {
@@ -3585,8 +3585,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 991,
-    "end_frame": 1048,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "test"
   },
   {
@@ -3595,8 +3595,8 @@
     "label": "pick-up",
     "subject": 4,
     "scenario": "",
-    "start_frame": 991,
-    "end_frame": 1048,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "test"
   },
   {
@@ -3605,8 +3605,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 45,
-    "end_frame": 102,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -3615,8 +3615,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 45,
-    "end_frame": 102,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -3625,8 +3625,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 15,
-    "end_frame": 80,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "train"
   },
   {
@@ -3635,8 +3635,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 15,
-    "end_frame": 80,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "val"
   },
   {
@@ -3645,8 +3645,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 38,
-    "end_frame": 78,
+    "start_frame": 0,
+    "end_frame": 40,
     "split": "test"
   },
   {
@@ -3655,8 +3655,8 @@
     "label": "check-watch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 38,
-    "end_frame": 78,
+    "start_frame": 0,
+    "end_frame": 40,
     "split": "test"
   },
   {
@@ -3665,8 +3665,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 111,
-    "end_frame": 183,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -3675,8 +3675,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 111,
-    "end_frame": 183,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -3685,8 +3685,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 161,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -3695,8 +3695,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 161,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "val"
   },
   {
@@ -3705,8 +3705,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 98,
-    "end_frame": 150,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "test"
   },
   {
@@ -3715,8 +3715,8 @@
     "label": "cross-arms",
     "subject": 5,
     "scenario": "",
-    "start_frame": 98,
-    "end_frame": 150,
+    "start_frame": 0,
+    "end_frame": 52,
     "split": "test"
   },
   {
@@ -3725,8 +3725,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 184,
-    "end_frame": 257,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -3735,8 +3735,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 184,
-    "end_frame": 257,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -3745,8 +3745,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 162,
-    "end_frame": 218,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "train"
   },
   {
@@ -3755,8 +3755,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 162,
-    "end_frame": 218,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "val"
   },
   {
@@ -3765,8 +3765,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 151,
-    "end_frame": 237,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "test"
   },
   {
@@ -3775,8 +3775,8 @@
     "label": "scratch-head",
     "subject": 5,
     "scenario": "",
-    "start_frame": 151,
-    "end_frame": 237,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "test"
   },
   {
@@ -3785,8 +3785,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 258,
-    "end_frame": 342,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "train"
   },
   {
@@ -3795,8 +3795,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 258,
-    "end_frame": 342,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "train"
   },
   {
@@ -3805,8 +3805,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 233,
-    "end_frame": 306,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -3815,8 +3815,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 233,
-    "end_frame": 306,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "val"
   },
   {
@@ -3825,8 +3825,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 238,
-    "end_frame": 316,
+    "start_frame": 0,
+    "end_frame": 78,
     "split": "test"
   },
   {
@@ -3835,8 +3835,8 @@
     "label": "sit-down",
     "subject": 5,
     "scenario": "",
-    "start_frame": 238,
-    "end_frame": 316,
+    "start_frame": 0,
+    "end_frame": 78,
     "split": "test"
   },
   {
@@ -3845,8 +3845,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 343,
-    "end_frame": 414,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -3855,8 +3855,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 343,
-    "end_frame": 414,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -3865,8 +3865,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 307,
-    "end_frame": 383,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -3875,8 +3875,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 307,
-    "end_frame": 383,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "val"
   },
   {
@@ -3885,8 +3885,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 323,
-    "end_frame": 387,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -3895,8 +3895,8 @@
     "label": "get-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 323,
-    "end_frame": 387,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -3905,8 +3905,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 415,
-    "end_frame": 482,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -3915,8 +3915,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 415,
-    "end_frame": 482,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "train"
   },
   {
@@ -3925,8 +3925,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 396,
-    "end_frame": 472,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -3935,8 +3935,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 396,
-    "end_frame": 472,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "val"
   },
   {
@@ -3945,8 +3945,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 388,
-    "end_frame": 456,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -3955,8 +3955,8 @@
     "label": "turn-around",
     "subject": 5,
     "scenario": "",
-    "start_frame": 388,
-    "end_frame": 456,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "test"
   },
   {
@@ -3965,8 +3965,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 491,
-    "end_frame": 671,
+    "start_frame": 0,
+    "end_frame": 180,
     "split": "train"
   },
   {
@@ -3975,8 +3975,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 491,
-    "end_frame": 671,
+    "start_frame": 0,
+    "end_frame": 180,
     "split": "train"
   },
   {
@@ -3985,8 +3985,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 473,
-    "end_frame": 633,
+    "start_frame": 0,
+    "end_frame": 160,
     "split": "train"
   },
   {
@@ -3995,8 +3995,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 473,
-    "end_frame": 633,
+    "start_frame": 0,
+    "end_frame": 160,
     "split": "val"
   },
   {
@@ -4005,8 +4005,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 457,
-    "end_frame": 601,
+    "start_frame": 0,
+    "end_frame": 144,
     "split": "test"
   },
   {
@@ -4015,8 +4015,8 @@
     "label": "walk",
     "subject": 5,
     "scenario": "",
-    "start_frame": 457,
-    "end_frame": 601,
+    "start_frame": 0,
+    "end_frame": 144,
     "split": "test"
   },
   {
@@ -4025,8 +4025,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 672,
-    "end_frame": 727,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -4035,8 +4035,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 672,
-    "end_frame": 727,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -4045,8 +4045,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 634,
-    "end_frame": 677,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "train"
   },
   {
@@ -4055,8 +4055,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 634,
-    "end_frame": 677,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "val"
   },
   {
@@ -4065,8 +4065,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 602,
-    "end_frame": 663,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -4075,8 +4075,8 @@
     "label": "wave",
     "subject": 5,
     "scenario": "",
-    "start_frame": 602,
-    "end_frame": 663,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "test"
   },
   {
@@ -4085,8 +4085,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 734,
-    "end_frame": 789,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -4095,8 +4095,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 734,
-    "end_frame": 789,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -4105,8 +4105,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 686,
-    "end_frame": 759,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "train"
   },
   {
@@ -4115,8 +4115,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 686,
-    "end_frame": 759,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "val"
   },
   {
@@ -4125,8 +4125,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 664,
-    "end_frame": 710,
+    "start_frame": 0,
+    "end_frame": 46,
     "split": "test"
   },
   {
@@ -4135,8 +4135,8 @@
     "label": "punch",
     "subject": 5,
     "scenario": "",
-    "start_frame": 664,
-    "end_frame": 710,
+    "start_frame": 0,
+    "end_frame": 46,
     "split": "test"
   },
   {
@@ -4145,8 +4145,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 790,
-    "end_frame": 866,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -4155,8 +4155,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 790,
-    "end_frame": 866,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "train"
   },
   {
@@ -4165,8 +4165,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 760,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4175,8 +4175,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 760,
-    "end_frame": 819,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "val"
   },
   {
@@ -4185,8 +4185,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 711,
-    "end_frame": 769,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -4195,8 +4195,8 @@
     "label": "kick",
     "subject": 5,
     "scenario": "",
-    "start_frame": 711,
-    "end_frame": 769,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "test"
   },
   {
@@ -4205,8 +4205,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 867,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 32,
     "split": "train"
   },
   {
@@ -4215,8 +4215,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 867,
-    "end_frame": 899,
+    "start_frame": 0,
+    "end_frame": 32,
     "split": "train"
   },
   {
@@ -4225,8 +4225,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 820,
-    "end_frame": 874,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "train"
   },
   {
@@ -4235,8 +4235,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 820,
-    "end_frame": 874,
+    "start_frame": 0,
+    "end_frame": 54,
     "split": "val"
   },
   {
@@ -4245,8 +4245,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 795,
-    "end_frame": 836,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "test"
   },
   {
@@ -4255,8 +4255,8 @@
     "label": "point",
     "subject": 5,
     "scenario": "",
-    "start_frame": 795,
-    "end_frame": 836,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "test"
   },
   {
@@ -4265,8 +4265,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 971,
-    "end_frame": 1030,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4275,8 +4275,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 971,
-    "end_frame": 1030,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4285,8 +4285,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 897,
-    "end_frame": 996,
+    "start_frame": 0,
+    "end_frame": 99,
     "split": "train"
   },
   {
@@ -4295,8 +4295,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 897,
-    "end_frame": 996,
+    "start_frame": 0,
+    "end_frame": 99,
     "split": "val"
   },
   {
@@ -4305,8 +4305,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 884,
-    "end_frame": 967,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "test"
   },
   {
@@ -4315,8 +4315,8 @@
     "label": "pick-up",
     "subject": 5,
     "scenario": "",
-    "start_frame": 884,
-    "end_frame": 967,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "test"
   },
   {
@@ -4325,8 +4325,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 36,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -4335,8 +4335,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 36,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "train"
   },
   {
@@ -4345,8 +4345,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 47,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -4355,8 +4355,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 47,
-    "end_frame": 107,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "val"
   },
   {
@@ -4365,8 +4365,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 40,
-    "end_frame": 90,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "test"
   },
   {
@@ -4375,8 +4375,8 @@
     "label": "check-watch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 40,
-    "end_frame": 90,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "test"
   },
   {
@@ -4385,8 +4385,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 126,
-    "end_frame": 186,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -4395,8 +4395,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 126,
-    "end_frame": 186,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -4405,8 +4405,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 170,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -4415,8 +4415,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 108,
-    "end_frame": 170,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "val"
   },
   {
@@ -4425,8 +4425,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 168,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "test"
   },
   {
@@ -4435,8 +4435,8 @@
     "label": "cross-arms",
     "subject": 6,
     "scenario": "",
-    "start_frame": 101,
-    "end_frame": 168,
+    "start_frame": 0,
+    "end_frame": 67,
     "split": "test"
   },
   {
@@ -4445,8 +4445,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 187,
-    "end_frame": 264,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -4455,8 +4455,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 187,
-    "end_frame": 264,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "train"
   },
   {
@@ -4465,8 +4465,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 171,
-    "end_frame": 253,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "train"
   },
   {
@@ -4475,8 +4475,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 171,
-    "end_frame": 253,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "val"
   },
   {
@@ -4485,8 +4485,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 169,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "test"
   },
   {
@@ -4495,8 +4495,8 @@
     "label": "scratch-head",
     "subject": 6,
     "scenario": "",
-    "start_frame": 169,
-    "end_frame": 238,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "test"
   },
   {
@@ -4505,8 +4505,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 265,
-    "end_frame": 352,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -4515,8 +4515,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 265,
-    "end_frame": 352,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -4525,8 +4525,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 335,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -4535,8 +4535,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 254,
-    "end_frame": 335,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "val"
   },
   {
@@ -4545,8 +4545,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 239,
-    "end_frame": 290,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -4555,8 +4555,8 @@
     "label": "sit-down",
     "subject": 6,
     "scenario": "",
-    "start_frame": 239,
-    "end_frame": 290,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -4565,8 +4565,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 353,
-    "end_frame": 412,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4575,8 +4575,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 353,
-    "end_frame": 412,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4585,8 +4585,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 336,
-    "end_frame": 393,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -4595,8 +4595,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 336,
-    "end_frame": 393,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -4605,8 +4605,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 303,
-    "end_frame": 346,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -4615,8 +4615,8 @@
     "label": "get-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 303,
-    "end_frame": 346,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -4625,8 +4625,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 429,
-    "end_frame": 497,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -4635,8 +4635,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 429,
-    "end_frame": 497,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -4645,8 +4645,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 412,
-    "end_frame": 480,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -4655,8 +4655,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 412,
-    "end_frame": 480,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "val"
   },
   {
@@ -4665,8 +4665,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 390,
-    "end_frame": 479,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "test"
   },
   {
@@ -4675,8 +4675,8 @@
     "label": "turn-around",
     "subject": 6,
     "scenario": "",
-    "start_frame": 390,
-    "end_frame": 479,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "test"
   },
   {
@@ -4685,8 +4685,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 666,
+    "start_frame": 0,
+    "end_frame": 168,
     "split": "train"
   },
   {
@@ -4695,8 +4695,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 498,
-    "end_frame": 666,
+    "start_frame": 0,
+    "end_frame": 168,
     "split": "train"
   },
   {
@@ -4705,8 +4705,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 481,
-    "end_frame": 620,
+    "start_frame": 0,
+    "end_frame": 139,
     "split": "train"
   },
   {
@@ -4715,8 +4715,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 481,
-    "end_frame": 620,
+    "start_frame": 0,
+    "end_frame": 139,
     "split": "val"
   },
   {
@@ -4725,8 +4725,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 480,
-    "end_frame": 606,
+    "start_frame": 0,
+    "end_frame": 126,
     "split": "test"
   },
   {
@@ -4735,8 +4735,8 @@
     "label": "walk",
     "subject": 6,
     "scenario": "",
-    "start_frame": 480,
-    "end_frame": 606,
+    "start_frame": 0,
+    "end_frame": 126,
     "split": "test"
   },
   {
@@ -4745,8 +4745,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 667,
-    "end_frame": 726,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4755,8 +4755,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 667,
-    "end_frame": 726,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -4765,8 +4765,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 641,
-    "end_frame": 707,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -4775,8 +4775,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 641,
-    "end_frame": 707,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "val"
   },
   {
@@ -4785,8 +4785,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 633,
-    "end_frame": 696,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -4795,8 +4795,8 @@
     "label": "wave",
     "subject": 6,
     "scenario": "",
-    "start_frame": 633,
-    "end_frame": 696,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -4805,8 +4805,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 727,
-    "end_frame": 791,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -4815,8 +4815,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 727,
-    "end_frame": 791,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -4825,8 +4825,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 708,
-    "end_frame": 759,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -4835,8 +4835,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 708,
-    "end_frame": 759,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "val"
   },
   {
@@ -4845,8 +4845,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 697,
-    "end_frame": 754,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "test"
   },
   {
@@ -4855,8 +4855,8 @@
     "label": "punch",
     "subject": 6,
     "scenario": "",
-    "start_frame": 697,
-    "end_frame": 754,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "test"
   },
   {
@@ -4865,8 +4865,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 792,
-    "end_frame": 850,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -4875,8 +4875,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 792,
-    "end_frame": 850,
+    "start_frame": 0,
+    "end_frame": 58,
     "split": "train"
   },
   {
@@ -4885,8 +4885,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 760,
-    "end_frame": 830,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -4895,8 +4895,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 760,
-    "end_frame": 830,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "val"
   },
   {
@@ -4905,8 +4905,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 755,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 44,
     "split": "test"
   },
   {
@@ -4915,8 +4915,8 @@
     "label": "kick",
     "subject": 6,
     "scenario": "",
-    "start_frame": 755,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 44,
     "split": "test"
   },
   {
@@ -4925,8 +4925,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 930,
-    "end_frame": 996,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -4935,8 +4935,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 930,
-    "end_frame": 996,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -4945,8 +4945,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 839,
-    "end_frame": 888,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -4955,8 +4955,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 839,
-    "end_frame": 888,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "val"
   },
   {
@@ -4965,8 +4965,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 821,
-    "end_frame": 885,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -4975,8 +4975,8 @@
     "label": "point",
     "subject": 6,
     "scenario": "",
-    "start_frame": 821,
-    "end_frame": 885,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -4985,8 +4985,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 997,
-    "end_frame": 1057,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -4995,8 +4995,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 997,
-    "end_frame": 1057,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -5005,8 +5005,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 909,
-    "end_frame": 972,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5015,8 +5015,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 909,
-    "end_frame": 972,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "val"
   },
   {
@@ -5025,8 +5025,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 886,
-    "end_frame": 931,
+    "start_frame": 0,
+    "end_frame": 45,
     "split": "test"
   },
   {
@@ -5035,8 +5035,8 @@
     "label": "pick-up",
     "subject": 6,
     "scenario": "",
-    "start_frame": 886,
-    "end_frame": 931,
+    "start_frame": 0,
+    "end_frame": 45,
     "split": "test"
   },
   {
@@ -5045,8 +5045,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 58,
-    "end_frame": 138,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -5055,8 +5055,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 58,
-    "end_frame": 138,
+    "start_frame": 0,
+    "end_frame": 80,
     "split": "train"
   },
   {
@@ -5065,8 +5065,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 52,
-    "end_frame": 122,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "train"
   },
   {
@@ -5075,8 +5075,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 52,
-    "end_frame": 122,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "val"
   },
   {
@@ -5085,8 +5085,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 65,
-    "end_frame": 135,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "test"
   },
   {
@@ -5095,8 +5095,8 @@
     "label": "check-watch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 65,
-    "end_frame": 135,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "test"
   },
   {
@@ -5105,8 +5105,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 139,
-    "end_frame": 203,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -5115,8 +5115,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 139,
-    "end_frame": 203,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -5125,8 +5125,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 123,
-    "end_frame": 204,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "train"
   },
   {
@@ -5135,8 +5135,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 123,
-    "end_frame": 204,
+    "start_frame": 0,
+    "end_frame": 81,
     "split": "val"
   },
   {
@@ -5145,8 +5145,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 219,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "test"
   },
   {
@@ -5155,8 +5155,8 @@
     "label": "cross-arms",
     "subject": 7,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 219,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "test"
   },
   {
@@ -5165,8 +5165,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 204,
-    "end_frame": 309,
+    "start_frame": 0,
+    "end_frame": 105,
     "split": "train"
   },
   {
@@ -5175,8 +5175,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 204,
-    "end_frame": 309,
+    "start_frame": 0,
+    "end_frame": 105,
     "split": "train"
   },
   {
@@ -5185,8 +5185,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 205,
-    "end_frame": 280,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -5195,8 +5195,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 205,
-    "end_frame": 280,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "val"
   },
   {
@@ -5205,8 +5205,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 220,
-    "end_frame": 296,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -5215,8 +5215,8 @@
     "label": "scratch-head",
     "subject": 7,
     "scenario": "",
-    "start_frame": 220,
-    "end_frame": 296,
+    "start_frame": 0,
+    "end_frame": 76,
     "split": "test"
   },
   {
@@ -5225,8 +5225,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 327,
-    "end_frame": 410,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -5235,8 +5235,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 327,
-    "end_frame": 410,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -5245,8 +5245,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 307,
-    "end_frame": 364,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -5255,8 +5255,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 307,
-    "end_frame": 364,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -5265,8 +5265,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 297,
-    "end_frame": 371,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -5275,8 +5275,8 @@
     "label": "sit-down",
     "subject": 7,
     "scenario": "",
-    "start_frame": 297,
-    "end_frame": 371,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -5285,8 +5285,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 411,
-    "end_frame": 474,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5295,8 +5295,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 411,
-    "end_frame": 474,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5305,8 +5305,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 375,
-    "end_frame": 438,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5315,8 +5315,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 375,
-    "end_frame": 438,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "val"
   },
   {
@@ -5325,8 +5325,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 372,
-    "end_frame": 460,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "test"
   },
   {
@@ -5335,8 +5335,8 @@
     "label": "get-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 372,
-    "end_frame": 460,
+    "start_frame": 0,
+    "end_frame": 88,
     "split": "test"
   },
   {
@@ -5345,8 +5345,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 501,
-    "end_frame": 564,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5355,8 +5355,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 501,
-    "end_frame": 564,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -5365,8 +5365,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 459,
-    "end_frame": 533,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -5375,8 +5375,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 459,
-    "end_frame": 533,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "val"
   },
   {
@@ -5385,8 +5385,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 461,
-    "end_frame": 550,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "test"
   },
   {
@@ -5395,8 +5395,8 @@
     "label": "turn-around",
     "subject": 7,
     "scenario": "",
-    "start_frame": 461,
-    "end_frame": 550,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "test"
   },
   {
@@ -5405,8 +5405,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 571,
-    "end_frame": 717,
+    "start_frame": 0,
+    "end_frame": 146,
     "split": "train"
   },
   {
@@ -5415,8 +5415,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 571,
-    "end_frame": 717,
+    "start_frame": 0,
+    "end_frame": 146,
     "split": "train"
   },
   {
@@ -5425,8 +5425,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 534,
-    "end_frame": 682,
+    "start_frame": 0,
+    "end_frame": 148,
     "split": "train"
   },
   {
@@ -5435,8 +5435,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 534,
-    "end_frame": 682,
+    "start_frame": 0,
+    "end_frame": 148,
     "split": "val"
   },
   {
@@ -5445,8 +5445,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 551,
-    "end_frame": 726,
+    "start_frame": 0,
+    "end_frame": 175,
     "split": "test"
   },
   {
@@ -5455,8 +5455,8 @@
     "label": "walk",
     "subject": 7,
     "scenario": "",
-    "start_frame": 551,
-    "end_frame": 726,
+    "start_frame": 0,
+    "end_frame": 175,
     "split": "test"
   },
   {
@@ -5465,8 +5465,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 756,
-    "end_frame": 816,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -5475,8 +5475,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 756,
-    "end_frame": 816,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -5485,8 +5485,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 683,
-    "end_frame": 739,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "train"
   },
   {
@@ -5495,8 +5495,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 683,
-    "end_frame": 739,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "val"
   },
   {
@@ -5505,8 +5505,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 727,
-    "end_frame": 801,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -5515,8 +5515,8 @@
     "label": "wave",
     "subject": 7,
     "scenario": "",
-    "start_frame": 727,
-    "end_frame": 801,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "test"
   },
   {
@@ -5525,8 +5525,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 830,
-    "end_frame": 871,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "train"
   },
   {
@@ -5535,8 +5535,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 830,
-    "end_frame": 871,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "train"
   },
   {
@@ -5545,8 +5545,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 765,
-    "end_frame": 814,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -5555,8 +5555,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 765,
-    "end_frame": 814,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "val"
   },
   {
@@ -5565,8 +5565,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 809,
-    "end_frame": 868,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "test"
   },
   {
@@ -5575,8 +5575,8 @@
     "label": "punch",
     "subject": 7,
     "scenario": "",
-    "start_frame": 809,
-    "end_frame": 868,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "test"
   },
   {
@@ -5585,8 +5585,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 891,
-    "end_frame": 965,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -5595,8 +5595,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 891,
-    "end_frame": 965,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -5605,8 +5605,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 815,
-    "end_frame": 907,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "train"
   },
   {
@@ -5615,8 +5615,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 815,
-    "end_frame": 907,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "val"
   },
   {
@@ -5625,8 +5625,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 869,
-    "end_frame": 953,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -5635,8 +5635,8 @@
     "label": "kick",
     "subject": 7,
     "scenario": "",
-    "start_frame": 869,
-    "end_frame": 953,
+    "start_frame": 0,
+    "end_frame": 84,
     "split": "test"
   },
   {
@@ -5645,8 +5645,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1007,
-    "end_frame": 1069,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -5655,8 +5655,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1007,
-    "end_frame": 1069,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -5665,8 +5665,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 929,
-    "end_frame": 1001,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -5675,8 +5675,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 929,
-    "end_frame": 1001,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "val"
   },
   {
@@ -5685,8 +5685,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 971,
-    "end_frame": 1044,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "test"
   },
   {
@@ -5695,8 +5695,8 @@
     "label": "point",
     "subject": 7,
     "scenario": "",
-    "start_frame": 971,
-    "end_frame": 1044,
+    "start_frame": 0,
+    "end_frame": 73,
     "split": "test"
   },
   {
@@ -5705,8 +5705,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1070,
-    "end_frame": 1166,
+    "start_frame": 0,
+    "end_frame": 96,
     "split": "train"
   },
   {
@@ -5715,8 +5715,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1070,
-    "end_frame": 1166,
+    "start_frame": 0,
+    "end_frame": 96,
     "split": "train"
   },
   {
@@ -5725,8 +5725,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1011,
-    "end_frame": 1083,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -5735,8 +5735,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1011,
-    "end_frame": 1083,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "val"
   },
   {
@@ -5745,8 +5745,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1045,
-    "end_frame": 1122,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "test"
   },
   {
@@ -5755,8 +5755,8 @@
     "label": "pick-up",
     "subject": 7,
     "scenario": "",
-    "start_frame": 1045,
-    "end_frame": 1122,
+    "start_frame": 0,
+    "end_frame": 77,
     "split": "test"
   },
   {
@@ -5765,8 +5765,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 47,
-    "end_frame": 94,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -5775,8 +5775,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 47,
-    "end_frame": 94,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -5785,8 +5785,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 79,
-    "end_frame": 129,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "train"
   },
   {
@@ -5795,8 +5795,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 79,
-    "end_frame": 129,
+    "start_frame": 0,
+    "end_frame": 50,
     "split": "val"
   },
   {
@@ -5805,8 +5805,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 40,
-    "end_frame": 105,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "test"
   },
   {
@@ -5815,8 +5815,8 @@
     "label": "check-watch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 40,
-    "end_frame": 105,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "test"
   },
   {
@@ -5825,8 +5825,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 113,
-    "end_frame": 164,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -5835,8 +5835,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 113,
-    "end_frame": 164,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "train"
   },
   {
@@ -5845,8 +5845,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 179,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "train"
   },
   {
@@ -5855,8 +5855,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 136,
-    "end_frame": 179,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "val"
   },
   {
@@ -5865,8 +5865,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 106,
-    "end_frame": 170,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -5875,8 +5875,8 @@
     "label": "cross-arms",
     "subject": 8,
     "scenario": "",
-    "start_frame": 106,
-    "end_frame": 170,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -5885,8 +5885,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 165,
-    "end_frame": 224,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -5895,8 +5895,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 165,
-    "end_frame": 224,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -5905,8 +5905,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 180,
-    "end_frame": 242,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "train"
   },
   {
@@ -5915,8 +5915,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 180,
-    "end_frame": 242,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "val"
   },
   {
@@ -5925,8 +5925,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 171,
-    "end_frame": 241,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "test"
   },
   {
@@ -5935,8 +5935,8 @@
     "label": "scratch-head",
     "subject": 8,
     "scenario": "",
-    "start_frame": 171,
-    "end_frame": 241,
+    "start_frame": 0,
+    "end_frame": 70,
     "split": "test"
   },
   {
@@ -5945,8 +5945,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 247,
-    "end_frame": 315,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -5955,8 +5955,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 247,
-    "end_frame": 315,
+    "start_frame": 0,
+    "end_frame": 68,
     "split": "train"
   },
   {
@@ -5965,8 +5965,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 257,
-    "end_frame": 318,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "train"
   },
   {
@@ -5975,8 +5975,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 257,
-    "end_frame": 318,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "val"
   },
   {
@@ -5985,8 +5985,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 242,
-    "end_frame": 313,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -5995,8 +5995,8 @@
     "label": "sit-down",
     "subject": 8,
     "scenario": "",
-    "start_frame": 242,
-    "end_frame": 313,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -6005,8 +6005,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 316,
-    "end_frame": 403,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -6015,8 +6015,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 316,
-    "end_frame": 403,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "train"
   },
   {
@@ -6025,8 +6025,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 337,
-    "end_frame": 411,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "train"
   },
   {
@@ -6035,8 +6035,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 337,
-    "end_frame": 411,
+    "start_frame": 0,
+    "end_frame": 74,
     "split": "val"
   },
   {
@@ -6045,8 +6045,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 314,
-    "end_frame": 380,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "test"
   },
   {
@@ -6055,8 +6055,8 @@
     "label": "get-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 314,
-    "end_frame": 380,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "test"
   },
   {
@@ -6065,8 +6065,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 404,
-    "end_frame": 479,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -6075,8 +6075,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 404,
-    "end_frame": 479,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -6085,8 +6085,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 412,
-    "end_frame": 469,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "train"
   },
   {
@@ -6095,8 +6095,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 412,
-    "end_frame": 469,
+    "start_frame": 0,
+    "end_frame": 57,
     "split": "val"
   },
   {
@@ -6105,8 +6105,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 410,
-    "end_frame": 473,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -6115,8 +6115,8 @@
     "label": "turn-around",
     "subject": 8,
     "scenario": "",
-    "start_frame": 410,
-    "end_frame": 473,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "test"
   },
   {
@@ -6125,8 +6125,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 480,
-    "end_frame": 595,
+    "start_frame": 0,
+    "end_frame": 115,
     "split": "train"
   },
   {
@@ -6135,8 +6135,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 480,
-    "end_frame": 595,
+    "start_frame": 0,
+    "end_frame": 115,
     "split": "train"
   },
   {
@@ -6145,8 +6145,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 470,
-    "end_frame": 587,
+    "start_frame": 0,
+    "end_frame": 117,
     "split": "train"
   },
   {
@@ -6155,8 +6155,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 470,
-    "end_frame": 587,
+    "start_frame": 0,
+    "end_frame": 117,
     "split": "val"
   },
   {
@@ -6165,8 +6165,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 474,
-    "end_frame": 620,
+    "start_frame": 0,
+    "end_frame": 146,
     "split": "test"
   },
   {
@@ -6175,8 +6175,8 @@
     "label": "walk",
     "subject": 8,
     "scenario": "",
-    "start_frame": 474,
-    "end_frame": 620,
+    "start_frame": 0,
+    "end_frame": 146,
     "split": "test"
   },
   {
@@ -6185,8 +6185,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 596,
-    "end_frame": 635,
+    "start_frame": 0,
+    "end_frame": 39,
     "split": "train"
   },
   {
@@ -6195,8 +6195,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 596,
-    "end_frame": 635,
+    "start_frame": 0,
+    "end_frame": 39,
     "split": "train"
   },
   {
@@ -6205,8 +6205,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 622,
-    "end_frame": 682,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "train"
   },
   {
@@ -6215,8 +6215,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 622,
-    "end_frame": 682,
+    "start_frame": 0,
+    "end_frame": 60,
     "split": "val"
   },
   {
@@ -6225,8 +6225,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 642,
-    "end_frame": 724,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "test"
   },
   {
@@ -6235,8 +6235,8 @@
     "label": "wave",
     "subject": 8,
     "scenario": "",
-    "start_frame": 642,
-    "end_frame": 724,
+    "start_frame": 0,
+    "end_frame": 82,
     "split": "test"
   },
   {
@@ -6245,8 +6245,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 649,
-    "end_frame": 698,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -6255,8 +6255,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 649,
-    "end_frame": 698,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -6265,8 +6265,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 694,
-    "end_frame": 735,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "train"
   },
   {
@@ -6275,8 +6275,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 694,
-    "end_frame": 735,
+    "start_frame": 0,
+    "end_frame": 41,
     "split": "val"
   },
   {
@@ -6285,8 +6285,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 782,
-    "end_frame": 825,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -6295,8 +6295,8 @@
     "label": "punch",
     "subject": 8,
     "scenario": "",
-    "start_frame": 782,
-    "end_frame": 825,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -6305,8 +6305,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 699,
-    "end_frame": 754,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -6315,8 +6315,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 699,
-    "end_frame": 754,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "train"
   },
   {
@@ -6325,8 +6325,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 736,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -6335,8 +6335,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 736,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "val"
   },
   {
@@ -6345,8 +6345,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 897,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -6355,8 +6355,8 @@
     "label": "kick",
     "subject": 8,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 897,
+    "start_frame": 0,
+    "end_frame": 71,
     "split": "test"
   },
   {
@@ -6365,8 +6365,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 755,
-    "end_frame": 827,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -6375,8 +6375,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 755,
-    "end_frame": 827,
+    "start_frame": 0,
+    "end_frame": 72,
     "split": "train"
   },
   {
@@ -6385,8 +6385,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 800,
-    "end_frame": 831,
+    "start_frame": 0,
+    "end_frame": 31,
     "split": "train"
   },
   {
@@ -6395,8 +6395,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 800,
-    "end_frame": 831,
+    "start_frame": 0,
+    "end_frame": 31,
     "split": "val"
   },
   {
@@ -6405,8 +6405,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 909,
-    "end_frame": 964,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -6415,8 +6415,8 @@
     "label": "point",
     "subject": 8,
     "scenario": "",
-    "start_frame": 909,
-    "end_frame": 964,
+    "start_frame": 0,
+    "end_frame": 55,
     "split": "test"
   },
   {
@@ -6425,8 +6425,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 828,
-    "end_frame": 877,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -6435,8 +6435,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 828,
-    "end_frame": 877,
+    "start_frame": 0,
+    "end_frame": 49,
     "split": "train"
   },
   {
@@ -6445,8 +6445,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 832,
-    "end_frame": 918,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "train"
   },
   {
@@ -6455,8 +6455,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 832,
-    "end_frame": 918,
+    "start_frame": 0,
+    "end_frame": 86,
     "split": "val"
   },
   {
@@ -6465,8 +6465,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 965,
-    "end_frame": 1016,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -6475,8 +6475,8 @@
     "label": "pick-up",
     "subject": 8,
     "scenario": "",
-    "start_frame": 965,
-    "end_frame": 1016,
+    "start_frame": 0,
+    "end_frame": 51,
     "split": "test"
   },
   {
@@ -6485,8 +6485,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 50,
-    "end_frame": 119,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -6495,8 +6495,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 50,
-    "end_frame": 119,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -6505,8 +6505,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 38,
-    "end_frame": 94,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "train"
   },
   {
@@ -6515,8 +6515,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 38,
-    "end_frame": 94,
+    "start_frame": 0,
+    "end_frame": 56,
     "split": "val"
   },
   {
@@ -6525,8 +6525,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 55,
-    "end_frame": 117,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -6535,8 +6535,8 @@
     "label": "check-watch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 55,
-    "end_frame": 117,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -6545,8 +6545,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 120,
-    "end_frame": 205,
+    "start_frame": 0,
+    "end_frame": 85,
     "split": "train"
   },
   {
@@ -6555,8 +6555,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 120,
-    "end_frame": 205,
+    "start_frame": 0,
+    "end_frame": 85,
     "split": "train"
   },
   {
@@ -6565,8 +6565,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 95,
-    "end_frame": 156,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "train"
   },
   {
@@ -6575,8 +6575,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 95,
-    "end_frame": 156,
+    "start_frame": 0,
+    "end_frame": 61,
     "split": "val"
   },
   {
@@ -6585,8 +6585,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 128,
-    "end_frame": 192,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -6595,8 +6595,8 @@
     "label": "cross-arms",
     "subject": 9,
     "scenario": "",
-    "start_frame": 128,
-    "end_frame": 192,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -6605,8 +6605,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 206,
-    "end_frame": 300,
+    "start_frame": 0,
+    "end_frame": 94,
     "split": "train"
   },
   {
@@ -6615,8 +6615,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 206,
-    "end_frame": 300,
+    "start_frame": 0,
+    "end_frame": 94,
     "split": "train"
   },
   {
@@ -6625,8 +6625,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 168,
-    "end_frame": 237,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "train"
   },
   {
@@ -6635,8 +6635,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 168,
-    "end_frame": 237,
+    "start_frame": 0,
+    "end_frame": 69,
     "split": "val"
   },
   {
@@ -6645,8 +6645,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 208,
-    "end_frame": 270,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -6655,8 +6655,8 @@
     "label": "scratch-head",
     "subject": 9,
     "scenario": "",
-    "start_frame": 208,
-    "end_frame": 270,
+    "start_frame": 0,
+    "end_frame": 62,
     "split": "test"
   },
   {
@@ -6665,8 +6665,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 313,
-    "end_frame": 402,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "train"
   },
   {
@@ -6675,8 +6675,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 313,
-    "end_frame": 402,
+    "start_frame": 0,
+    "end_frame": 89,
     "split": "train"
   },
   {
@@ -6685,8 +6685,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 238,
-    "end_frame": 329,
+    "start_frame": 0,
+    "end_frame": 91,
     "split": "train"
   },
   {
@@ -6695,8 +6695,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 238,
-    "end_frame": 329,
+    "start_frame": 0,
+    "end_frame": 91,
     "split": "val"
   },
   {
@@ -6705,8 +6705,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 279,
-    "end_frame": 377,
+    "start_frame": 0,
+    "end_frame": 98,
     "split": "test"
   },
   {
@@ -6715,8 +6715,8 @@
     "label": "sit-down",
     "subject": 9,
     "scenario": "",
-    "start_frame": 279,
-    "end_frame": 377,
+    "start_frame": 0,
+    "end_frame": 98,
     "split": "test"
   },
   {
@@ -6725,8 +6725,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 446,
-    "end_frame": 512,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -6735,8 +6735,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 446,
-    "end_frame": 512,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "train"
   },
   {
@@ -6745,8 +6745,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 335,
-    "end_frame": 427,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "train"
   },
   {
@@ -6755,8 +6755,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 335,
-    "end_frame": 427,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "val"
   },
   {
@@ -6765,8 +6765,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 378,
-    "end_frame": 443,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "test"
   },
   {
@@ -6775,8 +6775,8 @@
     "label": "get-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 378,
-    "end_frame": 443,
+    "start_frame": 0,
+    "end_frame": 65,
     "split": "test"
   },
   {
@@ -6785,8 +6785,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 533,
-    "end_frame": 644,
+    "start_frame": 0,
+    "end_frame": 111,
     "split": "train"
   },
   {
@@ -6795,8 +6795,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 533,
-    "end_frame": 644,
+    "start_frame": 0,
+    "end_frame": 111,
     "split": "train"
   },
   {
@@ -6805,8 +6805,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 428,
-    "end_frame": 511,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "train"
   },
   {
@@ -6815,8 +6815,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 428,
-    "end_frame": 511,
+    "start_frame": 0,
+    "end_frame": 83,
     "split": "val"
   },
   {
@@ -6825,8 +6825,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 462,
-    "end_frame": 549,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "test"
   },
   {
@@ -6835,8 +6835,8 @@
     "label": "turn-around",
     "subject": 9,
     "scenario": "",
-    "start_frame": 462,
-    "end_frame": 549,
+    "start_frame": 0,
+    "end_frame": 87,
     "split": "test"
   },
   {
@@ -6845,8 +6845,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 645,
-    "end_frame": 789,
+    "start_frame": 0,
+    "end_frame": 144,
     "split": "train"
   },
   {
@@ -6855,8 +6855,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 645,
-    "end_frame": 789,
+    "start_frame": 0,
+    "end_frame": 144,
     "split": "train"
   },
   {
@@ -6865,8 +6865,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 512,
-    "end_frame": 672,
+    "start_frame": 0,
+    "end_frame": 160,
     "split": "train"
   },
   {
@@ -6875,8 +6875,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 512,
-    "end_frame": 672,
+    "start_frame": 0,
+    "end_frame": 160,
     "split": "val"
   },
   {
@@ -6885,8 +6885,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 561,
-    "end_frame": 738,
+    "start_frame": 0,
+    "end_frame": 177,
     "split": "test"
   },
   {
@@ -6895,8 +6895,8 @@
     "label": "walk",
     "subject": 9,
     "scenario": "",
-    "start_frame": 561,
-    "end_frame": 738,
+    "start_frame": 0,
+    "end_frame": 177,
     "split": "test"
   },
   {
@@ -6905,8 +6905,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 806,
-    "end_frame": 865,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -6915,8 +6915,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 806,
-    "end_frame": 865,
+    "start_frame": 0,
+    "end_frame": 59,
     "split": "train"
   },
   {
@@ -6925,8 +6925,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 687,
-    "end_frame": 750,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "train"
   },
   {
@@ -6935,8 +6935,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 687,
-    "end_frame": 750,
+    "start_frame": 0,
+    "end_frame": 63,
     "split": "val"
   },
   {
@@ -6945,8 +6945,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 739,
-    "end_frame": 803,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -6955,8 +6955,8 @@
     "label": "wave",
     "subject": 9,
     "scenario": "",
-    "start_frame": 739,
-    "end_frame": 803,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -6965,8 +6965,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 866,
-    "end_frame": 913,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -6975,8 +6975,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 866,
-    "end_frame": 913,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -6985,8 +6985,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 751,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 48,
     "split": "train"
   },
   {
@@ -6995,8 +6995,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 751,
-    "end_frame": 799,
+    "start_frame": 0,
+    "end_frame": 48,
     "split": "val"
   },
   {
@@ -7005,8 +7005,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 869,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -7015,8 +7015,8 @@
     "label": "punch",
     "subject": 9,
     "scenario": "",
-    "start_frame": 826,
-    "end_frame": 869,
+    "start_frame": 0,
+    "end_frame": 43,
     "split": "test"
   },
   {
@@ -7025,8 +7025,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 914,
-    "end_frame": 999,
+    "start_frame": 0,
+    "end_frame": 85,
     "split": "train"
   },
   {
@@ -7035,8 +7035,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 914,
-    "end_frame": 999,
+    "start_frame": 0,
+    "end_frame": 85,
     "split": "train"
   },
   {
@@ -7045,8 +7045,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 800,
-    "end_frame": 864,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "train"
   },
   {
@@ -7055,8 +7055,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 800,
-    "end_frame": 864,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "val"
   },
   {
@@ -7065,8 +7065,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 870,
-    "end_frame": 945,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "test"
   },
   {
@@ -7075,8 +7075,8 @@
     "label": "kick",
     "subject": 9,
     "scenario": "",
-    "start_frame": 870,
-    "end_frame": 945,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "test"
   },
   {
@@ -7085,8 +7085,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1009,
-    "end_frame": 1056,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -7095,8 +7095,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1009,
-    "end_frame": 1056,
+    "start_frame": 0,
+    "end_frame": 47,
     "split": "train"
   },
   {
@@ -7105,8 +7105,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 933,
+    "start_frame": 0,
+    "end_frame": 40,
     "split": "train"
   },
   {
@@ -7115,8 +7115,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 893,
-    "end_frame": 933,
+    "start_frame": 0,
+    "end_frame": 40,
     "split": "val"
   },
   {
@@ -7125,8 +7125,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 946,
-    "end_frame": 1012,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "test"
   },
   {
@@ -7135,8 +7135,8 @@
     "label": "point",
     "subject": 9,
     "scenario": "",
-    "start_frame": 946,
-    "end_frame": 1012,
+    "start_frame": 0,
+    "end_frame": 66,
     "split": "test"
   },
   {
@@ -7145,8 +7145,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1057,
-    "end_frame": 1132,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -7155,8 +7155,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1057,
-    "end_frame": 1132,
+    "start_frame": 0,
+    "end_frame": 75,
     "split": "train"
   },
   {
@@ -7165,8 +7165,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 934,
-    "end_frame": 1026,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "train"
   },
   {
@@ -7175,8 +7175,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 934,
-    "end_frame": 1026,
+    "start_frame": 0,
+    "end_frame": 92,
     "split": "val"
   },
   {
@@ -7185,8 +7185,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1034,
-    "end_frame": 1098,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   },
   {
@@ -7195,8 +7195,8 @@
     "label": "pick-up",
     "subject": 9,
     "scenario": "",
-    "start_frame": 1034,
-    "end_frame": 1098,
+    "start_frame": 0,
+    "end_frame": 64,
     "split": "test"
   }
 ]
