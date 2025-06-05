@@ -1,6 +1,5 @@
 import os
 
-# Path to your video folder
 video_dir = "IXMAS"
 
 # Set of action class names to keep
