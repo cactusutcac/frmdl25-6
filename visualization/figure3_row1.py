@@ -32,7 +32,7 @@ plot_tradeoff(
     "visualization/logs/accuracy_log_kth.csv",
     "visualization/logs/accuracy_log_kth_no_encoder.csv",
     "KTH",
-    "visualization/tradeoff_kth.pdf"
+    "visualization/pics/tradeoff_kth.pdf"
 )
 
 # IXMAS
@@ -40,5 +40,5 @@ plot_tradeoff(
     "visualization/logs/accuracy_log_ixmas.csv",
     "visualization/logs/accuracy_log_ixmas_no_encoder.csv",
     "IXMAS",
-    "visualization/tradeoff_ixmas.pdf"
+    "visualization/pics/tradeoff_ixmas.pdf"
 )

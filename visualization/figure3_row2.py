@@ -19,11 +19,11 @@ def plot_quantization_curve(csv_path, dataset_name, output_file):
 plot_quantization_curve(
     "visualization/logs/quant_steps_kth.csv", 
     "KTH"
-    "visualization/learned_steps/kth.pdf"
+    "visualization/pics/learned_steps_kth.pdf"
 )
 
 plot_quantization_curve(
     "visualization/logs/quant_steps_ixmas.csv", 
     "IXMAS"
-    "visualization/earned_steps_ixmas.pdf"
+    "visualization/pics/learned_steps_ixmas.pdf"
 )
