@@ -29,16 +29,16 @@ def plot_tradeoff(csv_bdq, csv_orig, dataset_name, output_file):
 
 # KTH
 plot_tradeoff(
-    "accuracy_log_kth.csv",
-    "accuracy_log_kth_no_encoder.csv",
+    "visualization/logs/accuracy_log_kth.csv",
+    "visualization/logs/accuracy_log_kth_no_encoder.csv",
     "KTH",
-    "visualization/kth_tradeoff.png"
+    "visualization/tradeoff_kth.pdf"
 )
 
 # IXMAS
 plot_tradeoff(
-    "accuracy_log_ixmas.csv",
-    "accuracy_log_ixmas_no_encoder.csv",
+    "visualization/logs/accuracy_log_ixmas.csv",
+    "visualization/logs/accuracy_log_ixmas_no_encoder.csv",
     "IXMAS",
-    "visualization/ixmas_tradeoff.png"
+    "visualization/tradeoff_ixmas.pdf"
 )
