@@ -16,11 +16,10 @@ def plot_tradeoff(csv_bdq, csv_orig, dataset_name, output_file):
     plt.figure(figsize=(6,6))
     plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='o', s=100)
     plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', s=100)
-    plt.plot([0, 100], [0, 100], 'k--', label='Ideal')
 
     plt.xlabel("Identity Accuracy (%)")
     plt.ylabel("Action Accuracy (%)")
-    plt.title(f"{dataset_name}: Performance Trade-Off")
+    # plt.title(f"{dataset_name}: Performance Trade-Off")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()

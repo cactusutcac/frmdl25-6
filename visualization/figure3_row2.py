@@ -9,7 +9,7 @@ def plot_quantization_curve(csv_path, dataset_name, output_file):
     plt.step(df["input"], df["learned_output"], where="post", label="Learned", color="orange")
     plt.xlabel("Input")
     plt.ylabel("Output")
-    plt.title(f"Quantization Mapping ({dataset_name})")
+    # plt.title(f"Quantization Mapping ({dataset_name})")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
