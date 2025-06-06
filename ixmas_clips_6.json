@@ -1,0 +1,1802 @@
+[
+  {
+    "video_id": "alba1_07_walk_cam0_frames_0498_0640.avi",
+    "clip_id": "alba1_07_walk_cam0_frames_0498_0640",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 142,
+    "split": "train"
+  },
+  {
+    "video_id": "alba1_07_walk_cam1_frames_0498_0640.avi",
+    "clip_id": "alba1_07_walk_cam1_frames_0498_0640",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 142,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_07_walk_cam1_frames_0591_0760.avi",
+    "clip_id": "alba2_07_walk_cam1_frames_0591_0760",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 169,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_07_walk_cam3_frames_0591_0760.avi",
+    "clip_id": "alba2_07_walk_cam3_frames_0591_0760",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 169,
+    "split": "val"
+  },
+  {
+    "video_id": "alba3_07_walk_cam1_frames_0523_0651.avi",
+    "clip_id": "alba3_07_walk_cam1_frames_0523_0651",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 128,
+    "split": "test"
+  },
+  {
+    "video_id": "alba3_07_walk_cam3_frames_0523_0651.avi",
+    "clip_id": "alba3_07_walk_cam3_frames_0523_0651",
+    "label": "walk",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 128,
+    "split": "test"
+  },
+  {
+    "video_id": "alba1_10_kick_cam0_frames_0794_0871.avi",
+    "clip_id": "alba1_10_kick_cam0_frames_0794_0871",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 77,
+    "split": "train"
+  },
+  {
+    "video_id": "alba1_10_kick_cam1_frames_0794_0871.avi",
+    "clip_id": "alba1_10_kick_cam1_frames_0794_0871",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 77,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_10_kick_cam2_frames_0868_0966.avi",
+    "clip_id": "alba2_10_kick_cam2_frames_0868_0966",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 98,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_10_kick_cam3_frames_0868_0966.avi",
+    "clip_id": "alba2_10_kick_cam3_frames_0868_0966",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 98,
+    "split": "val"
+  },
+  {
+    "video_id": "alba3_10_kick_cam2_frames_0813_0897.avi",
+    "clip_id": "alba3_10_kick_cam2_frames_0813_0897",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "alba3_10_kick_cam3_frames_0813_0897.avi",
+    "clip_id": "alba3_10_kick_cam3_frames_0813_0897",
+    "label": "kick",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "alba1_11_point_cam0_frames_0872_0967.avi",
+    "clip_id": "alba1_11_point_cam0_frames_0872_0967",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 95,
+    "split": "train"
+  },
+  {
+    "video_id": "alba1_11_point_cam1_frames_0872_0967.avi",
+    "clip_id": "alba1_11_point_cam1_frames_0872_0967",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 95,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_11_point_cam2_frames_0998_1107.avi",
+    "clip_id": "alba2_11_point_cam2_frames_0998_1107",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 109,
+    "split": "train"
+  },
+  {
+    "video_id": "alba2_11_point_cam3_frames_0998_1107.avi",
+    "clip_id": "alba2_11_point_cam3_frames_0998_1107",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 109,
+    "split": "val"
+  },
+  {
+    "video_id": "alba3_11_point_cam2_frames_0898_0982.avi",
+    "clip_id": "alba3_11_point_cam2_frames_0898_0982",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "alba3_11_point_cam3_frames_0898_0982.avi",
+    "clip_id": "alba3_11_point_cam3_frames_0898_0982",
+    "label": "point",
+    "subject": 0,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "amel1_07_walk_cam0_frames_0618_0781.avi",
+    "clip_id": "amel1_07_walk_cam0_frames_0618_0781",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 163,
+    "split": "train"
+  },
+  {
+    "video_id": "amel1_07_walk_cam1_frames_0618_0781.avi",
+    "clip_id": "amel1_07_walk_cam1_frames_0618_0781",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 163,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_07_walk_cam1_frames_0556_0683.avi",
+    "clip_id": "amel2_07_walk_cam1_frames_0556_0683",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 127,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_07_walk_cam3_frames_0556_0683.avi",
+    "clip_id": "amel2_07_walk_cam3_frames_0556_0683",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 127,
+    "split": "val"
+  },
+  {
+    "video_id": "amel3_07_walk_cam1_frames_0642_0780.avi",
+    "clip_id": "amel3_07_walk_cam1_frames_0642_0780",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 138,
+    "split": "test"
+  },
+  {
+    "video_id": "amel3_07_walk_cam3_frames_0642_0780.avi",
+    "clip_id": "amel3_07_walk_cam3_frames_0642_0780",
+    "label": "walk",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 138,
+    "split": "test"
+  },
+  {
+    "video_id": "amel1_10_kick_cam0_frames_0918_1008.avi",
+    "clip_id": "amel1_10_kick_cam0_frames_0918_1008",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 90,
+    "split": "train"
+  },
+  {
+    "video_id": "amel1_10_kick_cam1_frames_0918_1008.avi",
+    "clip_id": "amel1_10_kick_cam1_frames_0918_1008",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 90,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_10_kick_cam0_frames_0825_0892.avi",
+    "clip_id": "amel2_10_kick_cam0_frames_0825_0892",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 67,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_10_kick_cam1_frames_0825_0892.avi",
+    "clip_id": "amel2_10_kick_cam1_frames_0825_0892",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 67,
+    "split": "val"
+  },
+  {
+    "video_id": "amel3_10_kick_cam2_frames_0893_0961.avi",
+    "clip_id": "amel3_10_kick_cam2_frames_0893_0961",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 68,
+    "split": "test"
+  },
+  {
+    "video_id": "amel3_10_kick_cam3_frames_0893_0961.avi",
+    "clip_id": "amel3_10_kick_cam3_frames_0893_0961",
+    "label": "kick",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 68,
+    "split": "test"
+  },
+  {
+    "video_id": "amel1_11_point_cam0_frames_1070_1152.avi",
+    "clip_id": "amel1_11_point_cam0_frames_1070_1152",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 82,
+    "split": "train"
+  },
+  {
+    "video_id": "amel1_11_point_cam1_frames_1070_1152.avi",
+    "clip_id": "amel1_11_point_cam1_frames_1070_1152",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 82,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_11_point_cam1_frames_0893_0946.avi",
+    "clip_id": "amel2_11_point_cam1_frames_0893_0946",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 53,
+    "split": "train"
+  },
+  {
+    "video_id": "amel2_11_point_cam2_frames_0893_0946.avi",
+    "clip_id": "amel2_11_point_cam2_frames_0893_0946",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 53,
+    "split": "val"
+  },
+  {
+    "video_id": "amel3_11_point_cam2_frames_0977_1031.avi",
+    "clip_id": "amel3_11_point_cam2_frames_0977_1031",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 54,
+    "split": "test"
+  },
+  {
+    "video_id": "amel3_11_point_cam3_frames_0977_1031.avi",
+    "clip_id": "amel3_11_point_cam3_frames_0977_1031",
+    "label": "point",
+    "subject": 1,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 54,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas1_07_walk_cam0_frames_0579_0772.avi",
+    "clip_id": "andreas1_07_walk_cam0_frames_0579_0772",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 193,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas1_07_walk_cam1_frames_0579_0772.avi",
+    "clip_id": "andreas1_07_walk_cam1_frames_0579_0772",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 193,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_07_walk_cam1_frames_0538_0680.avi",
+    "clip_id": "andreas2_07_walk_cam1_frames_0538_0680",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 142,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_07_walk_cam3_frames_0538_0680.avi",
+    "clip_id": "andreas2_07_walk_cam3_frames_0538_0680",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 142,
+    "split": "val"
+  },
+  {
+    "video_id": "andreas3_07_walk_cam1_frames_0515_0642.avi",
+    "clip_id": "andreas3_07_walk_cam1_frames_0515_0642",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 127,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas3_07_walk_cam3_frames_0515_0642.avi",
+    "clip_id": "andreas3_07_walk_cam3_frames_0515_0642",
+    "label": "walk",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 127,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas1_10_kick_cam0_frames_0932_0991.avi",
+    "clip_id": "andreas1_10_kick_cam0_frames_0932_0991",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 59,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas1_10_kick_cam1_frames_0932_0991.avi",
+    "clip_id": "andreas1_10_kick_cam1_frames_0932_0991",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 59,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_10_kick_cam1_frames_0822_0899.avi",
+    "clip_id": "andreas2_10_kick_cam1_frames_0822_0899",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 77,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_10_kick_cam3_frames_0822_0899.avi",
+    "clip_id": "andreas2_10_kick_cam3_frames_0822_0899",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 77,
+    "split": "val"
+  },
+  {
+    "video_id": "andreas3_10_kick_cam2_frames_0820_0861.avi",
+    "clip_id": "andreas3_10_kick_cam2_frames_0820_0861",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 41,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas3_10_kick_cam3_frames_0820_0861.avi",
+    "clip_id": "andreas3_10_kick_cam3_frames_0820_0861",
+    "label": "kick",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 41,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas1_11_point_cam0_frames_1009_1067.avi",
+    "clip_id": "andreas1_11_point_cam0_frames_1009_1067",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas1_11_point_cam1_frames_1009_1067.avi",
+    "clip_id": "andreas1_11_point_cam1_frames_1009_1067",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_11_point_cam1_frames_0933_1008.avi",
+    "clip_id": "andreas2_11_point_cam1_frames_0933_1008",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 75,
+    "split": "train"
+  },
+  {
+    "video_id": "andreas2_11_point_cam3_frames_0933_1008.avi",
+    "clip_id": "andreas2_11_point_cam3_frames_0933_1008",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 75,
+    "split": "val"
+  },
+  {
+    "video_id": "andreas3_11_point_cam2_frames_0884_0940.avi",
+    "clip_id": "andreas3_11_point_cam2_frames_0884_0940",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 56,
+    "split": "test"
+  },
+  {
+    "video_id": "andreas3_11_point_cam3_frames_0884_0940.avi",
+    "clip_id": "andreas3_11_point_cam3_frames_0884_0940",
+    "label": "point",
+    "subject": 2,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 56,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara1_07_walk_cam0_frames_0520_0668.avi",
+    "clip_id": "chiara1_07_walk_cam0_frames_0520_0668",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 148,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara1_07_walk_cam1_frames_0520_0668.avi",
+    "clip_id": "chiara1_07_walk_cam1_frames_0520_0668",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 148,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_07_walk_cam1_frames_0454_0599.avi",
+    "clip_id": "chiara2_07_walk_cam1_frames_0454_0599",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 145,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_07_walk_cam3_frames_0454_0599.avi",
+    "clip_id": "chiara2_07_walk_cam3_frames_0454_0599",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 145,
+    "split": "val"
+  },
+  {
+    "video_id": "chiara3_07_walk_cam1_frames_0449_0575.avi",
+    "clip_id": "chiara3_07_walk_cam1_frames_0449_0575",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 126,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara3_07_walk_cam3_frames_0449_0575.avi",
+    "clip_id": "chiara3_07_walk_cam3_frames_0449_0575",
+    "label": "walk",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 126,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara1_10_kick_cam0_frames_0853_0919.avi",
+    "clip_id": "chiara1_10_kick_cam0_frames_0853_0919",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara1_10_kick_cam1_frames_0853_0919.avi",
+    "clip_id": "chiara1_10_kick_cam1_frames_0853_0919",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_10_kick_cam2_frames_0716_0767.avi",
+    "clip_id": "chiara2_10_kick_cam2_frames_0716_0767",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 51,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_10_kick_cam3_frames_0716_0767.avi",
+    "clip_id": "chiara2_10_kick_cam3_frames_0716_0767",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 51,
+    "split": "val"
+  },
+  {
+    "video_id": "chiara3_10_kick_cam2_frames_0689_0757.avi",
+    "clip_id": "chiara3_10_kick_cam2_frames_0689_0757",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 68,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara3_10_kick_cam3_frames_0689_0757.avi",
+    "clip_id": "chiara3_10_kick_cam3_frames_0689_0757",
+    "label": "kick",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 68,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara1_11_point_cam0_frames_0941_0998.avi",
+    "clip_id": "chiara1_11_point_cam0_frames_0941_0998",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 57,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara1_11_point_cam1_frames_0941_0998.avi",
+    "clip_id": "chiara1_11_point_cam1_frames_0941_0998",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 57,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_11_point_cam1_frames_0790_0848.avi",
+    "clip_id": "chiara2_11_point_cam1_frames_0790_0848",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "train"
+  },
+  {
+    "video_id": "chiara2_11_point_cam2_frames_0790_0848.avi",
+    "clip_id": "chiara2_11_point_cam2_frames_0790_0848",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "val"
+  },
+  {
+    "video_id": "chiara3_11_point_cam2_frames_0758_0820.avi",
+    "clip_id": "chiara3_11_point_cam2_frames_0758_0820",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 62,
+    "split": "test"
+  },
+  {
+    "video_id": "chiara3_11_point_cam3_frames_0758_0820.avi",
+    "clip_id": "chiara3_11_point_cam3_frames_0758_0820",
+    "label": "point",
+    "subject": 3,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 62,
+    "split": "test"
+  },
+  {
+    "video_id": "clare1_07_walk_cam1_frames_0880_1160.avi",
+    "clip_id": "clare1_07_walk_cam1_frames_0880_1160",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 280,
+    "split": "train"
+  },
+  {
+    "video_id": "clare1_07_walk_cam3_frames_0880_1160.avi",
+    "clip_id": "clare1_07_walk_cam3_frames_0880_1160",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 280,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_07_walk_cam0_frames_0545_0714.avi",
+    "clip_id": "clare2_07_walk_cam0_frames_0545_0714",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 169,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_07_walk_cam3_frames_0545_0714.avi",
+    "clip_id": "clare2_07_walk_cam3_frames_0545_0714",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 169,
+    "split": "val"
+  },
+  {
+    "video_id": "clare3_07_walk_cam1_frames_0486_0694.avi",
+    "clip_id": "clare3_07_walk_cam1_frames_0486_0694",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 208,
+    "split": "test"
+  },
+  {
+    "video_id": "clare3_07_walk_cam3_frames_0486_0694.avi",
+    "clip_id": "clare3_07_walk_cam3_frames_0486_0694",
+    "label": "walk",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 208,
+    "split": "test"
+  },
+  {
+    "video_id": "clare1_10_kick_cam0_frames_1356_1411.avi",
+    "clip_id": "clare1_10_kick_cam0_frames_1356_1411",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "train"
+  },
+  {
+    "video_id": "clare1_10_kick_cam1_frames_1356_1411.avi",
+    "clip_id": "clare1_10_kick_cam1_frames_1356_1411",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_10_kick_cam2_frames_0920_0976.avi",
+    "clip_id": "clare2_10_kick_cam2_frames_0920_0976",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 56,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_10_kick_cam3_frames_0920_0976.avi",
+    "clip_id": "clare2_10_kick_cam3_frames_0920_0976",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 56,
+    "split": "val"
+  },
+  {
+    "video_id": "clare3_10_kick_cam2_frames_0819_0899.avi",
+    "clip_id": "clare3_10_kick_cam2_frames_0819_0899",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 80,
+    "split": "test"
+  },
+  {
+    "video_id": "clare3_10_kick_cam3_frames_0819_0899.avi",
+    "clip_id": "clare3_10_kick_cam3_frames_0819_0899",
+    "label": "kick",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 80,
+    "split": "test"
+  },
+  {
+    "video_id": "clare1_11_point_cam0_frames_1529_1615.avi",
+    "clip_id": "clare1_11_point_cam0_frames_1529_1615",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 86,
+    "split": "train"
+  },
+  {
+    "video_id": "clare1_11_point_cam1_frames_1529_1615.avi",
+    "clip_id": "clare1_11_point_cam1_frames_1529_1615",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 86,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_11_point_cam2_frames_1089_1146.avi",
+    "clip_id": "clare2_11_point_cam2_frames_1089_1146",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 57,
+    "split": "train"
+  },
+  {
+    "video_id": "clare2_11_point_cam3_frames_1089_1146.avi",
+    "clip_id": "clare2_11_point_cam3_frames_1089_1146",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 57,
+    "split": "val"
+  },
+  {
+    "video_id": "clare3_11_point_cam2_frames_0907_0971.avi",
+    "clip_id": "clare3_11_point_cam2_frames_0907_0971",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "test"
+  },
+  {
+    "video_id": "clare3_11_point_cam3_frames_0907_0971.avi",
+    "clip_id": "clare3_11_point_cam3_frames_0907_0971",
+    "label": "point",
+    "subject": 4,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel1_07_walk_cam0_frames_0491_0671.avi",
+    "clip_id": "daniel1_07_walk_cam0_frames_0491_0671",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 180,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel1_07_walk_cam1_frames_0491_0671.avi",
+    "clip_id": "daniel1_07_walk_cam1_frames_0491_0671",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 180,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_07_walk_cam1_frames_0473_0633.avi",
+    "clip_id": "daniel2_07_walk_cam1_frames_0473_0633",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 160,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_07_walk_cam3_frames_0473_0633.avi",
+    "clip_id": "daniel2_07_walk_cam3_frames_0473_0633",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 160,
+    "split": "val"
+  },
+  {
+    "video_id": "daniel3_07_walk_cam1_frames_0457_0601.avi",
+    "clip_id": "daniel3_07_walk_cam1_frames_0457_0601",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 144,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel3_07_walk_cam3_frames_0457_0601.avi",
+    "clip_id": "daniel3_07_walk_cam3_frames_0457_0601",
+    "label": "walk",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 144,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel1_10_kick_cam0_frames_0790_0866.avi",
+    "clip_id": "daniel1_10_kick_cam0_frames_0790_0866",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 76,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel1_10_kick_cam1_frames_0790_0866.avi",
+    "clip_id": "daniel1_10_kick_cam1_frames_0790_0866",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 76,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_10_kick_cam1_frames_0760_0819.avi",
+    "clip_id": "daniel2_10_kick_cam1_frames_0760_0819",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 59,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_10_kick_cam2_frames_0760_0819.avi",
+    "clip_id": "daniel2_10_kick_cam2_frames_0760_0819",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 59,
+    "split": "val"
+  },
+  {
+    "video_id": "daniel3_10_kick_cam2_frames_0711_0769.avi",
+    "clip_id": "daniel3_10_kick_cam2_frames_0711_0769",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel3_10_kick_cam3_frames_0711_0769.avi",
+    "clip_id": "daniel3_10_kick_cam3_frames_0711_0769",
+    "label": "kick",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel1_11_point_cam0_frames_0867_0899.avi",
+    "clip_id": "daniel1_11_point_cam0_frames_0867_0899",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 32,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel1_11_point_cam1_frames_0867_0899.avi",
+    "clip_id": "daniel1_11_point_cam1_frames_0867_0899",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 32,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_11_point_cam2_frames_0820_0874.avi",
+    "clip_id": "daniel2_11_point_cam2_frames_0820_0874",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 54,
+    "split": "train"
+  },
+  {
+    "video_id": "daniel2_11_point_cam3_frames_0820_0874.avi",
+    "clip_id": "daniel2_11_point_cam3_frames_0820_0874",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 54,
+    "split": "val"
+  },
+  {
+    "video_id": "daniel3_11_point_cam2_frames_0795_0836.avi",
+    "clip_id": "daniel3_11_point_cam2_frames_0795_0836",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 41,
+    "split": "test"
+  },
+  {
+    "video_id": "daniel3_11_point_cam3_frames_0795_0836.avi",
+    "clip_id": "daniel3_11_point_cam3_frames_0795_0836",
+    "label": "point",
+    "subject": 5,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 41,
+    "split": "test"
+  },
+  {
+    "video_id": "florian1_07_walk_cam1_frames_0498_0666.avi",
+    "clip_id": "florian1_07_walk_cam1_frames_0498_0666",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 168,
+    "split": "train"
+  },
+  {
+    "video_id": "florian1_07_walk_cam3_frames_0498_0666.avi",
+    "clip_id": "florian1_07_walk_cam3_frames_0498_0666",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 168,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_07_walk_cam1_frames_0481_0620.avi",
+    "clip_id": "florian2_07_walk_cam1_frames_0481_0620",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 139,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_07_walk_cam3_frames_0481_0620.avi",
+    "clip_id": "florian2_07_walk_cam3_frames_0481_0620",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 139,
+    "split": "val"
+  },
+  {
+    "video_id": "florian3_07_walk_cam1_frames_0480_0606.avi",
+    "clip_id": "florian3_07_walk_cam1_frames_0480_0606",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 126,
+    "split": "test"
+  },
+  {
+    "video_id": "florian3_07_walk_cam3_frames_0480_0606.avi",
+    "clip_id": "florian3_07_walk_cam3_frames_0480_0606",
+    "label": "walk",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 126,
+    "split": "test"
+  },
+  {
+    "video_id": "florian1_10_kick_cam0_frames_0792_0850.avi",
+    "clip_id": "florian1_10_kick_cam0_frames_0792_0850",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "train"
+  },
+  {
+    "video_id": "florian1_10_kick_cam1_frames_0792_0850.avi",
+    "clip_id": "florian1_10_kick_cam1_frames_0792_0850",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 58,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_10_kick_cam2_frames_0760_0830.avi",
+    "clip_id": "florian2_10_kick_cam2_frames_0760_0830",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 70,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_10_kick_cam3_frames_0760_0830.avi",
+    "clip_id": "florian2_10_kick_cam3_frames_0760_0830",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 70,
+    "split": "val"
+  },
+  {
+    "video_id": "florian3_10_kick_cam2_frames_0755_0799.avi",
+    "clip_id": "florian3_10_kick_cam2_frames_0755_0799",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 44,
+    "split": "test"
+  },
+  {
+    "video_id": "florian3_10_kick_cam3_frames_0755_0799.avi",
+    "clip_id": "florian3_10_kick_cam3_frames_0755_0799",
+    "label": "kick",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 44,
+    "split": "test"
+  },
+  {
+    "video_id": "florian1_11_point_cam0_frames_0930_0996.avi",
+    "clip_id": "florian1_11_point_cam0_frames_0930_0996",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "train"
+  },
+  {
+    "video_id": "florian1_11_point_cam1_frames_0930_0996.avi",
+    "clip_id": "florian1_11_point_cam1_frames_0930_0996",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_11_point_cam2_frames_0839_0888.avi",
+    "clip_id": "florian2_11_point_cam2_frames_0839_0888",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 49,
+    "split": "train"
+  },
+  {
+    "video_id": "florian2_11_point_cam3_frames_0839_0888.avi",
+    "clip_id": "florian2_11_point_cam3_frames_0839_0888",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 49,
+    "split": "val"
+  },
+  {
+    "video_id": "florian3_11_point_cam2_frames_0821_0885.avi",
+    "clip_id": "florian3_11_point_cam2_frames_0821_0885",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "test"
+  },
+  {
+    "video_id": "florian3_11_point_cam3_frames_0821_0885.avi",
+    "clip_id": "florian3_11_point_cam3_frames_0821_0885",
+    "label": "point",
+    "subject": 6,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena1_07_walk_cam1_frames_0571_0717.avi",
+    "clip_id": "hedlena1_07_walk_cam1_frames_0571_0717",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 146,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena1_07_walk_cam3_frames_0571_0717.avi",
+    "clip_id": "hedlena1_07_walk_cam3_frames_0571_0717",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 146,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_07_walk_cam1_frames_0534_0682.avi",
+    "clip_id": "hedlena2_07_walk_cam1_frames_0534_0682",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 148,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_07_walk_cam3_frames_0534_0682.avi",
+    "clip_id": "hedlena2_07_walk_cam3_frames_0534_0682",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 148,
+    "split": "val"
+  },
+  {
+    "video_id": "hedlena3_07_walk_cam1_frames_0551_0726.avi",
+    "clip_id": "hedlena3_07_walk_cam1_frames_0551_0726",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 175,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena3_07_walk_cam3_frames_0551_0726.avi",
+    "clip_id": "hedlena3_07_walk_cam3_frames_0551_0726",
+    "label": "walk",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 175,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena1_10_kick_cam0_frames_0891_0965.avi",
+    "clip_id": "hedlena1_10_kick_cam0_frames_0891_0965",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 74,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena1_10_kick_cam1_frames_0891_0965.avi",
+    "clip_id": "hedlena1_10_kick_cam1_frames_0891_0965",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 74,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_10_kick_cam1_frames_0815_0907.avi",
+    "clip_id": "hedlena2_10_kick_cam1_frames_0815_0907",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 92,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_10_kick_cam2_frames_0815_0907.avi",
+    "clip_id": "hedlena2_10_kick_cam2_frames_0815_0907",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 92,
+    "split": "val"
+  },
+  {
+    "video_id": "hedlena3_10_kick_cam2_frames_0869_0953.avi",
+    "clip_id": "hedlena3_10_kick_cam2_frames_0869_0953",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena3_10_kick_cam3_frames_0869_0953.avi",
+    "clip_id": "hedlena3_10_kick_cam3_frames_0869_0953",
+    "label": "kick",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 84,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena1_11_point_cam0_frames_1007_1069.avi",
+    "clip_id": "hedlena1_11_point_cam0_frames_1007_1069",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 62,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena1_11_point_cam1_frames_1007_1069.avi",
+    "clip_id": "hedlena1_11_point_cam1_frames_1007_1069",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 62,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_11_point_cam2_frames_0929_1001.avi",
+    "clip_id": "hedlena2_11_point_cam2_frames_0929_1001",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 72,
+    "split": "train"
+  },
+  {
+    "video_id": "hedlena2_11_point_cam3_frames_0929_1001.avi",
+    "clip_id": "hedlena2_11_point_cam3_frames_0929_1001",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 72,
+    "split": "val"
+  },
+  {
+    "video_id": "hedlena3_11_point_cam2_frames_0971_1044.avi",
+    "clip_id": "hedlena3_11_point_cam2_frames_0971_1044",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 73,
+    "split": "test"
+  },
+  {
+    "video_id": "hedlena3_11_point_cam3_frames_0971_1044.avi",
+    "clip_id": "hedlena3_11_point_cam3_frames_0971_1044",
+    "label": "point",
+    "subject": 7,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 73,
+    "split": "test"
+  },
+  {
+    "video_id": "julien1_07_walk_cam1_frames_0480_0595.avi",
+    "clip_id": "julien1_07_walk_cam1_frames_0480_0595",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 115,
+    "split": "train"
+  },
+  {
+    "video_id": "julien1_07_walk_cam3_frames_0480_0595.avi",
+    "clip_id": "julien1_07_walk_cam3_frames_0480_0595",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 115,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_07_walk_cam1_frames_0470_0587.avi",
+    "clip_id": "julien2_07_walk_cam1_frames_0470_0587",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 117,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_07_walk_cam3_frames_0470_0587.avi",
+    "clip_id": "julien2_07_walk_cam3_frames_0470_0587",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 117,
+    "split": "val"
+  },
+  {
+    "video_id": "julien3_07_walk_cam1_frames_0474_0620.avi",
+    "clip_id": "julien3_07_walk_cam1_frames_0474_0620",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 146,
+    "split": "test"
+  },
+  {
+    "video_id": "julien3_07_walk_cam3_frames_0474_0620.avi",
+    "clip_id": "julien3_07_walk_cam3_frames_0474_0620",
+    "label": "walk",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 146,
+    "split": "test"
+  },
+  {
+    "video_id": "julien1_10_kick_cam1_frames_0699_0754.avi",
+    "clip_id": "julien1_10_kick_cam1_frames_0699_0754",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "train"
+  },
+  {
+    "video_id": "julien1_10_kick_cam2_frames_0699_0754.avi",
+    "clip_id": "julien1_10_kick_cam2_frames_0699_0754",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_10_kick_cam2_frames_0736_0799.avi",
+    "clip_id": "julien2_10_kick_cam2_frames_0736_0799",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 63,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_10_kick_cam3_frames_0736_0799.avi",
+    "clip_id": "julien2_10_kick_cam3_frames_0736_0799",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 63,
+    "split": "val"
+  },
+  {
+    "video_id": "julien3_10_kick_cam2_frames_0826_0897.avi",
+    "clip_id": "julien3_10_kick_cam2_frames_0826_0897",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 71,
+    "split": "test"
+  },
+  {
+    "video_id": "julien3_10_kick_cam3_frames_0826_0897.avi",
+    "clip_id": "julien3_10_kick_cam3_frames_0826_0897",
+    "label": "kick",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 71,
+    "split": "test"
+  },
+  {
+    "video_id": "julien1_11_point_cam1_frames_0755_0827.avi",
+    "clip_id": "julien1_11_point_cam1_frames_0755_0827",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 72,
+    "split": "train"
+  },
+  {
+    "video_id": "julien1_11_point_cam2_frames_0755_0827.avi",
+    "clip_id": "julien1_11_point_cam2_frames_0755_0827",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 72,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_11_point_cam2_frames_0800_0831.avi",
+    "clip_id": "julien2_11_point_cam2_frames_0800_0831",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 31,
+    "split": "train"
+  },
+  {
+    "video_id": "julien2_11_point_cam3_frames_0800_0831.avi",
+    "clip_id": "julien2_11_point_cam3_frames_0800_0831",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 31,
+    "split": "val"
+  },
+  {
+    "video_id": "julien3_11_point_cam2_frames_0909_0964.avi",
+    "clip_id": "julien3_11_point_cam2_frames_0909_0964",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "test"
+  },
+  {
+    "video_id": "julien3_11_point_cam3_frames_0909_0964.avi",
+    "clip_id": "julien3_11_point_cam3_frames_0909_0964",
+    "label": "point",
+    "subject": 8,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 55,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas1_07_walk_cam1_frames_0645_0789.avi",
+    "clip_id": "nicolas1_07_walk_cam1_frames_0645_0789",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 144,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas1_07_walk_cam3_frames_0645_0789.avi",
+    "clip_id": "nicolas1_07_walk_cam3_frames_0645_0789",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 144,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_07_walk_cam1_frames_0512_0672.avi",
+    "clip_id": "nicolas2_07_walk_cam1_frames_0512_0672",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 160,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_07_walk_cam3_frames_0512_0672.avi",
+    "clip_id": "nicolas2_07_walk_cam3_frames_0512_0672",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 160,
+    "split": "val"
+  },
+  {
+    "video_id": "nicolas3_07_walk_cam1_frames_0561_0738.avi",
+    "clip_id": "nicolas3_07_walk_cam1_frames_0561_0738",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 177,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas3_07_walk_cam3_frames_0561_0738.avi",
+    "clip_id": "nicolas3_07_walk_cam3_frames_0561_0738",
+    "label": "walk",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 177,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas1_10_kick_cam0_frames_0914_0999.avi",
+    "clip_id": "nicolas1_10_kick_cam0_frames_0914_0999",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 85,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas1_10_kick_cam1_frames_0914_0999.avi",
+    "clip_id": "nicolas1_10_kick_cam1_frames_0914_0999",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 85,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_10_kick_cam2_frames_0800_0864.avi",
+    "clip_id": "nicolas2_10_kick_cam2_frames_0800_0864",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_10_kick_cam3_frames_0800_0864.avi",
+    "clip_id": "nicolas2_10_kick_cam3_frames_0800_0864",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 64,
+    "split": "val"
+  },
+  {
+    "video_id": "nicolas3_10_kick_cam2_frames_0870_0945.avi",
+    "clip_id": "nicolas3_10_kick_cam2_frames_0870_0945",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 75,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas3_10_kick_cam3_frames_0870_0945.avi",
+    "clip_id": "nicolas3_10_kick_cam3_frames_0870_0945",
+    "label": "kick",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 75,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas1_11_point_cam0_frames_1009_1056.avi",
+    "clip_id": "nicolas1_11_point_cam0_frames_1009_1056",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 47,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas1_11_point_cam1_frames_1009_1056.avi",
+    "clip_id": "nicolas1_11_point_cam1_frames_1009_1056",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 47,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_11_point_cam2_frames_0893_0933.avi",
+    "clip_id": "nicolas2_11_point_cam2_frames_0893_0933",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 40,
+    "split": "train"
+  },
+  {
+    "video_id": "nicolas2_11_point_cam3_frames_0893_0933.avi",
+    "clip_id": "nicolas2_11_point_cam3_frames_0893_0933",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 40,
+    "split": "val"
+  },
+  {
+    "video_id": "nicolas3_11_point_cam2_frames_0946_1012.avi",
+    "clip_id": "nicolas3_11_point_cam2_frames_0946_1012",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "test"
+  },
+  {
+    "video_id": "nicolas3_11_point_cam3_frames_0946_1012.avi",
+    "clip_id": "nicolas3_11_point_cam3_frames_0946_1012",
+    "label": "point",
+    "subject": 9,
+    "scenario": "",
+    "start_frame": 0,
+    "end_frame": 66,
+    "split": "test"
+  }
+]
