@@ -1,6 +1,6 @@
-from blur import LearnableGaussian
-from difference import Difference
-from quantization import DifferentiableQuantization
+from bdq_encoder.blur import LearnableGaussian
+from bdq_encoder.difference import Difference
+from bdq_encoder.quantization import DifferentiableQuantization
 from torch import nn
 
 class BDQEncoder(nn.Module):

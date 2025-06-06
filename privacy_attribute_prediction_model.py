@@ -80,8 +80,8 @@ if __name__ == "__main__":
     from preprocess import KTHBDQDataset
 
     # --- Parameters for Person Identification ---
-    root_dir = "KTH"
-    json_path = "kth_clips.json"
+    root_dir = "/datasets/KTH"
+    json_path = "/datasets/kth_clips.json"
     clip_len = 16
     resize = (224, 224)
     num_persons = 25  # 25 actors in KTH

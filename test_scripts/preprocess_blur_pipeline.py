@@ -1,7 +1,7 @@
 
 import torch
 from preprocess import KTHBDQDataset
-from blur import LearnableGaussian
+from bdq_encoder.blur import LearnableGaussian
 
 dataset = KTHBDQDataset(
     root_dir="KTH",

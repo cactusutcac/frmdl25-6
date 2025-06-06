@@ -6,7 +6,7 @@ from PIL import Image
 import torch
 from torch.utils.data import Dataset
 from torchvision.transforms.functional import pil_to_tensor
-from utils import ACTION_LABEL_MAP
+from datasets.utils_kth import ACTION_LABEL_MAP
 
 class KTHBDQDataset(Dataset):
     def __init__(self, root_dir, json_path, transform=None, split=None):
@@ -65,6 +65,57 @@ class KTHBDQDataset(Dataset):
         video_path = self._get_video_path(entry["label"], entry["video_id"])
         clip = self._load_clip(video_path, entry["start_frame"], entry["end_frame"])
         return clip, ACTION_LABEL_MAP[entry["label"]], entry["subject"]  # video tensor, action label, and privacy label
+
+class IXMASBDQDataset(Dataset):
+    def __init__(self, root_dir, json_path, transform=None, split=None):
+        """
+        Args:
+            root_dir (str): Folder containing .avi video files.
+            json_path (str): Path to ixmas_clips.json
+            transform (callable, optional): Optional transform to apply to [T, C, H, W] tensor.
+            split (str): 'train', 'val', or 'test'; filters dataset.
+        """
+        self.root_dir = root_dir
+        self.transform = transform
+
+        with open(IXMAS_LABELS_DIR, "r") as f:
+            all_clips = json.load(f)
+        
+        self.data = [c for c in all_clips if c["split"] == split] if split else all_clips
+        self.action_label_map = {label: i for i, label in enumerate(sorted(set(c["label"] for c in self.data)))}
+
+    def __len__(self):
+        return len(self.data)
+
+    def _load_clip(self, video_path):
+        cap = cv2.VideoCapture(video_path)
+        if not cap.isOpened():
+            raise FileNotFoundError(f"Could not open video: {video_path}")
+
+        frames = []
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            img = Image.fromarray(frame)
+            img_tensor = pil_to_tensor(img)
+            frames.append(img_tensor)
+
+        cap.release()
+        if len(frames) == 0:
+            raise RuntimeError(f"No frames extracted from {video_path}")
+
+        clip = torch.stack(frames)  # [T, C, H, W]
+        return self.transform(clip) if self.transform else clip
+
+    def __getitem__(self, idx):
+        entry = self.data[idx]
+        video_path = os.path.join(self.root_dir, entry["video_id"])
+        clip = self._load_clip(video_path)
+        action_label = self.action_label_map[entry["label"]]
+        subject_id = entry["subject"]
+        return clip, action_label, subject_id
 
 class ConsecutiveTemporalSubsample(object):
     """

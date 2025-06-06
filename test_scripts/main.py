@@ -2,8 +2,8 @@ import cv2
 import torch
 
 from action_recognition_model import ActionRecognitionModel
-from difference import Difference
-from BDQ import BDQEncoder
+from bdq_encoder.difference import Difference
+from bdq_encoder.BDQ import BDQEncoder
 from preprocess import KTHBDQDataset
 
 def main():

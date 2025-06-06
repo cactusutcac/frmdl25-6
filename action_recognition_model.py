@@ -1,5 +1,4 @@
 import torch
-import json
 from pytorchvideo.data.encoded_video import EncodedVideo
 from torchvision.transforms import Compose, Lambda, CenterCrop, Normalize
 from pytorchvideo.transforms import (

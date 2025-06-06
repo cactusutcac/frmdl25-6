@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
-from BDQ import BDQEncoder
+from bdq_encoder.BDQ import BDQEncoder
 from action_recognition_model import ActionRecognitionModel
 from loss import ActionLoss, PrivacyLoss
 from preprocess import KTHBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues
@@ -275,8 +275,8 @@ def load_train_checkpoint(E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAt
 
 if __name__ == "__main__":
     # Specify location of KTH dataset and labels file
-    KTH_DATA_DIR = "./KTH"
-    KTH_LABELS_DIR = "kth_clips.json"
+    KTH_DATA_DIR = "./datasets/KTH"
+    KTH_LABELS_DIR = "./datasets/kth_clips.json"
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
     num_epochs = 50
