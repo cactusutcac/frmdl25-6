@@ -17,6 +17,7 @@ from torchvision.transforms import Compose, Resize, CenterCrop
 import re
 import os
 from torch.utils.tensorboard import SummaryWriter
+import random
 
 # Setup checkpointing
 COLAB_PATH = os.getenv('COLAB_PATH')
@@ -52,7 +53,7 @@ def delete_old_checkpoints():
         for file, _ in checkpoints[:-2]:
             os.remove(file)
 
-def compute_accuracy(input, target_action, target_privacy):
+def compute_accuracy(input, target_action, target_privacy, random_frame: int | None = None):
     """
     Computes action and privacy prediction accuracy
     Args:
@@ -63,10 +64,14 @@ def compute_accuracy(input, target_action, target_privacy):
     with torch.no_grad():
         input_encoded = E.forward(input)
         T_pred = T.forward(input_encoded).argmax(dim=1)
-        P_pred = P.forward(input_encoded).argmax(dim=1)
+        privacy_acc = 0.0
+        frames = range(input_encoded.size(1)) if random_frame is None else [random_frame] #T
+        for frame in frames:
+            P_pred = P.forward(input_encoded[:, frame, :, :, :]).argmax(dim=1)
+            privacy_acc += torch.sum(P_pred == target_privacy)
 
         action_acc = torch.sum(T_pred == target_action)
-        privacy_acc = torch.sum(P_pred == target_privacy)
+        privacy_acc /= len(frames)
 
         return action_acc, privacy_acc
 
@@ -105,7 +110,9 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         # Freeze P, train E and T together
         input_encoded = E.forward(input)
         action_pred = T.forward(input_encoded)
-        frozen_privacy_pred = P.forward(input_encoded)
+        # Pick random frame for 2D privacy predictor
+        random_frame = random.randint(0, input_encoded.size(1) - 1)
+        frozen_privacy_pred = P.forward(input_encoded[:, random_frame, :, :, :])
         loss_action = action_loss.forward(action_pred, frozen_privacy_pred, target_action)
         loss_action.backward()
         optimizer_ET.step()
@@ -113,14 +120,14 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         optimizer_P.zero_grad()
         # Freeze E and T, unfreeze and train P
         frozen_input_encoded = E.forward(input)
-        privacy_pred = P.forward(frozen_input_encoded)
+        privacy_pred = P.forward(frozen_input_encoded[:, random_frame, :, :, :])
         loss_privacy = privacy_loss.forward(privacy_pred, target_privacy)
         loss_privacy.backward()
         optimizer_P.step()
 
         # Unfreeze all models, record losses
         # Compute statistics
-        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
+        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, random_frame)
 
         total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
@@ -165,11 +172,20 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
             # Perform evaluation with models on respective inputs
             input_encoded = E.forward(input)
             action_pred = T.forward(input_encoded)
-            privacy_pred = P.forward(input_encoded)
+            privacy_preds = []
+            frames = input_encoded.size(1) # T
+            for frame in range(frames):
+                privacy_preds.append(P.forward(input_encoded[:, frame, :, :, :]))
 
             # Compute statistics
-            loss_action = action_loss.forward(action_pred, privacy_pred, target_action) 
-            loss_privacy = privacy_loss.forward(privacy_pred, target_privacy)
+            loss_action = 0
+            loss_privacy = 0
+            for frame in range(frames):
+                privacy_pred = privacy_preds[frame]
+                loss_action += action_loss.forward(action_pred, privacy_pred, target_action)
+                loss_privacy += privacy_loss.forward(privacy_pred, target_privacy)
+            loss_action /= frames
+            loss_privacy /= frames
 
             acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
 
