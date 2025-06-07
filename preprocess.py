@@ -229,3 +229,14 @@ class NormalizePixelValues(object):
             x (torch.Tensor): an image-like tensor whose values to normalize.
         """
         return torch.clamp(x / 255., self.eps, 1.-self.eps)
+
+class NormalizeVideo(object):
+    def __init__(self):
+        norm_value = 255
+        self.mean = [110.63666788 / norm_value, 103.16065604 / norm_value, 96.29023126 / norm_value] # reused from https://github.com/suakaw/BDQ_PrivacyAR/blob/main/action-recognition-pytorch-entropy/train.py#L247
+        self.std = [38.7568578 / norm_value, 37.88248729 / norm_value, 40.02898126 / norm_value]
+
+    def __call__(self, x): # [T, C, H, W]
+        mean_tensor = torch.tensor(self.mean).view(1, x.shape[1], 1, 1)
+        std_tensor = torch.tensor(self.std).view(1, x.shape[1], 1, 1)
+        return (x - mean_tensor) / std_tensor
