@@ -32,44 +32,29 @@ class PrivacyAttributePredictor(nn.Module):
         for param in self.resnet_feature_extractor.fc.parameters():
             param.requires_grad = True
 
-    def forward(self, bdq_encoded_video):
+    def forward(self, bdq_encoded_frame):
         """
         Forward pass for the privacy attribute predictor.
 
         Args:
-            bdq_encoded_video (torch.Tensor): The output from the BDQ encoder.
-                Shape: (B, T, C, H, W), where
+            bdq_encoded_frame (torch.Tensor): The output from the BDQ encoder.
+                Shape: (B, C, H, W), where
                 B = batch size
-                T = number of time steps/frames
                 C = number of channels
                 H = height
                 W = width
 
         Returns:
-            torch.Tensor: Averaged softmax probabilities for privacy attributes.
+            torch.Tensor: softmax probabilities for privacy attributes.
                           Shape: (B, num_privacy_classes)
         """
-        B, T, C, H, W = bdq_encoded_video.shape
-
-        # ResNet50 expects input of shape (N, C, H, W).
-        # We need to process each of the T frames for each video in the batch.
-        # Reshape to (B*T, C, H, W) to pass all frames through ResNet in one go.
-        video_reshaped_for_resnet = bdq_encoded_video.contiguous().view(B * T, C, H, W)
-
-        # Get logits from the ResNet feature extractor for all (B*T) frames
-        logits_all_frames = self.resnet_feature_extractor(video_reshaped_for_resnet) # Shape: (B*T, num_privacy_classes)
+        # Get logits from the ResNet feature extractor for all (B) frames
+        logits_all_frames = self.resnet_feature_extractor(bdq_encoded_frame) # Shape: (B, num_privacy_classes)
 
         # Apply softmax to get probabilities for each frame
-        softmax_all_frames = F.softmax(logits_all_frames, dim=1) # Shape: (B*T, num_privacy_classes)
+        softmax_all_frames = F.softmax(logits_all_frames, dim=1) # Shape: (B, num_privacy_classes)
 
-        # Reshape back to (B, T, num_privacy_classes) to separate frames per video
-        softmax_per_frame_per_video = softmax_all_frames.view(B, T, self.num_privacy_classes)
-
-        # Average the softmax outputs over the T frames for each video in the batch
-        # as described in the paper (Section 4.2 Validation & Section 4.3 Results explanation).
-        averaged_softmax_predictions = torch.mean(softmax_per_frame_per_video, dim=1) # Shape: (B, num_privacy_classes)
-
-        return averaged_softmax_predictions
+        return softmax_all_frames
 
 
 if __name__ == "__main__":
