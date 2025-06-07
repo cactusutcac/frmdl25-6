@@ -24,9 +24,13 @@ class PrivacyAttributePredictor(nn.Module):
         else:
             self.resnet_feature_extractor = models.resnet50(weights=None)
 
+        for param in self.resnet_feature_extractor.parameters():
+            param.requires_grad = False
         # Replace the final fully connected layer for the new number of privacy classes
         num_ftrs = self.resnet_feature_extractor.fc.in_features
         self.resnet_feature_extractor.fc = nn.Linear(num_ftrs, num_privacy_classes)
+        for param in self.resnet_feature_extractor.fc.parameters():
+            param.requires_grad = True
 
     def forward(self, bdq_encoded_video):
         """
@@ -66,14 +70,6 @@ class PrivacyAttributePredictor(nn.Module):
         averaged_softmax_predictions = torch.mean(softmax_per_frame_per_video, dim=1) # Shape: (B, num_privacy_classes)
 
         return averaged_softmax_predictions
-
-    def freeze(self):
-        for param in self.parameters():
-            param.requires_grad = False
-
-    def unfreeze(self):
-        for param in self.parameters():
-            param.requires_grad = True
 
 
 if __name__ == "__main__":
