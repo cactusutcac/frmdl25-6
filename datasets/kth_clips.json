@@ -7,7 +7,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_boxing_d1",
@@ -47,7 +47,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_boxing_d2",
@@ -87,7 +87,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_boxing_d3",
@@ -127,7 +127,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_boxing_d4",
@@ -167,7 +167,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handclapping_d1",
@@ -207,7 +207,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 162,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handclapping_d2",
@@ -247,7 +247,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handclapping_d3",
@@ -287,7 +287,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handclapping_d4",
@@ -327,7 +327,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handwaving_d1",
@@ -367,7 +367,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handwaving_d2",
@@ -407,7 +407,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handwaving_d3",
@@ -447,7 +447,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 135,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_handwaving_d4",
@@ -487,7 +487,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_jogging_d1",
@@ -527,7 +527,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_jogging_d2",
@@ -567,7 +567,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_jogging_d3",
@@ -607,7 +607,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_jogging_d4",
@@ -647,7 +647,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_running_d1",
@@ -687,7 +687,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_running_d2",
@@ -757,7 +757,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_running_d4",
@@ -797,7 +797,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_walking_d1",
@@ -837,7 +837,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_walking_d2",
@@ -877,7 +877,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_walking_d3",
@@ -917,7 +917,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person01_walking_d4",
@@ -957,7 +957,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_boxing_d1",
@@ -997,7 +997,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_boxing_d2",
@@ -1037,7 +1037,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_boxing_d3",
@@ -1077,7 +1077,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_boxing_d4",
@@ -1117,7 +1117,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handclapping_d1",
@@ -1157,7 +1157,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handclapping_d2",
@@ -1197,7 +1197,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handclapping_d3",
@@ -1237,7 +1237,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handclapping_d4",
@@ -1277,7 +1277,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handwaving_d1",
@@ -1317,7 +1317,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 82,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handwaving_d2",
@@ -1357,7 +1357,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 86,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handwaving_d3",
@@ -1397,7 +1397,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_handwaving_d4",
@@ -1437,7 +1437,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 54,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_jogging_d1",
@@ -1477,7 +1477,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 152,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_jogging_d2",
@@ -1517,7 +1517,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_jogging_d3",
@@ -1557,7 +1557,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 72,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_jogging_d4",
@@ -1597,7 +1597,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_running_d1",
@@ -1637,7 +1637,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_running_d2",
@@ -1677,7 +1677,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_running_d3",
@@ -1717,7 +1717,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 62,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_running_d4",
@@ -1757,7 +1757,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 72,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_walking_d1",
@@ -1797,7 +1797,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 208,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_walking_d2",
@@ -1837,7 +1837,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 86,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_walking_d3",
@@ -1877,7 +1877,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 107,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person02_walking_d4",
@@ -1917,7 +1917,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_boxing_d1",
@@ -1957,7 +1957,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_boxing_d2",
@@ -1997,7 +1997,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_boxing_d3",
@@ -2037,7 +2037,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_boxing_d4",
@@ -2077,7 +2077,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handclapping_d1",
@@ -2117,7 +2117,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handclapping_d2",
@@ -2157,7 +2157,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 142,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handclapping_d3",
@@ -2197,7 +2197,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handclapping_d4",
@@ -2237,7 +2237,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 134,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handwaving_d1",
@@ -2277,7 +2277,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handwaving_d2",
@@ -2317,7 +2317,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handwaving_d3",
@@ -2357,7 +2357,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_handwaving_d4",
@@ -2397,7 +2397,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 58,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_jogging_d1",
@@ -2437,7 +2437,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_jogging_d2",
@@ -2477,7 +2477,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 48,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_jogging_d3",
@@ -2517,7 +2517,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_jogging_d4",
@@ -2557,7 +2557,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 38,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_running_d1",
@@ -2597,7 +2597,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_running_d2",
@@ -2637,7 +2637,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 34,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_running_d3",
@@ -2677,7 +2677,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_running_d4",
@@ -2717,7 +2717,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_walking_d1",
@@ -2757,7 +2757,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 226,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_walking_d2",
@@ -2797,7 +2797,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_walking_d3",
@@ -2837,7 +2837,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person03_walking_d4",
@@ -2877,7 +2877,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_boxing_d1",
@@ -2917,7 +2917,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_boxing_d2",
@@ -2957,7 +2957,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_boxing_d3",
@@ -2997,7 +2997,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_boxing_d4",
@@ -3037,7 +3037,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handclapping_d1",
@@ -3077,7 +3077,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handclapping_d2",
@@ -3117,7 +3117,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handclapping_d3",
@@ -3157,7 +3157,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handclapping_d4",
@@ -3197,7 +3197,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handwaving_d1",
@@ -3237,7 +3237,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handwaving_d2",
@@ -3277,7 +3277,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handwaving_d3",
@@ -3317,7 +3317,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_handwaving_d4",
@@ -3357,7 +3357,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_jogging_d1",
@@ -3397,7 +3397,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_jogging_d2",
@@ -3437,7 +3437,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_jogging_d3",
@@ -3477,7 +3477,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_jogging_d4",
@@ -3517,7 +3517,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_running_d1",
@@ -3557,7 +3557,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 78,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_running_d2",
@@ -3597,7 +3597,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_running_d3",
@@ -3637,7 +3637,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_running_d4",
@@ -3677,7 +3677,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_walking_d1",
@@ -3717,7 +3717,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_walking_d2",
@@ -3757,7 +3757,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 74,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_walking_d3",
@@ -3797,7 +3797,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person04_walking_d4",
@@ -3837,7 +3837,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_boxing_d1",
@@ -3877,7 +3877,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 78,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_boxing_d2",
@@ -3917,7 +3917,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 96,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_boxing_d3",
@@ -3957,7 +3957,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_boxing_d4",
@@ -3997,7 +3997,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handclapping_d1",
@@ -4037,7 +4037,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handclapping_d2",
@@ -4077,7 +4077,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handclapping_d3",
@@ -4117,7 +4117,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handclapping_d4",
@@ -4157,7 +4157,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handwaving_d1",
@@ -4197,7 +4197,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handwaving_d2",
@@ -4237,7 +4237,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handwaving_d3",
@@ -4277,7 +4277,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 138,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_handwaving_d4",
@@ -4317,7 +4317,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_jogging_d1",
@@ -4357,7 +4357,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 62,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_jogging_d2",
@@ -4397,7 +4397,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 54,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_jogging_d3",
@@ -4437,7 +4437,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_jogging_d4",
@@ -4477,7 +4477,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 36,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_running_d1",
@@ -4517,7 +4517,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_running_d2",
@@ -4557,7 +4557,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_running_d3",
@@ -4597,7 +4597,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_running_d4",
@@ -4637,7 +4637,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_walking_d1",
@@ -4677,7 +4677,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_walking_d2",
@@ -4717,7 +4717,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_walking_d3",
@@ -4757,7 +4757,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person05_walking_d4",
@@ -4797,7 +4797,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_boxing_d1",
@@ -4837,7 +4837,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 86,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_boxing_d2",
@@ -4877,7 +4877,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_boxing_d3",
@@ -4917,7 +4917,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 96,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_boxing_d4",
@@ -4957,7 +4957,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handclapping_d1",
@@ -4997,7 +4997,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handclapping_d2",
@@ -5037,7 +5037,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handclapping_d3",
@@ -5077,7 +5077,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handclapping_d4",
@@ -5117,7 +5117,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handwaving_d1",
@@ -5157,7 +5157,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handwaving_d2",
@@ -5197,7 +5197,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handwaving_d3",
@@ -5237,7 +5237,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_handwaving_d4",
@@ -5277,7 +5277,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_jogging_d1",
@@ -5317,7 +5317,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_jogging_d2",
@@ -5357,7 +5357,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_jogging_d3",
@@ -5397,7 +5397,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_jogging_d4",
@@ -5437,7 +5437,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_running_d1",
@@ -5477,7 +5477,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_running_d2",
@@ -5517,7 +5517,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_running_d3",
@@ -5557,7 +5557,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 48,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_running_d4",
@@ -5597,7 +5597,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 72,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_walking_d1",
@@ -5637,7 +5637,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 180,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_walking_d2",
@@ -5677,7 +5677,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 68,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_walking_d3",
@@ -5717,7 +5717,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person06_walking_d4",
@@ -5757,7 +5757,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_boxing_d1",
@@ -5797,7 +5797,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 96,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_boxing_d2",
@@ -5837,7 +5837,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_boxing_d3",
@@ -5877,7 +5877,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_boxing_d4",
@@ -5917,7 +5917,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handclapping_d1",
@@ -5957,7 +5957,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handclapping_d2",
@@ -5997,7 +5997,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handclapping_d3",
@@ -6037,7 +6037,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 158,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handclapping_d4",
@@ -6077,7 +6077,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 226,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handwaving_d1",
@@ -6117,7 +6117,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 204,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handwaving_d2",
@@ -6157,7 +6157,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handwaving_d3",
@@ -6197,7 +6197,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 216,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_handwaving_d4",
@@ -6237,7 +6237,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 42,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_jogging_d1",
@@ -6277,7 +6277,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 72,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_jogging_d2",
@@ -6317,7 +6317,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_jogging_d3",
@@ -6357,7 +6357,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_jogging_d4",
@@ -6417,7 +6417,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 56,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_running_d2",
@@ -6457,7 +6457,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_running_d3",
@@ -6497,7 +6497,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_running_d4",
@@ -6537,7 +6537,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_walking_d1",
@@ -6577,7 +6577,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 98,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_walking_d2",
@@ -6617,7 +6617,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_walking_d3",
@@ -6657,7 +6657,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person07_walking_d4",
@@ -6697,7 +6697,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_boxing_d1",
@@ -6737,7 +6737,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_boxing_d2",
@@ -6777,7 +6777,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 68,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_boxing_d3",
@@ -6817,7 +6817,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_boxing_d4",
@@ -6857,7 +6857,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handclapping_d1",
@@ -6897,7 +6897,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handclapping_d2",
@@ -6937,7 +6937,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handclapping_d3",
@@ -6977,7 +6977,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handclapping_d4",
@@ -7017,7 +7017,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handwaving_d1",
@@ -7057,7 +7057,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handwaving_d2",
@@ -7097,7 +7097,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handwaving_d3",
@@ -7137,7 +7137,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_handwaving_d4",
@@ -7177,7 +7177,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 58,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_jogging_d1",
@@ -7217,7 +7217,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 84,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_jogging_d2",
@@ -7257,7 +7257,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_jogging_d3",
@@ -7297,7 +7297,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 78,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_jogging_d4",
@@ -7337,7 +7337,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 42,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_running_d1",
@@ -7377,7 +7377,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 56,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_running_d2",
@@ -7417,7 +7417,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 42,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_running_d3",
@@ -7457,7 +7457,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_running_d4",
@@ -7497,7 +7497,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 78,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_walking_d1",
@@ -7537,7 +7537,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_walking_d2",
@@ -7577,7 +7577,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_walking_d3",
@@ -7617,7 +7617,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person08_walking_d4",
@@ -7657,7 +7657,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_boxing_d1",
@@ -7697,7 +7697,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_boxing_d2",
@@ -7737,7 +7737,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_boxing_d3",
@@ -7777,7 +7777,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_boxing_d4",
@@ -7817,7 +7817,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handclapping_d1",
@@ -7857,7 +7857,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handclapping_d2",
@@ -7897,7 +7897,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handclapping_d3",
@@ -7937,7 +7937,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handclapping_d4",
@@ -7977,7 +7977,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handwaving_d1",
@@ -8017,7 +8017,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handwaving_d2",
@@ -8057,7 +8057,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handwaving_d3",
@@ -8097,7 +8097,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 97,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_handwaving_d4",
@@ -8137,7 +8137,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_jogging_d1",
@@ -8177,7 +8177,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_jogging_d2",
@@ -8217,7 +8217,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_jogging_d3",
@@ -8257,7 +8257,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_jogging_d4",
@@ -8297,7 +8297,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 36,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_running_d1",
@@ -8337,7 +8337,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 54,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_running_d2",
@@ -8377,7 +8377,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 36,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_running_d3",
@@ -8417,7 +8417,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_running_d4",
@@ -8457,7 +8457,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_walking_d1",
@@ -8497,7 +8497,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_walking_d2",
@@ -8537,7 +8537,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_walking_d3",
@@ -8577,7 +8577,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person09_walking_d4",
@@ -8617,7 +8617,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_boxing_d1",
@@ -8657,7 +8657,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_boxing_d2",
@@ -8697,7 +8697,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_boxing_d3",
@@ -8737,7 +8737,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_boxing_d4",
@@ -8777,7 +8777,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handclapping_d1",
@@ -8807,7 +8807,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handclapping_d2",
@@ -8847,7 +8847,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handclapping_d3",
@@ -8887,7 +8887,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handclapping_d4",
@@ -8927,7 +8927,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handwaving_d1",
@@ -8967,7 +8967,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 98,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handwaving_d2",
@@ -9007,7 +9007,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handwaving_d3",
@@ -9047,7 +9047,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 142,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_handwaving_d4",
@@ -9087,7 +9087,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_jogging_d1",
@@ -9127,7 +9127,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_jogging_d2",
@@ -9167,7 +9167,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_jogging_d3",
@@ -9207,7 +9207,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_jogging_d4",
@@ -9247,7 +9247,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_running_d1",
@@ -9267,7 +9267,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_running_d2",
@@ -9307,7 +9307,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_running_d3",
@@ -9347,7 +9347,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_running_d4",
@@ -9387,7 +9387,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_walking_d1",
@@ -9427,7 +9427,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 190,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_walking_d2",
@@ -9467,7 +9467,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_walking_d3",
@@ -9507,7 +9507,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person10_walking_d4",
@@ -9547,7 +9547,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 74,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_boxing_d1",
@@ -9587,7 +9587,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_boxing_d2",
@@ -9627,7 +9627,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_boxing_d3",
@@ -9667,7 +9667,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_boxing_d4",
@@ -9697,7 +9697,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handclapping_d1",
@@ -9737,7 +9737,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handclapping_d2",
@@ -9777,7 +9777,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handclapping_d3",
@@ -9817,7 +9817,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handclapping_d4",
@@ -9857,7 +9857,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 148,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handwaving_d1",
@@ -9897,7 +9897,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handwaving_d2",
@@ -9937,7 +9937,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 135,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handwaving_d3",
@@ -9977,7 +9977,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_handwaving_d4",
@@ -10017,7 +10017,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_jogging_d1",
@@ -10057,7 +10057,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_jogging_d2",
@@ -10097,7 +10097,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_jogging_d3",
@@ -10137,7 +10137,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_jogging_d4",
@@ -10177,7 +10177,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_running_d1",
@@ -10217,7 +10217,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_running_d2",
@@ -10257,7 +10257,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_running_d3",
@@ -10277,7 +10277,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_running_d4",
@@ -10317,7 +10317,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_walking_d1",
@@ -10357,7 +10357,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 185,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_walking_d2",
@@ -10397,7 +10397,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_walking_d3",
@@ -10437,7 +10437,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person11_walking_d4",
@@ -10477,7 +10477,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 137,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_boxing_d1",
@@ -10517,7 +10517,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 89,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_boxing_d2",
@@ -10557,7 +10557,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_boxing_d3",
@@ -10597,7 +10597,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_boxing_d4",
@@ -10637,7 +10637,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handclapping_d1",
@@ -10677,7 +10677,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handclapping_d2",
@@ -10717,7 +10717,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 123,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handclapping_d3",
@@ -10757,7 +10757,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 133,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handclapping_d4",
@@ -10797,7 +10797,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 168,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handwaving_d1",
@@ -10837,7 +10837,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handwaving_d2",
@@ -10877,7 +10877,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 178,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handwaving_d3",
@@ -10917,7 +10917,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 152,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_handwaving_d4",
@@ -10957,7 +10957,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_jogging_d1",
@@ -10997,7 +10997,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_jogging_d2",
@@ -11037,7 +11037,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_jogging_d3",
@@ -11077,7 +11077,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_jogging_d4",
@@ -11127,7 +11127,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_running_d2",
@@ -11167,7 +11167,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_running_d3",
@@ -11207,7 +11207,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_running_d4",
@@ -11247,7 +11247,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_walking_d1",
@@ -11287,7 +11287,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 160,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_walking_d2",
@@ -11327,7 +11327,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_walking_d3",
@@ -11367,7 +11367,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person12_walking_d4",
@@ -11407,7 +11407,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_boxing_d1",
@@ -11447,7 +11447,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 144,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_boxing_d2",
@@ -11487,7 +11487,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_boxing_d3",
@@ -11527,7 +11527,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 109,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_boxing_d4",
@@ -11567,7 +11567,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handclapping_d1",
@@ -11607,7 +11607,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handclapping_d2",
@@ -11647,7 +11647,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handclapping_d4",
@@ -11687,7 +11687,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handwaving_d1",
@@ -11727,7 +11727,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handwaving_d2",
@@ -11767,7 +11767,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handwaving_d3",
@@ -11797,7 +11797,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 180,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_handwaving_d4",
@@ -11837,7 +11837,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_jogging_d1",
@@ -11877,7 +11877,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_jogging_d2",
@@ -11917,7 +11917,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_jogging_d3",
@@ -11957,7 +11957,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_jogging_d4",
@@ -11997,7 +11997,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_running_d1",
@@ -12037,7 +12037,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_running_d2",
@@ -12077,7 +12077,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_running_d3",
@@ -12117,7 +12117,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_running_d4",
@@ -12157,7 +12157,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_walking_d1",
@@ -12197,7 +12197,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_walking_d2",
@@ -12237,7 +12237,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_walking_d3",
@@ -12277,7 +12277,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person13_walking_d4",
@@ -12317,7 +12317,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 123,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_boxing_d1",
@@ -12357,7 +12357,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_boxing_d2",
@@ -12397,7 +12397,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 162,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_boxing_d3",
@@ -12437,7 +12437,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_boxing_d4",
@@ -12477,7 +12477,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handclapping_d1",
@@ -12517,7 +12517,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handclapping_d2",
@@ -12557,7 +12557,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handclapping_d3",
@@ -12597,7 +12597,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handclapping_d4",
@@ -12637,7 +12637,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 165,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handwaving_d1",
@@ -12677,7 +12677,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handwaving_d2",
@@ -12717,7 +12717,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 145,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handwaving_d3",
@@ -12747,7 +12747,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_handwaving_d4",
@@ -12787,7 +12787,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_jogging_d1",
@@ -12827,7 +12827,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_jogging_d2",
@@ -12867,7 +12867,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_jogging_d3",
@@ -12907,7 +12907,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_jogging_d4",
@@ -12947,7 +12947,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_running_d1",
@@ -12987,7 +12987,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_running_d2",
@@ -13027,7 +13027,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 33,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_running_d3",
@@ -13067,7 +13067,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_running_d4",
@@ -13107,7 +13107,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_walking_d1",
@@ -13147,7 +13147,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_walking_d2",
@@ -13187,7 +13187,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_walking_d3",
@@ -13227,7 +13227,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person14_walking_d4",
@@ -13267,7 +13267,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_boxing_d1",
@@ -13307,7 +13307,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_boxing_d2",
@@ -13347,7 +13347,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_boxing_d3",
@@ -13387,7 +13387,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_boxing_d4",
@@ -13417,7 +13417,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handclapping_d1",
@@ -13457,7 +13457,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handclapping_d2",
@@ -13497,7 +13497,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handclapping_d3",
@@ -13537,7 +13537,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handclapping_d4",
@@ -13577,7 +13577,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handwaving_d1",
@@ -13617,7 +13617,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 170,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handwaving_d2",
@@ -13657,7 +13657,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 123,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handwaving_d3",
@@ -13697,7 +13697,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 150,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_handwaving_d4",
@@ -13737,7 +13737,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_jogging_d1",
@@ -13777,7 +13777,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_jogging_d2",
@@ -13817,7 +13817,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_jogging_d3",
@@ -13857,7 +13857,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_jogging_d4",
@@ -13897,7 +13897,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_running_d1",
@@ -13937,7 +13937,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_running_d2",
@@ -13977,7 +13977,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_running_d3",
@@ -14017,7 +14017,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_running_d4",
@@ -14057,7 +14057,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_walking_d1",
@@ -14097,7 +14097,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 175,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_walking_d2",
@@ -14137,7 +14137,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_walking_d3",
@@ -14177,7 +14177,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 145,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person15_walking_d4",
@@ -14217,7 +14217,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_boxing_d1",
@@ -14257,7 +14257,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 42,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_boxing_d2",
@@ -14297,7 +14297,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_boxing_d3",
@@ -14337,7 +14337,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_boxing_d4",
@@ -14377,7 +14377,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handclapping_d1",
@@ -14417,7 +14417,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handclapping_d2",
@@ -14457,7 +14457,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handclapping_d3",
@@ -14497,7 +14497,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handclapping_d4",
@@ -14537,7 +14537,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handwaving_d1",
@@ -14577,7 +14577,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handwaving_d2",
@@ -14617,7 +14617,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handwaving_d3",
@@ -14657,7 +14657,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_handwaving_d4",
@@ -14697,7 +14697,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_jogging_d1",
@@ -14737,7 +14737,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_jogging_d2",
@@ -14777,7 +14777,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_jogging_d3",
@@ -14817,7 +14817,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_jogging_d4",
@@ -14857,7 +14857,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_running_d1",
@@ -14897,7 +14897,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_running_d2",
@@ -14937,7 +14937,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_running_d3",
@@ -14977,7 +14977,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_running_d4",
@@ -15017,7 +15017,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_walking_d1",
@@ -15057,7 +15057,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 160,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_walking_d2",
@@ -15097,7 +15097,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_walking_d3",
@@ -15137,7 +15137,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person16_walking_d4",
@@ -15177,7 +15177,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_boxing_d1",
@@ -15217,7 +15217,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_boxing_d2",
@@ -15257,7 +15257,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_boxing_d3",
@@ -15297,7 +15297,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_boxing_d4",
@@ -15337,7 +15337,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handclapping_d1",
@@ -15377,7 +15377,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handclapping_d2",
@@ -15417,7 +15417,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handclapping_d3",
@@ -15457,7 +15457,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handclapping_d4",
@@ -15497,7 +15497,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 86,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handwaving_d1",
@@ -15537,7 +15537,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handwaving_d2",
@@ -15577,7 +15577,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handwaving_d3",
@@ -15617,7 +15617,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_handwaving_d4",
@@ -15657,7 +15657,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_jogging_d1",
@@ -15697,7 +15697,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_jogging_d2",
@@ -15737,7 +15737,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_jogging_d3",
@@ -15777,7 +15777,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_jogging_d4",
@@ -15847,7 +15847,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_running_d2",
@@ -15887,7 +15887,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_running_d3",
@@ -15927,7 +15927,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_running_d4",
@@ -15967,7 +15967,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_walking_d1",
@@ -16007,7 +16007,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 160,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_walking_d2",
@@ -16047,7 +16047,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_walking_d3",
@@ -16087,7 +16087,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person17_walking_d4",
@@ -16127,7 +16127,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_boxing_d1",
@@ -16167,7 +16167,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_boxing_d2",
@@ -16207,7 +16207,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_boxing_d3",
@@ -16247,7 +16247,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_boxing_d4",
@@ -16287,7 +16287,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handclapping_d1",
@@ -16327,7 +16327,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handclapping_d2",
@@ -16367,7 +16367,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handclapping_d3",
@@ -16407,7 +16407,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handclapping_d4",
@@ -16447,7 +16447,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handwaving_d1",
@@ -16487,7 +16487,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handwaving_d2",
@@ -16527,7 +16527,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handwaving_d3",
@@ -16567,7 +16567,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_handwaving_d4",
@@ -16607,7 +16607,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_jogging_d1",
@@ -16647,7 +16647,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_jogging_d2",
@@ -16687,7 +16687,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_jogging_d3",
@@ -16727,7 +16727,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_jogging_d4",
@@ -16767,7 +16767,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_running_d1",
@@ -16807,7 +16807,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_running_d2",
@@ -16847,7 +16847,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_running_d3",
@@ -16887,7 +16887,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_running_d4",
@@ -16927,7 +16927,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_walking_d1",
@@ -16967,7 +16967,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_walking_d2",
@@ -17007,7 +17007,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_walking_d3",
@@ -17047,7 +17047,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person18_walking_d4",
@@ -17087,7 +17087,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_boxing_d1",
@@ -17127,7 +17127,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_boxing_d2",
@@ -17167,7 +17167,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_boxing_d3",
@@ -17207,7 +17207,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_boxing_d4",
@@ -17247,7 +17247,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handclapping_d1",
@@ -17287,7 +17287,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 84,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handclapping_d2",
@@ -17327,7 +17327,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handclapping_d3",
@@ -17367,7 +17367,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handclapping_d4",
@@ -17407,7 +17407,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handwaving_d1",
@@ -17447,7 +17447,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 144,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handwaving_d2",
@@ -17487,7 +17487,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handwaving_d3",
@@ -17527,7 +17527,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_handwaving_d4",
@@ -17567,7 +17567,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_jogging_d1",
@@ -17607,7 +17607,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_jogging_d2",
@@ -17647,7 +17647,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_jogging_d3",
@@ -17687,7 +17687,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_jogging_d4",
@@ -17727,7 +17727,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_running_d1",
@@ -17767,7 +17767,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_running_d2",
@@ -17807,7 +17807,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_running_d3",
@@ -17847,7 +17847,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_running_d4",
@@ -17887,7 +17887,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_walking_d1",
@@ -17927,7 +17927,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_walking_d2",
@@ -17967,7 +17967,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_walking_d3",
@@ -18007,7 +18007,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person19_walking_d4",
@@ -18047,7 +18047,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_boxing_d1",
@@ -18087,7 +18087,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_boxing_d2",
@@ -18127,7 +18127,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_boxing_d3",
@@ -18167,7 +18167,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_boxing_d4",
@@ -18207,7 +18207,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handclapping_d1",
@@ -18247,7 +18247,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handclapping_d2",
@@ -18287,7 +18287,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handclapping_d3",
@@ -18327,7 +18327,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handclapping_d4",
@@ -18367,7 +18367,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 125,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handwaving_d1",
@@ -18407,7 +18407,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handwaving_d2",
@@ -18447,7 +18447,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handwaving_d3",
@@ -18487,7 +18487,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 114,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_handwaving_d4",
@@ -18527,7 +18527,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_jogging_d1",
@@ -18567,7 +18567,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_jogging_d2",
@@ -18607,7 +18607,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_jogging_d3",
@@ -18647,7 +18647,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 65,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_jogging_d4",
@@ -18707,7 +18707,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_running_d2",
@@ -18747,7 +18747,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 35,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_running_d3",
@@ -18767,7 +18767,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_running_d4",
@@ -18807,7 +18807,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_walking_d1",
@@ -18847,7 +18847,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 162,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_walking_d2",
@@ -18887,7 +18887,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_walking_d3",
@@ -18927,7 +18927,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 105,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person20_walking_d4",
@@ -18967,7 +18967,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 75,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_boxing_d1",
@@ -19007,7 +19007,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_boxing_d2",
@@ -19047,7 +19047,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 142,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_boxing_d3",
@@ -19087,7 +19087,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_boxing_d4",
@@ -19127,7 +19127,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handclapping_d1",
@@ -19167,7 +19167,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handclapping_d2",
@@ -19207,7 +19207,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 116,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handclapping_d3",
@@ -19247,7 +19247,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handclapping_d4",
@@ -19287,7 +19287,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handwaving_d1",
@@ -19327,7 +19327,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handwaving_d2",
@@ -19367,7 +19367,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 158,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handwaving_d3",
@@ -19407,7 +19407,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 145,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_handwaving_d4",
@@ -19447,7 +19447,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_jogging_d1",
@@ -19487,7 +19487,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_jogging_d2",
@@ -19527,7 +19527,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_jogging_d3",
@@ -19567,7 +19567,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_jogging_d4",
@@ -19637,7 +19637,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_running_d2",
@@ -19707,7 +19707,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 52,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_running_d4",
@@ -19747,7 +19747,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 82,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_walking_d1",
@@ -19787,7 +19787,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 132,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_walking_d2",
@@ -19827,7 +19827,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_walking_d3",
@@ -19867,7 +19867,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person21_walking_d4",
@@ -19907,7 +19907,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_boxing_d1",
@@ -19937,7 +19937,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 74,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_boxing_d2",
@@ -19977,7 +19977,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 99,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_boxing_d3",
@@ -20017,7 +20017,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_boxing_d4",
@@ -20057,7 +20057,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handclapping_d1",
@@ -20097,7 +20097,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handclapping_d2",
@@ -20137,7 +20137,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handclapping_d3",
@@ -20177,7 +20177,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handclapping_d4",
@@ -20217,7 +20217,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handwaving_d1",
@@ -20257,7 +20257,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 175,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handwaving_d2",
@@ -20297,7 +20297,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handwaving_d3",
@@ -20337,7 +20337,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 155,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_handwaving_d4",
@@ -20377,7 +20377,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_jogging_d1",
@@ -20417,7 +20417,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 85,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_jogging_d2",
@@ -20457,7 +20457,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_jogging_d3",
@@ -20497,7 +20497,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_jogging_d4",
@@ -20557,7 +20557,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_running_d2",
@@ -20627,7 +20627,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_running_d4",
@@ -20667,7 +20667,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 102,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_walking_d1",
@@ -20707,7 +20707,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 152,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_walking_d2",
@@ -20747,7 +20747,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_walking_d3",
@@ -20787,7 +20787,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person22_walking_d4",
@@ -20827,7 +20827,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_boxing_d1",
@@ -20867,7 +20867,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 128,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_boxing_d2",
@@ -20907,7 +20907,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 82,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_boxing_d3",
@@ -20947,7 +20947,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 115,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_boxing_d4",
@@ -20987,7 +20987,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handclapping_d1",
@@ -21027,7 +21027,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handclapping_d2",
@@ -21067,7 +21067,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 142,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handclapping_d3",
@@ -21107,7 +21107,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handclapping_d4",
@@ -21147,7 +21147,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handwaving_d1",
@@ -21187,7 +21187,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handwaving_d2",
@@ -21227,7 +21227,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handwaving_d3",
@@ -21267,7 +21267,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 136,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_handwaving_d4",
@@ -21307,7 +21307,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 46,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_jogging_d1",
@@ -21347,7 +21347,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_jogging_d2",
@@ -21387,7 +21387,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 45,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_jogging_d3",
@@ -21427,7 +21427,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 60,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_jogging_d4",
@@ -21467,7 +21467,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 64,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_running_d2",
@@ -21517,7 +21517,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 50,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_running_d4",
@@ -21557,7 +21557,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_walking_d1",
@@ -21597,7 +21597,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 174,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_walking_d2",
@@ -21637,7 +21637,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 84,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_walking_d3",
@@ -21677,7 +21677,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 94,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person23_walking_d4",
@@ -21717,7 +21717,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 112,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_boxing_d1",
@@ -21757,7 +21757,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 122,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_boxing_d2",
@@ -21797,7 +21797,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 94,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_boxing_d3",
@@ -21837,7 +21837,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_boxing_d4",
@@ -21877,7 +21877,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 94,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handclapping_d1",
@@ -21917,7 +21917,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 92,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handclapping_d2",
@@ -21957,7 +21957,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 90,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handclapping_d3",
@@ -21997,7 +21997,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 86,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handclapping_d4",
@@ -22037,7 +22037,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 138,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handwaving_d1",
@@ -22077,7 +22077,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 140,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handwaving_d2",
@@ -22117,7 +22117,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handwaving_d3",
@@ -22157,7 +22157,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 134,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_handwaving_d4",
@@ -22197,7 +22197,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_jogging_d1",
@@ -22237,7 +22237,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_jogging_d2",
@@ -22277,7 +22277,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_jogging_d3",
@@ -22317,7 +22317,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 82,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_jogging_d4",
@@ -22387,7 +22387,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_running_d2",
@@ -22427,7 +22427,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 40,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_running_d3",
@@ -22467,7 +22467,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_running_d4",
@@ -22507,7 +22507,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_walking_d1",
@@ -22547,7 +22547,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 184,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_walking_d2",
@@ -22587,7 +22587,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 80,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_walking_d3",
@@ -22627,7 +22627,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 88,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person24_walking_d4",
@@ -22667,7 +22667,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_boxing_d1",
@@ -22707,7 +22707,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 108,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_boxing_d2",
@@ -22747,7 +22747,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_boxing_d3",
@@ -22787,7 +22787,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_boxing_d4",
@@ -22827,7 +22827,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 104,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handclapping_d1",
@@ -22867,7 +22867,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 124,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handclapping_d2",
@@ -22907,7 +22907,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handclapping_d3",
@@ -22947,7 +22947,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 126,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handclapping_d4",
@@ -22987,7 +22987,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 120,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handwaving_d1",
@@ -23027,7 +23027,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 110,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handwaving_d2",
@@ -23067,7 +23067,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 130,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handwaving_d3",
@@ -23107,7 +23107,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 118,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_handwaving_d4",
@@ -23147,7 +23147,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 58,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_jogging_d1",
@@ -23187,7 +23187,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 95,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_jogging_d2",
@@ -23227,7 +23227,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 62,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_jogging_d3",
@@ -23267,7 +23267,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 70,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_jogging_d4",
@@ -23307,7 +23307,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 42,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_running_d1",
@@ -23347,7 +23347,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 72,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_running_d2",
@@ -23387,7 +23387,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 48,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_running_d3",
@@ -23427,7 +23427,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 55,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_running_d4",
@@ -23467,7 +23467,7 @@
     "scenario": "1",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_walking_d1",
@@ -23507,7 +23507,7 @@
     "scenario": "2",
     "start_frame": 1,
     "end_frame": 162,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_walking_d2",
@@ -23547,7 +23547,7 @@
     "scenario": "3",
     "start_frame": 1,
     "end_frame": 106,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_walking_d3",
@@ -23587,7 +23587,7 @@
     "scenario": "4",
     "start_frame": 1,
     "end_frame": 100,
-    "split": ""
+    "split": "train"
   },
   {
     "video_id": "person25_walking_d4",
