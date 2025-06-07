@@ -100,11 +100,9 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         target_privacy = target_privacy.to(device)
 
         # Reset gradients
-        optimizer_P.zero_grad()
         optimizer_ET.zero_grad()
 
         # Freeze P, train E and T together
-        P.freeze()
         input_encoded = E.forward(input)
         action_pred = T.forward(input_encoded)
         frozen_privacy_pred = P.forward(input_encoded)
@@ -112,10 +110,8 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         loss_action.backward()
         optimizer_ET.step()
 
+        optimizer_P.zero_grad()
         # Freeze E and T, unfreeze and train P
-        P.unfreeze()
-        E.freeze()
-        T.freeze()
         frozen_input_encoded = E.forward(input)
         privacy_pred = P.forward(frozen_input_encoded)
         loss_privacy = privacy_loss.forward(privacy_pred, target_privacy)
@@ -123,9 +119,6 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         optimizer_P.step()
 
         # Unfreeze all models, record losses
-        E.unfreeze()
-        T.unfreeze()
-
         # Compute statistics
         acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
 
@@ -330,7 +323,7 @@ if __name__ == "__main__":
 
     # Initialize optimizer, scheduler and loss functions
     optim_ET = SGD(params=list(E.parameters())+list(T.parameters()), lr=lr)
-    optim_P = SGD(params=list(P.parameters()), lr=lr)
+    optim_P = SGD(params=P.parameters(), lr=lr)
     scheduler_ET = CosineAnnealingLR(optimizer=optim_ET, T_max=num_epochs)
     scheduler_P = CosineAnnealingLR(optimizer=optim_P, T_max=num_epochs)
     checkpoints = get_sorted_checkpoints()

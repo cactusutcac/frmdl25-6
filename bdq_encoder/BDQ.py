@@ -25,17 +25,3 @@ class BDQEncoder(nn.Module):
             x = layer.forward(x)
         
         return x
-    
-    def freeze(self):
-        """
-        Freezes the parameters to prevent/pause learning. 
-        """
-        for param in self.parameters():
-            param.requires_grad = False
-
-    def unfreeze(self):
-        """
-        Resumes learning for BDQ encoder parameters.
-        """
-        for param in self.parameters():
-            param.requires_grad = True

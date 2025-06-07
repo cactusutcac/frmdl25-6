@@ -28,7 +28,11 @@ class ActionRecognitionModel(nn.Module):
         model = model.eval()
         model = model.to(device)
         if fine_tune:
+            for param in model.parameters():
+                param.requires_grad = False
             model.blocks[-1].proj = nn.Linear(in_features = model.blocks[-1].proj.in_features, out_features = num_classes)
+            for param in model.blocks[-1].proj.parameters():
+                param.requires_grad = True
         self.model = model
         self.transform = ApplyTransformToKey(
             key="video",
@@ -77,12 +81,4 @@ class ActionRecognitionModel(nn.Module):
         pred_classes = preds.topk(k = 1).indices[0]
         pred_class_names = [self.id_to_classname[int(i)] for i in pred_classes]
         return pred_class_names
-
-    def freeze(self):
-        for param in self.parameters():
-            param.requires_grad = False
-
-    def unfreeze(self):
-        for param in self.parameters():
-            param.requires_grad = True
 # Adapted from: https://pytorch.org/hub/facebookresearch_pytorchvideo_resnet/
