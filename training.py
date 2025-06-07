@@ -7,7 +7,7 @@ from tqdm import tqdm
 from bdq_encoder.BDQ import BDQEncoder
 from action_recognition_model import ActionRecognitionModel
 from loss import ActionLoss, PrivacyLoss
-from preprocess import KTHBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues
+from preprocess import KTHBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues, NormalizeVideo
 from privacy_attribute_prediction_model import PrivacyAttributePredictor
 from pytorchvideo.transforms import UniformTemporalSubsample
 from torch.optim import SGD, Optimizer
@@ -301,6 +301,7 @@ if __name__ == "__main__":
         MultiScaleCrop(), # then, apply randomized multi-scale crop
         Resize(crop_size), # then, resize to (224, 224)
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
+        NormalizeVideo()
     ])
     train_data = KTHBDQDataset(
         root_dir=KTH_DATA_DIR,
@@ -318,6 +319,7 @@ if __name__ == "__main__":
         ConsecutiveTemporalSubsample(consecutive_frames), # first sample 32 consecutive frames
         CenterCrop(crop_size),  # then, we apply a center crop of (224, 224) without scaling (resizing)
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
+        NormalizeVideo()
     ])
     val_data = KTHBDQDataset(
         root_dir=KTH_DATA_DIR,
