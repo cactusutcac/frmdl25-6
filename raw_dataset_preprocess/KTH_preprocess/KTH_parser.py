@@ -39,7 +39,7 @@ def parse_sequences_txt(txt_path):
                         "scenario": scenario,
                         "start_frame": start,
                         "end_frame": end,
-                        "split": "train" if idx in [0, 1] else "val" if idx == 2 else "test" if idx == 3 else "" # 1st and 2nd clips used for training, 3rd for validation, 4th for testing
+                        "split": "train" if idx == 1 else "val" if idx == 2 else "test" if idx == 3 else "" # 1st clip used for training, 3rd for validation, 4th for testing
                     })
     return parsed
 
