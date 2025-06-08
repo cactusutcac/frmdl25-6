@@ -148,7 +148,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
     return total_loss_action, total_loss_privacy, total_acc_action, total_acc_privacy
 
 def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor, 
-                  loss):
+                  loss_f: nn.CrossEntropyLoss):
     """
     Function to perform one validation epoch of adversarial training from https://arxiv.org/abs/2208.02459
     Args:
@@ -156,8 +156,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
-        action_loss: criterion for optimizing action attribute prediction
-        privacy_loss: criterion for optimizing privacy attribute prediction
+        loss_f: criterion for optimizing attribute prediction
     """
     E.eval()
     T.eval()
@@ -184,11 +183,11 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
                 privacy_preds.append(P.forward(input_encoded[:, frame, :, :, :]))
 
             # Compute statistics
-            loss_action = loss.forward(action_pred, target_action)
+            loss_action = loss_f.forward(action_pred, target_action)
             loss_privacy = 0
             for frame in range(frames):
                 privacy_pred = privacy_preds[frame]
-                loss_privacy += loss.forward(privacy_pred, target_privacy)
+                loss_privacy += loss_f.forward(privacy_pred, target_privacy)
             loss_privacy /= frames
 
             acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
@@ -206,7 +205,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
 
 def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                          P: PrivacyAttributePredictor, optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, 
-                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy, last_epoch=0, num_epochs=50):
+                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy: nn.CrossEntropyLoss, last_epoch=0, num_epochs=50):
     """
     Function encapsulating the whole adversarial training process from https://arxiv.org/abs/2208.02459.
     If last_epoch >= num_epochs then only runs validation once.
@@ -239,7 +238,7 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
 
     if last_epoch >= num_epochs:
         val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P, 
-                                                                                            loss=cross_entropy)
+                                                                                            loss_f=cross_entropy)
         print(f"Action accuracy: {val_acc_action:.4f}, Privacy accuracy: {val_acc_privacy:.4f}")
         print(f"Action Loss: {val_loss_action:.4f}, Privacy Loss: {val_loss_privacy:.4f}")
 
@@ -250,7 +249,7 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
                                                                                                     optimizer_ET=optimizer_ET, optimizer_P=optimizer_P)
             
             val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P, 
-                                                                                            loss=cross_entropy)
+                                                                                            loss_f=cross_entropy)
 
             # Update learning rates
             scheduler_ET.step()
@@ -271,7 +270,7 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
             progress_loader.refresh()
 
 def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel, P: PrivacyAttributePredictor,
-                      loss, optimizer: Optimizer, mode: str):
+                      loss_f: nn.CrossEntropyLoss, optimizer: Optimizer, mode: str):
     """
     Function to perform one training epoch of validation training from https://arxiv.org/abs/2208.02459
     Args:
@@ -279,7 +278,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
-        loss: criterion for optimizing attribute prediction
+        loss_f: criterion for optimizing attribute prediction
         optimizer: SGD optimizer for the attribute predictor
     """
     # Set all components to training mode
@@ -307,8 +306,8 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
         # Pick random frame for 2D privacy predictor
         random_frame = random.randint(0, frozen_input_encoded.size(1) - 1)
         privacy_pred = P.forward(frozen_input_encoded[:, random_frame, :, :, :])
-        loss_action = loss.forward(action_pred, target_action)
-        loss_privacy = loss.forward(privacy_pred, target_privacy)
+        loss_action = loss_f.forward(action_pred, target_action)
+        loss_privacy = loss_f.forward(privacy_pred, target_privacy)
         if mode == 'action':
             loss = loss_action
         elif mode == 'privacy':
@@ -334,7 +333,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
 
 def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                     P: PrivacyAttributePredictor, optimizer: Optimizer, scheduler: LRScheduler,
-                    loss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=50):
+                    loss_f: nn.CrossEntropyLoss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=50):
     """
     Function encapsulating the whole validation training process from https://arxiv.org/abs/2208.02459.
     Args:
@@ -345,7 +344,7 @@ def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E:
         P: 2d resnet50 for predicting target privacy attributes
         optimizer: SGD optimizer for the attribute predictor
         scheduler: learning rate scheduler for updating learning rate each epoch for optimizer
-        loss: criterion for optimizing attribute prediction
+        loss_f: criterion for optimizing attribute prediction
         last_epoch (optional, int): checkpoint of last saved epoch
         num_epochs (optional, int): number of epochs to train for (default=50)
     """
@@ -361,10 +360,10 @@ def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E:
     with tqdm(range(last_epoch, num_epochs), total=num_epochs, initial=last_epoch, desc=f"{mode} ResNet training", unit="epoch", position=0, leave=True) as progress_loader:
         for epoch in progress_loader:
             train_loss_action, train_loss_privacy, train_acc_action, train_acc_privacy = train_once_resnet(train_dataloader=train_dataloader, E=E, T=T, P=P,
-                                                                                                           loss=loss, optimizer=optimizer, mode=mode)
+                                                                                                           loss_f=loss_f, optimizer=optimizer, mode=mode)
 
             val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P,
-                                                                                            loss=loss)
+                                                                                            loss_f=loss_f)
 
             # Update learning rates
             scheduler.step()
@@ -505,7 +504,7 @@ if __name__ == "__main__":
 
     resnet_training(train_dataloader=train_dataloader, val_dataloader=val_dataloader, E=E, T=T, P=P,
                     optimizer=optim, scheduler=scheduler,
-                    loss=cross_entropy,
+                    loss_f=cross_entropy,
                     writer=writer, mode=MODE_ACTION, last_epoch=last_epoch, num_epochs=num_epochs)
 
     # Initialize optimizer and scheduler
@@ -520,7 +519,7 @@ if __name__ == "__main__":
 
     resnet_training(train_dataloader=train_dataloader, val_dataloader=val_dataloader, E=E, T=T, P=P,
                     optimizer=optim, scheduler=scheduler,
-                    loss=cross_entropy,
+                    loss_f=cross_entropy,
                     writer=writer, mode=MODE_PRIVACY, last_epoch=last_epoch, num_epochs=num_epochs)
     writer.flush()
     writer.close()
