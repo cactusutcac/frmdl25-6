@@ -7,7 +7,6 @@ class PrivacyAttributePredictor(nn.Module):
     """
     Privacy Attribute Prediction Model.
     Uses a 2D ResNet-50 to predict privacy attributes from BDQ-encoded video frames.
-    The softmax outputs from each frame are averaged.
     """
     def __init__(self, num_privacy_classes, pretrained_resnet=True):
         """
@@ -45,16 +44,13 @@ class PrivacyAttributePredictor(nn.Module):
                 W = width
 
         Returns:
-            torch.Tensor: softmax probabilities for privacy attributes.
+            torch.Tensor: logits for privacy attributes.
                           Shape: (B, num_privacy_classes)
         """
         # Get logits from the ResNet feature extractor for all (B) frames
         logits_all_frames = self.resnet_feature_extractor(bdq_encoded_frame) # Shape: (B, num_privacy_classes)
 
-        # Apply softmax to get probabilities for each frame
-        softmax_all_frames = F.softmax(logits_all_frames, dim=1) # Shape: (B, num_privacy_classes)
-
-        return softmax_all_frames
+        return logits_all_frames
 
 
 if __name__ == "__main__":
