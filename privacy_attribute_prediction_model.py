@@ -51,10 +51,7 @@ class PrivacyAttributePredictor(nn.Module):
         # Get logits from the ResNet feature extractor for all (B) frames
         logits_all_frames = self.resnet_feature_extractor(bdq_encoded_frame) # Shape: (B, num_privacy_classes)
 
-        # Apply softmax to get probabilities for each frame
-        softmax_all_frames = F.softmax(logits_all_frames, dim=1) # Shape: (B, num_privacy_classes)
-
-        return softmax_all_frames
+        return logits_all_frames
 
 
 if __name__ == "__main__":

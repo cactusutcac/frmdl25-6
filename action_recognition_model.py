@@ -61,10 +61,7 @@ class ActionRecognitionModel(nn.Module):
         x = torch.transpose(x, -3, -4)
         logits = self.model(x)  # Get prediction logits from 3d resnet. Shape: (B, num_classes)
 
-        # Apply softmax to get and return probabilities of each label
-        logits_softmax = F.softmax(logits, dim=1)
-        
-        return logits_softmax
+        return logits
 
     def test(self, video_path):
         video = EncodedVideo.from_path(video_path)
