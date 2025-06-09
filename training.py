@@ -19,7 +19,6 @@ import os
 from torch.utils.tensorboard import SummaryWriter
 import random
 from torch import nn
-import torch.nn.functional as F
 
 # Setup checkpointing
 COLAB_PATH = os.getenv('COLAB_PATH')
@@ -128,7 +127,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         # Freeze E and T, unfreeze and train P
         frozen_input_encoded = E.forward(input)
         privacy_pred = P.forward(frozen_input_encoded[:, random_frame, :, :, :])
-        loss_privacy = privacy_loss.forward(F.softmax(privacy_pred, dim=1), target_privacy)
+        loss_privacy = privacy_loss.forward(privacy_pred, target_privacy)
         loss_privacy.backward()
         optimizer_P.step()
 
