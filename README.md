@@ -55,10 +55,10 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ```bash
 pip install -r requirements.txt
 ```
-2. Preprocess datasets:
-> todo 
-3. Adversarial training: 
-> todo 
+1. Adversarial training: 
+```bash
+python training.py 
+```
 
 ## Reproducing Figure 3 
 > todo 
