@@ -37,8 +37,8 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
     - `.../IXMAS_preprocess/IXMAS_720`: 720 manually selected representative frames 
     - `.../IXMAS_preprocess/IXMAS_utils` 
       - `.../ixmas_extract_frame.py`: extracts and saves a representative frame from each IXMAS video 
-      - `.../IXMAS_utils/ixmas_6_vid.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_extract_vid.py`: locates and copies videos matching selected frame names (e.g., for `IXMAS_720/`) 
+      - `.../IXMAS_utils/ixmas_extract_vid_class.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_parser.py`: generates clip metadata from IXMAS video filenames 
 
 ### Models & Training 
@@ -55,7 +55,7 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ```bash
 pip install -r requirements.txt
 ```
-1. Adversarial training: 
+2. Adversarial training: 
 ```bash
 python training.py 
 ```
