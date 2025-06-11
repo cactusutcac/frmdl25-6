@@ -11,5 +11,5 @@ class Difference(nn.Module):
         x: the input frames tensor of shape (B, T, C, H, W), i.e. video with T frames
     """
     def forward(self, x):
-        d = x.roll(-1, dims=1) - x
-        return d
+        d = x - x.roll(1, dims=1)
+        return d[:, 1:, :, :, :]
