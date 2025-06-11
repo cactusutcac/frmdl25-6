@@ -442,7 +442,7 @@ def main(dataset):
     ])
 
     # Dynamically load dataset
-    if args.dataset == 'kth':
+    if dataset == 'kth':
         train_data = KTHBDQDataset(
             root_dir=KTH_DATA_DIR,
             json_path=KTH_LABELS_DIR,
@@ -455,7 +455,7 @@ def main(dataset):
             transform=val_transform,
             split="val",
         )
-    elif args.dataset == 'ixmas':
+    elif dataset == 'ixmas':
         print(f"IXMAS_LABELS_DIR used: {IXMAS_LABELS_DIR}")
         train_data = IXMASBDQDataset(
             root_dir=IXMAS_DATA_DIR,
