@@ -7,7 +7,7 @@ from tqdm import tqdm
 from bdq_encoder.BDQ import BDQEncoder
 from action_recognition_model import ActionRecognitionModel
 from loss import ActionLoss, PrivacyLoss
-from preprocess import KTHBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues, NormalizeVideo
+from preprocess import KTHBDQDataset, IXMASBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues, NormalizeVideo
 from privacy_attribute_prediction_model import PrivacyAttributePredictor
 from pytorchvideo.transforms import UniformTemporalSubsample
 from torch.optim import SGD, Optimizer
@@ -19,6 +19,8 @@ import os
 from torch.utils.tensorboard import SummaryWriter
 import random
 from torch import nn
+
+import argparse
 
 # Setup checkpointing
 COLAB_PATH = os.getenv('COLAB_PATH')
@@ -38,7 +40,6 @@ device = torch.accelerator.current_accelerator() if torch.accelerator.is_availab
 torch.manual_seed(42)
 np.random.seed(42)
 random.seed(42)
-
 
 def get_sorted_checkpoints(checkpoint_path: str):
     checkpoints = []
@@ -152,7 +153,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
     """
     Function to perform one validation epoch of adversarial training from https://arxiv.org/abs/2208.02459
     Args:
-        val_dataloader: DataLoader for the validation split of the KTH dataset
+        val_dataloader: DataLoader for the validation split of the dataset
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
@@ -210,8 +211,8 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
     Function encapsulating the whole adversarial training process from https://arxiv.org/abs/2208.02459.
     If last_epoch >= num_epochs then only runs validation once.
     Args:
-        train_dataloader: DataLoader for the training split of the KTH dataset
-        val_dataloader: DataLoader for the validation split of the KTH dataset
+        train_dataloader: DataLoader for the training split of the dataset
+        val_dataloader: DataLoader for the validation split of the dataset
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
@@ -274,7 +275,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
     """
     Function to perform one training epoch of validation training from https://arxiv.org/abs/2208.02459
     Args:
-        train_dataloader: DataLoader for the training split of the KTH dataset
+        train_dataloader: DataLoader for the training split of the dataset
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
@@ -337,8 +338,8 @@ def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E:
     """
     Function encapsulating the whole validation training process from https://arxiv.org/abs/2208.02459.
     Args:
-        train_dataloader: DataLoader for the training split of the KTH dataset
-        val_dataloader: DataLoader for the validation split of the KTH dataset
+        train_dataloader: DataLoader for the training split of the dataset
+        val_dataloader: DataLoader for the validation split of the dataset
         E: the BDQ encoder
         T: 3d resnet50 for predicting target action attributes
         P: 2d resnet50 for predicting target privacy attributes
@@ -411,19 +412,26 @@ def load_resnet_train_checkpoint(T: ActionRecognitionModel, P: PrivacyAttributeP
     scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
 
 if __name__ == "__main__":
-    # Specify location of KTH dataset and labels file
+    parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
+    parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
+                        help='Dataset to use: "KTH" or "IXMAS"')
+    args = parser.parse_args()
+
+    # Specify location of datasets and labels file
     KTH_DATA_DIR = "./datasets/KTH"
     KTH_LABELS_DIR = "./datasets/kth_clips.json"
+    IXMAS_DATA_DIR = './datasets/IXMAS'
+    IXMAS_LABELS_DIR = './datasets/ixmas_clips_6.json'
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
     num_epochs = 50
     lr = 0.001
     batch_size = 4
-    consecutive_frames = 24
+    consecutive_frames = 24 # Not 32 due to hardware limitation 
     crop_size = (224, 224)
     writer = SummaryWriter(log_dir=os.path.join(CHECKPOINT_PATH, "runs"))
 
-    # Load KTH dataset. Apply transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
+    # Difine transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
     train_transform = Compose([
         ConsecutiveTemporalSubsample(consecutive_frames), # first, sample 32 consecutive frames
         MultiScaleCrop(), # then, apply randomized multi-scale crop
@@ -431,29 +439,47 @@ if __name__ == "__main__":
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
         NormalizeVideo()
     ])
-    train_data = KTHBDQDataset(
-        root_dir=KTH_DATA_DIR,
-        json_path=KTH_LABELS_DIR,
-        transform=train_transform,
-        split="train",
-    )
-    train_dataloader = DataLoader(
-        train_data,
-        batch_size=batch_size,
-        num_workers=4,
-    )
-    # Load validation dataset according to the same Section 4.2
     val_transform = Compose([
         ConsecutiveTemporalSubsample(consecutive_frames), # first sample 32 consecutive frames
         CenterCrop(crop_size),  # then, we apply a center crop of (224, 224) without scaling (resizing)
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
         NormalizeVideo()
     ])
-    val_data = KTHBDQDataset(
-        root_dir=KTH_DATA_DIR,
-        json_path=KTH_LABELS_DIR,
-        transform=val_transform,
-        split="val",
+
+    # Dynamically load dataset
+    if args.dataset == 'kth':
+        train_data = KTHBDQDataset(
+            root_dir=KTH_DATA_DIR,
+            json_path=KTH_LABELS_DIR,
+            transform=train_transform,
+            split="train",
+        )
+        val_data = KTHBDQDataset(
+            root_dir=KTH_DATA_DIR,
+            json_path=KTH_LABELS_DIR,
+            transform=val_transform,
+            split="val",
+        )
+    elif args.dataset == 'ixmas':
+        print(f"IXMAS_LABELS_DIR used: {IXMAS_LABELS_DIR}")
+        train_data = IXMASBDQDataset(
+            root_dir=IXMAS_DATA_DIR,
+            json_path=IXMAS_LABELS_DIR,
+            transform=train_transform,
+            split="train",
+        )
+        val_data = IXMASBDQDataset(
+            root_dir=IXMAS_DATA_DIR,
+            json_path=IXMAS_LABELS_DIR,
+            transform=val_transform,
+            split="val",
+        )
+    
+    # Wrap in DataLoaders
+    train_dataloader = DataLoader(
+        train_data,
+        batch_size=batch_size,
+        num_workers=4,
     )
     val_dataloader = DataLoader(
         val_data,
