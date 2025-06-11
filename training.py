@@ -22,6 +22,8 @@ from torch import nn
 
 import argparse
 
+from visualization.quantization_steps import save_quantizer_mapping 
+
 # Setup checkpointing
 COLAB_PATH = os.getenv('COLAB_PATH')
 CHECKPOINT_PATH = "checkpoints" if COLAB_PATH is None else COLAB_PATH  # "checkpoints/checkpoint_1.tar"
@@ -206,7 +208,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
 
 def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                          P: PrivacyAttributePredictor, optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, 
-                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy: nn.CrossEntropyLoss, last_epoch=0, num_epochs=50):
+                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy: nn.CrossEntropyLoss, last_epoch=0, num_epochs=2):#fixme
     """
     Function encapsulating the whole adversarial training process from https://arxiv.org/abs/2208.02459.
     If last_epoch >= num_epochs then only runs validation once.
@@ -334,7 +336,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
 
 def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                     P: PrivacyAttributePredictor, optimizer: Optimizer, scheduler: LRScheduler,
-                    loss_f: nn.CrossEntropyLoss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=50):
+                    loss_f: nn.CrossEntropyLoss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=2):#fixme
     """
     Function encapsulating the whole validation training process from https://arxiv.org/abs/2208.02459.
     Args:
@@ -419,7 +421,7 @@ def main(dataset):
     IXMAS_LABELS_DIR = './datasets/ixmas_clips_6.json'
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
-    num_epochs = 50
+    num_epochs = 2 #fixme
     lr = 0.001
     batch_size = 4
     consecutive_frames = 24 # Not 32 due to hardware limitation 
@@ -544,6 +546,9 @@ def main(dataset):
                     writer=writer, mode=MODE_PRIVACY, last_epoch=last_epoch, num_epochs=num_epochs)
     writer.flush()
     writer.close()
+
+    # Save quantizer curve after training    
+    save_quantizer_mapping(E.encoder[2], f"quant_steps_{dataset}.csv", device="cuda")#fixme
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
