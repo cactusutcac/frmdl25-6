@@ -191,7 +191,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
                 loss_privacy += loss_f.forward(privacy_pred, target_privacy)
             loss_privacy /= frames
 
-            acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
+            acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P)
 
             total_loss_action += loss_action.item()
             total_loss_privacy += loss_privacy.item()
@@ -318,7 +318,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
 
         # record losses
         # Compute statistics
-        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, random_frame)
+        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame)
 
         total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
