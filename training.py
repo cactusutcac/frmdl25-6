@@ -419,7 +419,7 @@ def main(dataset):
     IXMAS_LABELS_DIR = './datasets/ixmas_clips_6.json'
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
-    num_epochs = 2
+    num_epochs = 50
     lr = 0.001
     batch_size = 4
     consecutive_frames = 24 # Not 32 due to hardware limitation 
