@@ -28,11 +28,11 @@ class ActionRecognitionModel(nn.Module):
         model = model.eval()
         model = model.to(device)
         if fine_tune:
-            for param in model.parameters():
-                param.requires_grad = False
+            # for param in model.parameters():
+            #     param.requires_grad = False
             model.blocks[-1].proj = nn.Linear(in_features = model.blocks[-1].proj.in_features, out_features = num_classes)
-            for param in model.blocks[-1].proj.parameters():
-                param.requires_grad = True
+            # for param in model.blocks[-1].proj.parameters():
+            #     param.requires_grad = True
         self.model = model
         self.transform = ApplyTransformToKey(
             key="video",
