@@ -60,7 +60,7 @@ def delete_old_checkpoints(checkpoint_path: str):
         for file, _ in checkpoints[:-2]:
             os.remove(file)
 
-def compute_accuracy(input, target_action, target_privacy, E, T, random_frame: int | None = None):
+def compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame: int | None = None):
     """
     Computes action and privacy prediction accuracy
     Args:
@@ -134,7 +134,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
 
         # Unfreeze all models, record losses
         # Compute statistics
-        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, random_frame)
+        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame)
 
         total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
