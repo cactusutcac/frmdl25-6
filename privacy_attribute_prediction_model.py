@@ -23,13 +23,13 @@ class PrivacyAttributePredictor(nn.Module):
         else:
             self.resnet_feature_extractor = models.resnet50(weights=None)
 
-        for param in self.resnet_feature_extractor.parameters():
-            param.requires_grad = False
+        # for param in self.resnet_feature_extractor.parameters():
+        #     param.requires_grad = False
         # Replace the final fully connected layer for the new number of privacy classes
         num_ftrs = self.resnet_feature_extractor.fc.in_features
         self.resnet_feature_extractor.fc = nn.Linear(num_ftrs, num_privacy_classes)
-        for param in self.resnet_feature_extractor.fc.parameters():
-            param.requires_grad = True
+        # for param in self.resnet_feature_extractor.fc.parameters():
+        #     param.requires_grad = True
 
     def forward(self, bdq_encoded_frame):
         """
