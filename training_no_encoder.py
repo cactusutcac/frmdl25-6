@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
-from bdq_encoder.BDQ import BDQEncoder
+from bdq_encoder.BDQ_disabled import BDQEncoder
 from action_recognition_model import ActionRecognitionModel
 from loss import ActionLoss, PrivacyLoss
 from preprocess import KTHBDQDataset, IXMASBDQDataset, ConsecutiveTemporalSubsample, MultiScaleCrop, NormalizePixelValues, NormalizeVideo
@@ -21,8 +21,6 @@ import random
 from torch import nn
 
 import argparse
-
-from visualization.quantization_steps import save_quantizer_mapping 
 
 # Setup checkpointing
 COLAB_PATH = os.getenv('COLAB_PATH')
@@ -546,9 +544,6 @@ def main(dataset):
                     writer=writer, mode=MODE_PRIVACY, last_epoch=last_epoch, num_epochs=num_epochs)
     writer.flush()
     writer.close()
-
-    # Save quantizer curve after training 
-    save_quantizer_mapping(E.encoder[2], f"quant_steps_{dataset}.csv", device="cuda")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
