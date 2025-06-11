@@ -411,12 +411,7 @@ def load_resnet_train_checkpoint(T: ActionRecognitionModel, P: PrivacyAttributeP
     optim.load_state_dict(checkpoint['optim_state_dict'])
     scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
-    parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
-                        help='Dataset to use: "KTH" or "IXMAS"')
-    args = parser.parse_args()
-
+def main(args):
     # Specify location of datasets and labels file
     KTH_DATA_DIR = "./datasets/KTH"
     KTH_LABELS_DIR = "./datasets/kth_clips.json"
@@ -549,3 +544,10 @@ if __name__ == "__main__":
                     writer=writer, mode=MODE_PRIVACY, last_epoch=last_epoch, num_epochs=num_epochs)
     writer.flush()
     writer.close()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
+    parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
+                        help='Dataset to use: "KTH" or "IXMAS"')
+    args = parser.parse_args()
+    main(args)
