@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 def plot_quantization_curve(csv_path, dataset_name, output_file):
     df = pd.read_csv(csv_path)
 
-    plt.figure(figsize=(6, 6))
+    plt.figure(figsize=(8, 8))
     plt.step(df["input"], df["init_output"], where="post",
          label="Initialized", color="blue", linestyle="--", alpha=0.5)
     plt.step(df["input"], df["learned_output"], where="post",

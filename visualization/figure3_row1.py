@@ -37,8 +37,8 @@ def plot_tradeoff_tensorboard(log_root_bdq, log_root_orig, tag_action, tag_priva
     privacy_orig *= 100
 
     plt.figure(figsize=(8,8))
-    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='o', s=100)
-    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', s=100)
+    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='s', color='orange', s=100)
+    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', color='red', s=100) 
     plt.xlabel("Identity Accuracy (%)", fontsize=20)
     plt.ylabel("Action Accuracy (%)", fontsize=20)
     plt.xticks(fontsize=14)
