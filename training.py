@@ -206,7 +206,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
 
 def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                          P: PrivacyAttributePredictor, optimizer_ET: Optimizer, optimizer_P: Optimizer, scheduler_ET: LRScheduler, 
-                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy: nn.CrossEntropyLoss, last_epoch=0, num_epochs=50):
+                         scheduler_P: LRScheduler, action_loss: ActionLoss, privacy_loss: PrivacyLoss, writer: SummaryWriter, cross_entropy: nn.CrossEntropyLoss, last_epoch=0, num_epochs=2):#Fixme
     """
     Function encapsulating the whole adversarial training process from https://arxiv.org/abs/2208.02459.
     If last_epoch >= num_epochs then only runs validation once.
@@ -334,7 +334,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
 
 def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
                     P: PrivacyAttributePredictor, optimizer: Optimizer, scheduler: LRScheduler,
-                    loss_f: nn.CrossEntropyLoss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=50):
+                    loss_f: nn.CrossEntropyLoss, writer: SummaryWriter, mode: str, last_epoch=0, num_epochs=2):#fixme
     """
     Function encapsulating the whole validation training process from https://arxiv.org/abs/2208.02459.
     Args:
@@ -411,7 +411,7 @@ def load_resnet_train_checkpoint(T: ActionRecognitionModel, P: PrivacyAttributeP
     optim.load_state_dict(checkpoint['optim_state_dict'])
     scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
 
-def main(args):
+def main(dataset):
     # Specify location of datasets and labels file
     KTH_DATA_DIR = "./datasets/KTH"
     KTH_LABELS_DIR = "./datasets/kth_clips.json"
@@ -419,7 +419,7 @@ def main(args):
     IXMAS_LABELS_DIR = './datasets/ixmas_clips_6.json'
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
-    num_epochs = 50
+    num_epochs = 2
     lr = 0.001
     batch_size = 4
     consecutive_frames = 24 # Not 32 due to hardware limitation 
@@ -550,4 +550,4 @@ if __name__ == "__main__":
     parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
                         help='Dataset to use: "KTH" or "IXMAS"')
     args = parser.parse_args()
-    main(args)
+    main(args.dataset)
