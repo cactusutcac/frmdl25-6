@@ -461,6 +461,7 @@ if __name__ == "__main__":
             split="val",
         )
     elif args.dataset == 'ixmas':
+        print(f"IXMAS_LABELS_DIR used: {IXMAS_LABELS_DIR}")
         train_data = IXMASBDQDataset(
             root_dir=IXMAS_DATA_DIR,
             json_path=IXMAS_LABELS_DIR,
