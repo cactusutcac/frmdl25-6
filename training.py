@@ -60,7 +60,7 @@ def delete_old_checkpoints(checkpoint_path: str):
         for file, _ in checkpoints[:-2]:
             os.remove(file)
 
-def compute_accuracy(input, target_action, target_privacy, random_frame: int | None = None):
+def compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame: int | None = None):
     """
     Computes action and privacy prediction accuracy
     Args:
@@ -134,7 +134,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
 
         # Unfreeze all models, record losses
         # Compute statistics
-        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, random_frame)
+        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame)
 
         total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
@@ -191,7 +191,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
                 loss_privacy += loss_f.forward(privacy_pred, target_privacy)
             loss_privacy /= frames
 
-            acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy)
+            acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P)
 
             total_loss_action += loss_action.item()
             total_loss_privacy += loss_privacy.item()
@@ -318,7 +318,7 @@ def train_once_resnet(train_dataloader: DataLoader, E: BDQEncoder, T: ActionReco
 
         # record losses
         # Compute statistics
-        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, random_frame)
+        acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame)
 
         total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
@@ -411,12 +411,7 @@ def load_resnet_train_checkpoint(T: ActionRecognitionModel, P: PrivacyAttributeP
     optim.load_state_dict(checkpoint['optim_state_dict'])
     scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
-    parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
-                        help='Dataset to use: "KTH" or "IXMAS"')
-    args = parser.parse_args()
-
+def main(dataset):
     # Specify location of datasets and labels file
     KTH_DATA_DIR = "./datasets/KTH"
     KTH_LABELS_DIR = "./datasets/kth_clips.json"
@@ -424,7 +419,7 @@ if __name__ == "__main__":
     IXMAS_LABELS_DIR = './datasets/ixmas_clips_6.json'
 
     # Set parameters according to https://arxiv.org/abs/2208.02459
-    num_epochs = 50
+    num_epochs = 2
     lr = 0.001
     batch_size = 4
     consecutive_frames = 24 # Not 32 due to hardware limitation 
@@ -447,7 +442,7 @@ if __name__ == "__main__":
     ])
 
     # Dynamically load dataset
-    if args.dataset == 'kth':
+    if dataset == 'kth':
         train_data = KTHBDQDataset(
             root_dir=KTH_DATA_DIR,
             json_path=KTH_LABELS_DIR,
@@ -460,7 +455,7 @@ if __name__ == "__main__":
             transform=val_transform,
             split="val",
         )
-    elif args.dataset == 'ixmas':
+    elif dataset == 'ixmas':
         print(f"IXMAS_LABELS_DIR used: {IXMAS_LABELS_DIR}")
         train_data = IXMASBDQDataset(
             root_dir=IXMAS_DATA_DIR,
@@ -549,3 +544,10 @@ if __name__ == "__main__":
                     writer=writer, mode=MODE_PRIVACY, last_epoch=last_epoch, num_epochs=num_epochs)
     writer.flush()
     writer.close()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Train BDQ model on selected dataset. ")
+    parser.add_argument('--dataset', type=str, choices=['kth', 'ixmas'], required=True,
+                        help='Dataset to use: "KTH" or "IXMAS"')
+    args = parser.parse_args()
+    main(args.dataset)
