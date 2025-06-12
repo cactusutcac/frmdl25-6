@@ -204,6 +204,8 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
         total_acc_action /= len(val_dataloader.dataset)
         total_acc_privacy /= len(val_dataloader.dataset)
 
+        print(f"Action accuracy: {total_acc_action:.4f}, Privacy accuracy: {total_acc_privacy:.4f}")
+        print(f"Action Loss: {total_loss_action:.4f}, Privacy Loss: {total_loss_privacy:.4f}")
         return total_loss_action, total_loss_privacy, total_acc_action, total_acc_privacy
 
 def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitionModel,
@@ -250,9 +252,18 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
             train_loss_action, train_loss_privacy, train_acc_action, train_acc_privacy = train_once(train_dataloader=train_dataloader, E=E, T=T, P=P, 
                                                                                                     action_loss=action_loss, privacy_loss=privacy_loss, 
                                                                                                     optimizer_ET=optimizer_ET, optimizer_P=optimizer_P)
-            
-            val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P, 
-                                                                                            loss_f=cross_entropy)
+            print(f"Action accuracy: {train_acc_action:.4f}, Privacy accuracy: {train_acc_privacy:.4f}")
+            print(f"Action Loss: {train_loss_action:.4f}, Privacy Loss: {train_loss_privacy:.4f}")
+
+            if epoch % 10 == 0 or epoch >= num_epochs - 2:
+                val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(
+                    val_dataloader=val_dataloader, E=E, T=T, P=P,
+                    loss_f=cross_entropy)
+            else:
+                val_loss_action = torch.tensor(0.)
+                val_loss_privacy = torch.tensor(0.)
+                val_acc_action = torch.tensor(0.)
+                val_acc_privacy = torch.tensor(0.)
 
             # Update learning rates
             scheduler_ET.step()
@@ -360,13 +371,27 @@ def resnet_training(train_dataloader: DataLoader, val_dataloader: DataLoader, E:
         }, os.path.join(CHECKPOINT_PATH, mode, f"checkpoint_{epoch}.tar"))
         delete_old_checkpoints(os.path.join(CHECKPOINT_PATH, mode))
 
+    if last_epoch >= num_epochs:
+        val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P,
+                                                                                            loss_f=loss_f)
+        print(f"Action accuracy: {val_acc_action:.4f}, Privacy accuracy: {val_acc_privacy:.4f}")
+        print(f"Action Loss: {val_loss_action:.4f}, Privacy Loss: {val_loss_privacy:.4f}")
+
     with tqdm(range(last_epoch, num_epochs), total=num_epochs, initial=last_epoch, desc=f"{mode} ResNet training", unit="epoch", position=0, leave=True) as progress_loader:
         for epoch in progress_loader:
             train_loss_action, train_loss_privacy, train_acc_action, train_acc_privacy = train_once_resnet(train_dataloader=train_dataloader, E=E, T=T, P=P,
                                                                                                            loss_f=loss_f, optimizer=optimizer, mode=mode)
+            print(f"Action accuracy: {train_acc_action:.4f}, Privacy accuracy: {train_acc_privacy:.4f}")
+            print(f"Action Loss: {train_loss_action:.4f}, Privacy Loss: {train_loss_privacy:.4f}")
 
-            val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P,
-                                                                                            loss_f=loss_f)
+            if epoch % 10 == 0 or epoch >= num_epochs - 2:
+                val_loss_action, val_loss_privacy, val_acc_action, val_acc_privacy = validate_once(val_dataloader=val_dataloader, E=E, T=T, P=P,
+                                                                                                loss_f=loss_f)
+            else:
+                val_loss_action = torch.tensor(0.)
+                val_loss_privacy = torch.tensor(0.)
+                val_acc_action = torch.tensor(0.)
+                val_acc_privacy = torch.tensor(0.)
 
             # Update learning rates
             scheduler.step()
