@@ -71,15 +71,17 @@ def compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame
         target_privacy: target labels for privacy attribute
     """
     with torch.no_grad():
-        input_encoded = E.forward(input)
-        T_pred = T.forward(input_encoded).argmax(dim=1)
+        # input_encoded = E.forward(input)
+        input_encoded = input
+        # T_pred = T.forward(input_encoded).argmax(dim=1)
         privacy_acc = 0.0
         frames = range(input_encoded.size(1)) if random_frame is None else [random_frame] #T
         for frame in frames:
             P_pred = P.forward(input_encoded[:, frame, :, :, :]).argmax(dim=1)
             privacy_acc += torch.sum(P_pred == target_privacy)
 
-        action_acc = torch.sum(T_pred == target_action)
+        # action_acc = torch.sum(T_pred == target_action)
+        action_acc = torch.tensor(0.)
         privacy_acc /= len(frames)
 
         return action_acc, privacy_acc
@@ -99,8 +101,8 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         optimizer_P: SGD optimizer for the privacy attribute predictor
     """
     # Set all components to training mode
-    E.train()
-    T.train()
+    # E.train()
+    # T.train()
     P.train()
 
     total_loss_action = torch.tensor(0.)
@@ -113,22 +115,24 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         target_action = target_action.to(device)
         target_privacy = target_privacy.to(device)
 
-        # Reset gradients
-        optimizer_ET.zero_grad()
-
-        # Freeze P, train E and T together
-        input_encoded = E.forward(input)
-        action_pred = T.forward(input_encoded)
-        # Pick random frame for 2D privacy predictor
+        # # Reset gradients
+        # optimizer_ET.zero_grad()
+        #
+        # # Freeze P, train E and T together
+        # input_encoded = E.forward(input)
+        input_encoded = input
+        # action_pred = T.forward(input_encoded)
+        # # Pick random frame for 2D privacy predictor
         random_frame = random.randint(0, input_encoded.size(1) - 1)
-        frozen_privacy_pred = P.forward(input_encoded[:, random_frame, :, :, :])
-        loss_action = action_loss.forward(action_pred, frozen_privacy_pred, target_action)
-        loss_action.backward()
-        optimizer_ET.step()
+        # frozen_privacy_pred = P.forward(input_encoded[:, random_frame, :, :, :])
+        # loss_action = action_loss.forward(action_pred, frozen_privacy_pred, target_action)
+        # loss_action.backward()
+        # optimizer_ET.step()
 
         optimizer_P.zero_grad()
         # Freeze E and T, unfreeze and train P
-        frozen_input_encoded = E.forward(input)
+        # frozen_input_encoded = E.forward(input)
+        frozen_input_encoded = input
         privacy_pred = P.forward(frozen_input_encoded[:, random_frame, :, :, :])
         loss_privacy = privacy_loss.forward(privacy_pred, target_privacy)
         loss_privacy.backward()
@@ -138,7 +142,7 @@ def train_once(train_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognition
         # Compute statistics
         acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P, random_frame)
 
-        total_loss_action += loss_action.item()
+        # total_loss_action += loss_action.item()
         total_loss_privacy += loss_privacy.item()
 
         total_acc_action += acc_action.item()
@@ -161,8 +165,8 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
         P: 2d resnet50 for predicting target privacy attributes
         loss_f: criterion for optimizing attribute prediction
     """
-    E.eval()
-    T.eval()
+    # E.eval()
+    # T.eval()
     P.eval()
 
     with torch.no_grad():
@@ -178,15 +182,16 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
             target_privacy = target_privacy.to(device)
 
             # Perform evaluation with models on respective inputs
-            input_encoded = E.forward(input)
-            action_pred = T.forward(input_encoded)
+            # input_encoded = E.forward(input)
+            input_encoded = input
+            # action_pred = T.forward(input_encoded)
             privacy_preds = []
             frames = input_encoded.size(1) # T
             for frame in range(frames):
                 privacy_preds.append(P.forward(input_encoded[:, frame, :, :, :]))
 
             # Compute statistics
-            loss_action = loss_f.forward(action_pred, target_action)
+            # loss_action = loss_f.forward(action_pred, target_action)
             loss_privacy = 0
             for frame in range(frames):
                 privacy_pred = privacy_preds[frame]
@@ -195,7 +200,7 @@ def validate_once(val_dataloader: DataLoader, E: BDQEncoder, T: ActionRecognitio
 
             acc_action, acc_privacy = compute_accuracy(input, target_action, target_privacy, E, T, P)
 
-            total_loss_action += loss_action.item()
+            # total_loss_action += loss_action.item()
             total_loss_privacy += loss_privacy.item()
             total_acc_action += acc_action.item()
             total_acc_privacy += acc_privacy.item()
@@ -266,7 +271,7 @@ def adversarial_training(train_dataloader: DataLoader, val_dataloader: DataLoade
                 val_acc_privacy = torch.tensor(0.)
 
             # Update learning rates
-            scheduler_ET.step()
+            # scheduler_ET.step()
             scheduler_P.step()
             save_checkpoint(epoch + 1)
             writer.add_scalars("Loss", {'train_loss_action': train_loss_action,
@@ -456,8 +461,9 @@ def main(dataset):
     # Difine transformation sequence according to Section 4.2 in https://arxiv.org/abs/2208.02459
     train_transform = Compose([
         ConsecutiveTemporalSubsample(consecutive_frames), # first, sample 32 consecutive frames
-        MultiScaleCrop(), # then, apply randomized multi-scale crop
-        Resize(crop_size), # then, resize to (224, 224)
+        # MultiScaleCrop(), # then, apply randomized multi-scale crop
+        # Resize(crop_size), # then, resize to (224, 224)
+        CenterCrop(crop_size),
         NormalizePixelValues(), # (also normalize pixel values for pytorch)
         NormalizeVideo()
     ])
