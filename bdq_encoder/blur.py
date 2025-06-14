@@ -27,7 +27,7 @@ class LearnableGaussian(nn.Module):
         gauss = gauss / gauss.sum()
 
         # Make 2D kernel
-        kernel = 0.5 / (torch.pi * (sigma ** 2)) * torch.outer(gauss, gauss)
+        kernel = torch.outer(gauss, gauss)
         kernel = kernel.expand(C_kernel, 1, self.kernel_size, self.kernel_size)
 
         # Apply depthwise convolution

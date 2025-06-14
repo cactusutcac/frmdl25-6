@@ -32,7 +32,6 @@ class KTHBDQDataset(Dataset):
         """Construct video path using the '_uncomp' suffix."""
         return os.path.join(self.root_dir, label, f"{video_id}_uncomp.avi")
 
-
     def _load_clip(self, video_path, start, end):
         """Extract a clip of frames from the video"""
         cap = cv2.VideoCapture(video_path)
@@ -78,7 +77,7 @@ class IXMASBDQDataset(Dataset):
         self.root_dir = root_dir
         self.transform = transform
 
-        with open(IXMAS_LABELS_DIR, "r") as f:
+        with open(json_path, "r") as f:
             all_clips = json.load(f)
         
         self.data = [c for c in all_clips if c["split"] == split] if split else all_clips

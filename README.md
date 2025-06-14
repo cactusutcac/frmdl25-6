@@ -57,7 +57,9 @@ pip install -r requirements.txt
 ```
 2. Adversarial training: 
 ```bash
-python training.py 
+python training.py --dataset kth
+# or
+python training.py --dataset ixmas
 ```
 
 ## Reproducing Figure 3 

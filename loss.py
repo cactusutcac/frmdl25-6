@@ -1,5 +1,6 @@
 import torch
 from torch import nn
+import torch.nn.functional as F
 
 class ActionLoss(nn.Module):
     """
@@ -24,7 +25,7 @@ class ActionLoss(nn.Module):
         L_action: the ground-truth action labels of the inputs
     """
     def forward(self, T_pred, P_pred, L_action):
-        loss = self.cross_entropy(T_pred, L_action) - self.alpha * self.entropy(P_pred)
+        loss = self.cross_entropy(T_pred, L_action) - self.alpha * self.entropy(F.softmax(P_pred, dim=1))
         return loss
 
 class PrivacyLoss(nn.Module):

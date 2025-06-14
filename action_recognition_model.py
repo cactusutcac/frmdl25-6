@@ -28,11 +28,11 @@ class ActionRecognitionModel(nn.Module):
         model = model.eval()
         model = model.to(device)
         if fine_tune:
-            for param in model.parameters():
-                param.requires_grad = False
+            # for param in model.parameters():
+            #     param.requires_grad = False
             model.blocks[-1].proj = nn.Linear(in_features = model.blocks[-1].proj.in_features, out_features = num_classes)
-            for param in model.blocks[-1].proj.parameters():
-                param.requires_grad = True
+            # for param in model.blocks[-1].proj.parameters():
+            #     param.requires_grad = True
         self.model = model
         self.transform = ApplyTransformToKey(
             key="video",
@@ -61,10 +61,7 @@ class ActionRecognitionModel(nn.Module):
         x = torch.transpose(x, -3, -4)
         logits = self.model(x)  # Get prediction logits from 3d resnet. Shape: (B, num_classes)
 
-        # Apply softmax to get and return probabilities of each label
-        logits_softmax = F.softmax(logits, dim=1)
-        
-        return logits_softmax
+        return logits
 
     def test(self, video_path):
         video = EncodedVideo.from_path(video_path)

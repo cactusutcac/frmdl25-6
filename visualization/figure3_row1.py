@@ -1,43 +1,70 @@
-import pandas as pd
+import os
 import matplotlib.pyplot as plt
+from tensorboard.backend.event_processing import event_accumulator
 
-def plot_tradeoff(csv_bdq, csv_orig, dataset_name, output_file):
-    # Load CSVs
-    df_bdq = pd.read_csv(csv_bdq)
-    df_orig = pd.read_csv(csv_orig)
+def extract_last_scalar_from_subdir(root_dir, subdir_name):
+    """
+    Extracts the last scalar value from a TensorBoard run directory. 
+    Assumes:
+    - Subdirectory is named by the metric (e.g., Accuracy_val_acc_action)
+    - Scalar tag inside is always 'Accuracy'
+    """
+    full_path = os.path.join(root_dir, subdir_name)
+    event_files = [f for f in os.listdir(full_path) if f.startswith("events.out")]
+    if not event_files:
+        raise FileNotFoundError(f"No event file found in {full_path}")
 
-    # Extract last epoch accuracies
-    action_bdq = df_bdq['action_accuracy'].iloc[-1]
-    privacy_bdq = df_bdq['privacy_accuracy'].iloc[-1]
-    action_orig = df_orig['action_accuracy'].iloc[-1]
-    privacy_orig = df_orig['privacy_accuracy'].iloc[-1]
+    event_path = os.path.join(full_path, event_files[0])
+    ea = event_accumulator.EventAccumulator(event_path)
+    ea.Reload()
 
-    # Plot
-    plt.figure(figsize=(6,6))
-    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='o', s=100)
-    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', s=100)
+    if "Accuracy" not in ea.Tags().get("scalars", []):
+        raise KeyError(f"Tag 'Accuracy' not found in {event_path}")
 
-    plt.xlabel("Identity Accuracy (%)")
-    plt.ylabel("Action Accuracy (%)")
-    # plt.title(f"{dataset_name}: Performance Trade-Off")
-    plt.legend()
+    scalars = ea.Scalars("Accuracy")
+    return scalars[-1].value
+
+def plot_tradeoff_tensorboard(log_root_bdq, log_root_orig, tag_action, tag_privacy, dataset_name, output_file):
+    action_bdq = extract_last_scalar_from_subdir(log_root_bdq, tag_action)
+    privacy_bdq = extract_last_scalar_from_subdir(log_root_bdq, tag_privacy)
+    action_orig = extract_last_scalar_from_subdir(log_root_orig, tag_action)
+    privacy_orig = extract_last_scalar_from_subdir(log_root_orig, tag_privacy)
+
+    # Convert to %
+    action_bdq *= 100
+    privacy_bdq *= 100
+    action_orig *= 100
+    privacy_orig *= 100
+
+    plt.figure(figsize=(8,8))
+    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='s', color='orange', s=100)
+    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', color='red', s=100) 
+    plt.xlabel("Identity Accuracy (%)", fontsize=20)
+    plt.ylabel("Action Accuracy (%)", fontsize=20)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.legend(fontsize=20)
     plt.grid(True)
+    plt.xlim(0,105)
+    plt.ylim(0,105)
     plt.tight_layout()
     plt.savefig(output_file)
     plt.close()
 
-# KTH
-plot_tradeoff(
-    "visualization/logs/accuracy_log_kth.csv",
-    "visualization/logs/accuracy_log_kth_no_encoder.csv",
-    "KTH",
-    "visualization/pics/tradeoff_kth.pdf"
+plot_tradeoff_tensorboard(
+    log_root_bdq="visualization/logs/runs_kth",
+    log_root_orig="visualization/logs/runs_kth_no_encoder",
+    tag_action="Accuracy_val_acc_action",
+    tag_privacy="Accuracy_val_acc_privacy",
+    dataset_name="KTH",
+    output_file="visualization/pics/tradeoff_kth.pdf"
 )
 
-# IXMAS
-plot_tradeoff(
-    "visualization/logs/accuracy_log_ixmas.csv",
-    "visualization/logs/accuracy_log_ixmas_no_encoder.csv",
-    "IXMAS",
-    "visualization/pics/tradeoff_ixmas.pdf"
+plot_tradeoff_tensorboard(
+    log_root_bdq="visualization/logs/runs_ixmas",
+    log_root_orig="visualization/logs/runs_ixmas_no_encoder",
+    tag_action="Accuracy_val_acc_action",
+    tag_privacy="Accuracy_val_acc_privacy",
+    dataset_name="IXMAS",
+    output_file="visualization/pics/tradeoff_ixmas.pdf"
 )
