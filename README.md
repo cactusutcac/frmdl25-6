@@ -1,6 +1,6 @@
 # Reproduction of _Privacy-Preserving Action Recognition via Motion Difference Quantization_ 
-This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_
-We replicate the results on the [**KTH**](https://www.csc.kth.se/cvap/actions/) dataset and additionally evaluate on [**IXMAS**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/). 
+This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_ [1]. 
+We replicate the results on the [**KTH**](https://www.csc.kth.se/cvap/actions/) dataset [2] and additionally evaluate on [**IXMAS**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) [3]. 
 
 ## Project Overview
 We implemented the BDQ encoder consisting of three modules, Blur, Difference, and Quantization. The encoder is trained in an adversarial setup to retain action features while supressing privacy-sensitive ones. 
@@ -37,8 +37,8 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
     - `.../IXMAS_preprocess/IXMAS_720`: 720 manually selected representative frames 
     - `.../IXMAS_preprocess/IXMAS_utils` 
       - `.../ixmas_extract_frame.py`: extracts and saves a representative frame from each IXMAS video 
-      - `.../IXMAS_utils/ixmas_6_vid.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_extract_vid.py`: locates and copies videos matching selected frame names (e.g., for `IXMAS_720/`) 
+      - `.../IXMAS_utils/ixmas_extract_vid_class.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_parser.py`: generates clip metadata from IXMAS video filenames 
 
 ### Models & Training 
@@ -55,7 +55,7 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ```bash
 pip install -r requirements.txt
 ```
-1. Adversarial training: 
+2. Adversarial training: 
 ```bash
 python training.py --dataset kth
 # or
