@@ -37,15 +37,28 @@ def plot_tradeoff_tensorboard(log_root_bdq, log_root_orig, tag_action, tag_priva
     privacy_orig *= 100
 
     plt.figure(figsize=(8,8))
-    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='o', s=100)
-    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', s=100)
-    plt.xlabel("Identity Accuracy (%)")
-    plt.ylabel("Action Accuracy (%)")
-    plt.legend()
+    plt.scatter(privacy_orig, action_orig, label="Orig. Video", marker='s', color='orange', s=100)
+    plt.scatter(privacy_bdq, action_bdq, label="BDQ", marker='*', color='red', s=100) 
+    plt.xlabel("Identity Accuracy (%)", fontsize=20)
+    plt.ylabel("Action Accuracy (%)", fontsize=20)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.legend(fontsize=20)
     plt.grid(True)
+    plt.xlim(0,105)
+    plt.ylim(0,105)
     plt.tight_layout()
     plt.savefig(output_file)
     plt.close()
+
+plot_tradeoff_tensorboard(
+    log_root_bdq="visualization/logs/runs_kth",
+    log_root_orig="visualization/logs/runs_kth_no_encoder",
+    tag_action="Accuracy_val_acc_action",
+    tag_privacy="Accuracy_val_acc_privacy",
+    dataset_name="KTH",
+    output_file="visualization/pics/tradeoff_kth.pdf"
+)
 
 plot_tradeoff_tensorboard(
     log_root_bdq="visualization/logs/runs_ixmas",
