@@ -1,6 +1,5 @@
 # Reproduction of _Privacy-Preserving Action Recognition via Motion Difference Quantization_ 
-This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_
-We replicate the results on the [**KTH**](https://www.csc.kth.se/cvap/actions/) dataset and additionally evaluate on [**IXMAS**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/). 
+This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_. We replicate the results on the [**KTH**](https://www.csc.kth.se/cvap/actions/) dataset and additionally evaluate on [**IXMAS**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/). 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -17,7 +16,7 @@ We replicate the results on the [**KTH**](https://www.csc.kth.se/cvap/actions/) 
 - [Reproduce Figure 3](#reproduce-figure-3)
 
 ## Project Overview
-We implemented the BDQ encoder consisting of three modules, Blur, Difference, and Quantization. The encoder is trained adversariallly to retain action features while supressing privacy-sensitive ones. 
+We implemented the BDQ encoder consisting of three modules, Blur, Difference, and Quantization. The encoder is trained adversarially to retain action features while suppressing privacy-sensitive ones. 
 
 ## Directory Structure 
 ### Core Components
@@ -57,7 +56,7 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ### Models & Training 
 - `loss.py`: loss functions for adversarial training 
 - `training.py`: training and validation pipeline 
-- `training_no_encoder.py`: identical pipeline that bypasses BDQ transformations, used for ablation or baseline comparison 
+- `training_no_encoder.py`: an identical pipeline that bypasses BDQ transformations, used for ablation or baseline comparison 
 - `action_recognition_model.py`: 3D ResNet-based action classifier 
 - `privacy_attribute_prediction_model.py`: 2D ResNet-based identity classifier 
 
@@ -75,7 +74,7 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ### Run On Kaggle 
 1. Generate a GitHub Personal Access Token (PAT). 
 2. Upload the notebook from [`/notebooks`](./notebooks) to Kaggle. 
-3. Add the token as a Kaggle secret in your notebook: `Add-ons` -> `Secrets` -> `Add Secrect`. 
+3. Add the token as a Kaggle secret in your notebook: `Add-ons` -> `Secrets` -> `Add Secret`. 
 4. Access the secret in the notebook by replacing the placeholder: 
   ```Python
   user_secrets = UserSecretsClient()
@@ -90,7 +89,7 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 6. Enable GPU: `Settings` -> `Accelerator` -> select `GPU P100`. 
 
 ### Run Locally 
-> [!NOTE] training may be slow without a CUDA-enabled GPU. 
+> [!NOTE] Training may be slow without a CUDA-enabled GPU. 
 
 1. Install requirements: 
 ```bash
