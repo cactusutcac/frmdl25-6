@@ -9,10 +9,11 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 ### Core Components
 - `bdq_encoder/` 
   - `BDQ.py`: high-level wrapper for the BDQ encoder
+  - `BDQ_disabled`: a passthrough version of the encoder that disables all BDQ transformations, used for ablation or baseline comparisons 
   - `blur.py`, `difference.py`, `quantization.py`: module-level definitions 
 
 ### Datasets & Metadata 
-- Raw datasets available from: 
+- Raw datasets available at: 
   - [KTH Dateset](https://www.csc.kth.se/cvap/actions/) 
   - [IXMAS Dataset](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) 
 - `datasets/`
@@ -22,11 +23,9 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
   - `datasets/ixmas_clips_6.json`, `datasets/kth_clips.json`: structured clip metadata generated from parsers 
 
 ### Notebooks 
-- `notebooks/`: Ready-to-run experiments for the Kaggle GPU100 environment 
-  - `notebooks/bdq-kth.ipynb`: KTH experiment with BDQ encoder 
-  -  `notebooks/bdq-kth-no-encoder.ipynb`: KTH baseline without BDQ 
-  -  `notebooks/bdq-ixmas.ipynb`: IXMAS experiment with BDQ encoder 
-  -  `notebooks/bdq-ixmas-no-encoder.ipynb`: IXMAS baseline without BDQ 
+- `notebooks/`
+  - `notebooks/bdq-encoder.ipynb`: experiment with BDQ encoder 
+  -  `notebooks/bdq-no-encoder.ipynb`: baseline experiment without BDQ encoder 
 
 ### Preprocessing Scripts 
 - `preprocess.py`: preprocessing pipeline 
@@ -34,36 +33,39 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
   - `raw_dataset_preprocess/KTH_preprocess`
     - `.../KTH_preprocess/kth_parser.py`: parses `00sequences.txt` into structured KTH clip metadata 
   - `raw_dataset_preprocess/IXMAS_preprocess` 
-    - `.../IXMAS_preprocess/IXMAS_720`: 720 manually selected representative frames 
+    - `.../IXMAS_preprocess/IXMAS_720`: 720 manually selected representative frames (10 subject × 12 classes × 2 viewpoints × 3 takes) 
     - `.../IXMAS_preprocess/IXMAS_utils` 
       - `.../ixmas_extract_frame.py`: extracts and saves a representative frame from each IXMAS video 
-      - `.../IXMAS_utils/ixmas_6_vid.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_extract_vid.py`: locates and copies videos matching selected frame names (e.g., for `IXMAS_720/`) 
+      - `.../IXMAS_utils/ixmas_6_vid.py`: filters and saves videos belonging to six selected actions 
       - `.../IXMAS_utils/ixmas_parser.py`: generates clip metadata from IXMAS video filenames 
 
 ### Models & Training 
 - `loss.py`: loss functions for adversarial training 
 - `training.py`: training and validation pipeline 
+- `training_no_encoder.py`: identical pipeline that bypasses BDQ transformations, used for ablation or baseline comparison 
 - `action_recognition_model.py`: 3D ResNet-based action classifier 
 - `privacy_attribute_prediction_model.py`: 2D ResNet-based identity classifier 
 
 ### Visualization & Evaluation 
 > todo
 
-## Run the Project
+## Run the Project 
+### On Kaggle 
+>todo
+
+### Locally 
 1. Install requirements: 
 ```bash
 pip install -r requirements.txt
 ```
-1. Adversarial training: 
+2. Adversarial training: 
 ```bash
 python training.py --dataset kth
 # or
 python training.py --dataset ixmas
 ```
 
-## Reproducing Figure 3 
-> todo 
 
 ## References 
 [1] S. Kumawat and H. Nagahara, “Privacy-Preserving Action Recognition via Motion Difference Quantization,” Aug. 2022.
