@@ -89,7 +89,8 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
 6. Enable GPU: `Settings` -> `Accelerator` -> select `GPU P100`. 
 
 ### Run Locally 
-> [!NOTE] Training may be slow without a CUDA-enabled GPU. 
+
+> **Note:** Training may be slow without a CUDA-enabled GPU. 
 
 1. Install requirements: 
 ```bash
