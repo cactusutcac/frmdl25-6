@@ -53,6 +53,8 @@ We implemented the BDQ encoder consisting of three modules, Blur, Difference, an
       - `.../IXMAS_utils/ixmas_parser.py`: generates clip metadata from IXMAS video filenames 
 
 ### Models & Training 
+- `checkpoint_25.tar`: checkpoint containing model weights saved after 25th epoch of training on KTH dataset. 
+Note that because of GitHub limitations, file had to be split and needs to be reassembled from pieces using command `cat checkpoint_25_part_* > checkpoint_25.tar`
 - `loss.py`: loss functions for adversarial training 
 - `training.py`: training and validation pipeline 
 - `training_no_encoder.py`: an identical pipeline that bypasses BDQ transformations, used for ablation or baseline comparison 
@@ -111,6 +113,12 @@ python visualization/figure3_row2.py
 ```
 These scripts read from log files and generate the corresponding plots in [`visualization/pics/`](./visualization/pics/). 
 
+## BDQ encoder samples
+Below are some sample outputs from the BDQ encoder obtained after training the model for 25 epochs on KTH dataset (see `checkpoint_25.tar`), 
+which demonstrate the transformations applied to the input video frames:
+
+<img src="samples/output0.gif" width="200" />
+<img src="samples/output1.gif" width="200" />
 
 ## References 
 [1] S. Kumawat and H. Nagahara, “Privacy-Preserving Action Recognition via Motion Difference Quantization,” Aug. 2022.
