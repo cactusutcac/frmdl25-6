@@ -1,5 +1,5 @@
 # Reproduction of _Privacy-Preserving Action Recognition via Motion Difference Quantization_ 
-This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_ [1]. We replicate the results on the [**KTH dataset**](https://www.csc.kth.se/cvap/actions/) [2] and additionally evaluate on [**IXMAS dataset**] (https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) [3]. 
+This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_ [1]. We replicate the results on the [**KTH dataset**](https://www.csc.kth.se/cvap/actions/) [2] and additionally evaluate on [**IXMAS dataset**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) [3]. 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
