@@ -1,5 +1,5 @@
 # Reproduction of _Privacy-Preserving Action Recognition via Motion Difference Quantization_ 
-This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_ [1]. We replicate the results on the [**KTH dataset**](https://www.csc.kth.se/cvap/actions/) [2] and additionally evaluate on [**IXMAS dataset**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) [3]. 
+This repository contains our reproduction and extension of the BDQ encoder from the paper _Privacy-Preserving Action Recognition via Motion Difference Quantization_ [1]. We replicate the results on the [**KTH dataset**](https://www.csc.kth.se/cvap/actions/) [2] and additionally evaluate on the [**IXMAS dataset**](https://www.epfl.ch/labs/cvlab/data/data-ixmas10/) [3]. 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,6 +14,7 @@ This repository contains our reproduction and extension of the BDQ encoder from 
   - [Run On Kaggle](#run-on-kaggle)
   - [Run Locally](#run-locally)
 - [Reproduce Figure 3](#reproduce-figure-3)
+- [BDQ Encoder Samples](#bdq-encoder-samples)
 
 ## Project Overview
 We implemented the BDQ encoder consisting of three modules, Blur, Difference, and Quantization. The encoder is trained adversarially to retain action features while suppressing privacy-sensitive ones. 
@@ -79,7 +80,7 @@ Note that because of GitHub limitations, file had to be split and needs to be re
 4. Access the secret in the notebook by replacing the placeholder: 
   ```Python
   user_secrets = UserSecretsClient()
-  token = user_secrets.get_secret("your_secrect_name") # replace with the actual name 
+  token = user_secrets.get_secret("your_secret_name") # replace with the actual name 
   ```
 5. Specify the dataset to run: 
   ```Python
@@ -106,19 +107,20 @@ python training.py --dataset ixmas
 
 ## Reproduce Figure 3 
 
-To replicate the two plots in Figure 3 from the original BDQ paper using saved logs, run the following commands: 
+To replicate the two subplots in Figure 3 of the original BDQ paper using saved logs, run the following commands: 
 ```bash
 python visualization/figure3_row1.py
 python visualization/figure3_row2.py
 ```
 These scripts read from log files and generate the corresponding plots in [`visualization/pics/`](./visualization/pics/). 
 
-## BDQ encoder samples
-Below are some sample outputs from the BDQ encoder obtained after training the model for 25 epochs on KTH dataset (see `checkpoint_25.tar`), 
-which demonstrate the transformations applied to the input video frames:
+## BDQ Encoder Samples 
+
+Below are some sample outputs of the BDQ encoder after training for 25 epochs on the KTH dataset (see [`checkpoint_25.tar`](./checkpoints/)), which demonstrate the transformations applied to the input video frames: 
 
 <img src="samples/output0.gif" width="200" />
 <img src="samples/output1.gif" width="200" />
+
 
 ## References 
 [1] S. Kumawat and H. Nagahara, “Privacy-Preserving Action Recognition via Motion Difference Quantization,” Aug. 2022.
